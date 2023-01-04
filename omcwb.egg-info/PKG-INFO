@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: omcwb
+Version: 0.0.1
+Summary: Peça para 40ª Oficina de Música de Curitiba
+Home-page: UNKNOWN
+Author: Davi Raubach Tuchtenhagen
+Author-email: <raubachdavi@gmail.com>
+License: UNKNOWN
+Keywords: music notation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Partitura para 40ª Oficina de Música de Curitiba
+

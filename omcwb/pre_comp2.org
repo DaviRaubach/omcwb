@@ -1,0 +1,203 @@
+* Texto
+Consegui pensar em três fragmentos de 1 a 1:30 minutos que conectados formam a peça completa.
+
+As imagens abaixo apresentam um percurso dos materiais.
+#+ATTR_LATEX: :width 10cm 
+[[file:images/20230104_085554.jpg]]
+
+#+ATTR_LATEX: :width 10cm 
+[[file:images/20230104_085602.jpg]]
+
+#+ATTR_LATEX: :width 10cm 
+[[file:images/20230104_085609.jpg]]
+
+#+ATTR_LATEX: :width 10cm 
+[[file:images/20230104_085625.jpg]]
+
+#+ATTR_LATEX: :width 10cm 
+[[file:images/20230104_085636.jpg]]
+
+
+
+
+A B C
+
+** A
+Estou trabalhando a partir do texto. Tento pensar o material musical como se fosse a leitura de um texto poético. 
+
+O trecho abaixo se refere ao fragmento A. Para a apresentação abaixo (*diferente da partitura* [fn:tachado]), usei a seguinte notação:
+
+normal = uma nota para cada sílaba
++tachado+ = pausa (leitura mental sem tocar)
+_sublinhado_ = notas que se extendem por várias sílabas
+
+
+*Piccolo:*
+
+Palavra +salta, salta, voa+
+atirada contra a água +leve, leve, leve+
+
+salta, salta, voa
+_palavra_ a - _tirada_
+pousa sobre as nuvens
+pa - _lavra_ con - _tra a água_
+
+mer - _gulha cada vez mais_ fundo
+cada _vez mais alto_
+
+a _palavra seduz_ a _língua e escorre_
++e escorre+, _e escorre, e escorre
+_cada vez mais sonhada_
+
+
+
+
+
+
+ofélias e narcisos dissolvidos
+escorrem pela boca
+cada vez mais sonhados
+
+"Nunca nos curamos de ter sonhado ao pé de uma água dormente..."
+
+
+
+[fn:tachado]: Na partitura, o texto +tachado+ se refere à leitura mental (não falado).
+
+
+
+
+
+
+Nunca nos curamos de ter sonhado ao pé de uma água dormente... ( Bachelard)
+a
+No one ever recovers from having dreamed next to
+dormant water
+
+On ne se guéritjamais d’avoir rêvé près d’une eau dormante...
+
+
+
+
+* Ly
+#+begin_src lilypond :file test.png :result output
+          \version "2.23.6"
+          \paper { page-breaking = #ly:one-line-auto-height-breaking }
+          #(print-keys-verbose 'soprano-saxophone (current-error-port))
+      scratched =
+  #(define-music-function
+       (text)
+       (markup?)
+     #{
+     \markup \override #'(offset . -4) \underline #text
+     #})
+          %% http://lsr.di.unimi.it/LSR/Item?id=253
+      %% see also http://lilypond.org/doc/v2.18/Documentation/notation/graphic
+
+      ViolinI = \new Staff \relative c' {
+        \set Staff.instrumentName = "Violin I"
+        e1 | f_\markup {
+          % espessura da linha / arredondar? / [tamanho do traço / distância entre eles] / espaço vert. antes / posição de início / posição de fim / linha ou curva / stroke?
+
+          \postscript "0.3 setlinewidth 1 setlinecap [0.5 1] 3 setdash 1 0 moveto 0 -8 rlineto stroke" }
+        \override Staff.Rest.stencil = #ly:text-interface::print
+        \override Staff.Rest.text = \markup {
+      \musicglyph "scripts.rcomma"
+  }
+        
+        \override Score.SpacingSpanner.shortest-duration-space = #4.0
+        \override Score.BendAfter.thickness = #5.0
+        c-\bendAfter #0
+      }
+
+
+
+      \score {
+        <<
+          \ViolinI
+
+        >>
+      }
+#+end_src
+
+#+RESULTS:
+[[file:test.png]]
+
+
+  
+#+begin_src lilypond :file test2.png :result output
+  \version "2.23.6"
+  \paper { page-breaking = #ly:one-line-auto-height-breaking }
+  #(print-keys-verbose 'soprano-saxophone (current-error-port))
+  minima = #(lambda (grob)(grob-interpret-markup grob
+  #{ \markup
+    \musicglyph "noteheads.s1"
+   #}))
+  musicOne = \relative {
+    c''4 b8. a16 g4. f8 e4 d c2
+
+    <c' \tweak stencil \minima e'>4
+  }
+  verseOne = \lyricmode {
+    tes -- tan -- \markup \bold do‿al -- go
+  }
+  \score {
+    <<
+      \new Voice = "one" {
+        \time 2/4
+        \musicOne
+      }
+      \new Lyrics \lyricsto "one" {
+        \verseOne
+      }
+    >>
+  }
+#+end_src
+
+#+RESULTS:
+[[file:test2.png]]
+
+
+
+#+begin_src lilypond :file test3.png :result output
+\layout {
+  \context {
+    \Voice
+    \consists Duration_line_engraver
+    % \omit Stem
+    % \omit Flag
+    % \omit Beam
+    \override NoteHead.duration-log = 2
+  }
+}
+
+{
+  a'2 ~ 2\- s2
+  \once \override DurationLine.style = #'line
+  a'1 s2 r
+  \once \override DurationLine.style = #'dashed-line
+  \once \override DurationLine.dash-period = 2
+  a'1\- s2 r
+  \once \override DurationLine.style = #'dotted-line
+  \once \override DurationLine.dash-period = 1
+  \once \override DurationLine.bound-details.right.padding = 1
+  a'1\- s2 r
+  \once \override DurationLine.thickness = 2
+  \once \override DurationLine.style = #'zigzag
+  a'1\- s2 r
+  \once \override DurationLine.style = #'trill
+  a'1\- s2 r
+  \once \override DurationLine.style = #'none
+  a'1\- s2 r
+  \once \override DurationLine.bound-details.right.end-style = #'arrow
+  a'1\- s2 r
+  \override DurationLine.bound-details.right.end-style = #'hook
+  a'1\- s2 r
+  \override DurationLine.details.hook-direction = #DOWN
+  a'1\- s2 r
+  \bar "|."
+}
+#+end_src
+
+#+RESULTS:
+[[file:test3.png]]

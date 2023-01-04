@@ -1,0 +1,44 @@
+; Orchidea configuration file for Plurisons 2022 piece
+
+  ; DATABASE AND ORCHESTRA -------------------------------------------------------
+db_files /Volumes/128/Orchidea/OrchideaSOL2020/OrchideaSOL2020.spectrum.db /Volumes/128/Orchidea/OrchideaSOL2020/CSOL_multiphonics.spectrum.db
+
+  sound_paths /Volumes/128/Orchidea/OrchideaSOL2020/OrchideaSOL2020/ /Volumes/128/Orchidea/OrchideaSOL2020/CSOL_multiphonics/
+
+  orchestra			Fl ASax Gtr Vc
+  ; dynamics			ppp pp p N
+
+
+  ; OPTIMIZATION -----------------------------------------------------------------
+  pop_size			100
+  max_epochs			100
+
+  pursuit			5
+
+  xover_rate			0.8
+  mutation_rate		0.001
+
+  sparsity			0.001
+
+  positive_penalization 	0.5
+  negative_penalization 	10
+
+  hysteresis 0
+
+  regularization 0
+
+  ; TARGET -----------------------------------------------------------------------
+  segmentation			flux
+  partials_window			32768
+  partials_filtering		0
+
+  extra_pitches			N
+
+  ; DYNAMIC ORCHESTRATION --------------------------------------------------------
+  onsets_threshold		0.3
+  onsets_timegate			5
+
+  ; EXPORT -----------------------------------------------------------------------
+  export_solutions		0
+  t60				2.8
+  dry_wet				.8 .4

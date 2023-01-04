@@ -1,0 +1,91 @@
+#+INFOJS_OPT: view:overview toc:nil path:https://orgmode.org/worg/code/org-info-js/org-info-src.js
+#+title: orch_seg_03
+* Segment 03
+** Ensemble
+*** Edit Orchidea Configuration File
+#+begin_src org :tangle orch.txt
+    ; Orchidea configuration file for Plurisons 2022 piece
+
+    ; DATABASE AND ORCHESTRA -------------------------------------------------------
+  db_files /Volumes/128/Orchidea/OrchideaSOL2020/OrchideaSOL2020.spectrum.db /Volumes/128/Orchidea/OrchideaSOL2020/CSOL_multiphonics.spectrum.db
+
+    sound_paths /Volumes/128/Orchidea/OrchideaSOL2020/OrchideaSOL2020/ /Volumes/128/Orchidea/OrchideaSOL2020/CSOL_multiphonics/
+
+    orchestra			Fl ASax Gtr Vc
+    ; dynamics			ppp pp p N
+
+
+    ; OPTIMIZATION -----------------------------------------------------------------
+    pop_size			100
+    max_epochs			100
+
+    pursuit			5
+
+    xover_rate			0.8
+    mutation_rate		0.001
+
+    sparsity			0.001
+
+    positive_penalization 	0.5
+    negative_penalization 	10
+
+    hysteresis 0
+
+    regularization 0
+
+    ; TARGET -----------------------------------------------------------------------
+    segmentation			flux
+    partials_window			32768
+    partials_filtering		0
+
+    extra_pitches			N
+
+    ; DYNAMIC ORCHESTRATION --------------------------------------------------------
+    onsets_threshold		0.3
+    onsets_timegate			5
+
+    ; EXPORT -----------------------------------------------------------------------
+    export_solutions		0
+    t60				2.8
+    dry_wet				.8 .4 
+#+end_src
+*** Run Orchidea
+**** Sabiá
+#+begin_src eshell :async
+  ~/github/orchidea/orchestrate /Volumes/128/Orchidea/sabia.wav ./orch.txt
+#+end_src
+
+#+RESULTS:
+#+begin_example
+[orchidea, ver. 0.3]
+
+assisted orchestration tool
+(c) 2018, www.carminecella.com
+
+loading configuration... done
+parameters.............. 0.8, 0.001, 0.001
+loading databases....... done (14205 entries)
+analysing target........ done (7 segments)
+searching............... done
+connecting.............. done
+exporting solutions..... done
+
+#+end_example
+
+
+
+
+**** Orchidea
+
+#+begin_src python :results value :session :tangle orch.py
+  #
+  # ORCHIDEA 
+  #
+  import orchijad
+  import os
+  current_dir = os.path.dirname(__file__)
+  pitches_connection = current_dir + "/connection.txt"
+  _file = open(pitches_connection, "r")
+  orchestration = orchijad.Orchestration(_file)
+  # orch_dict = orchestration.
+#+end_src

@@ -1,0 +1,15 @@
+setup.py
+omcwb/__init__.py
+omcwb/__main__.py
+omcwb/evans_metmod.py
+omcwb/metronome_marks.py
+omcwb/score_template.py
+omcwb/sketch.py
+omcwb/timespans.py
+omcwb.egg-info/PKG-INFO
+omcwb.egg-info/SOURCES.txt
+omcwb.egg-info/dependency_links.txt
+omcwb.egg-info/top_level.txt
+omcwb/sketch/__init__.py
+omcwb/sketch/sketch.py
+omcwb/sketch/timespans.py

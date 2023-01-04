@@ -1,0 +1,173 @@
+[ orchestra Fl ClBb Gtr Vc ]
+[ segment 92.8571
+	[ solution 1
+		[ note 3993.67 Fl flatt B5 ff N /Winds/Flute/flatterzunge/Fl-flatt-B5-ff-N-N.wav 25 ]
+		[ note 185.76 ClBb aeol_and_ord C5 pp N /Winds/Clarinet_Bb/aeolian_and_ordinario/ClBb-aeol_and_ord-C5-pp-N-N.wav 45 ]
+		[ note 185.76 Gtr ord D#3 mf 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-D#3-mf-4c-N.wav -4 ]
+		[ note 185.76 Vc tasto_trem D#3 mf 2c /Strings/Violoncello/sul_tasto_tremolo/Vc-tasto_trem-D#3-mf-2c-T11d.wav -4 ]
+	]
+]
+[ segment 278.639
+	[ solution 2
+		[ note 510.816 ClBb ord F5 mf N /Winds/Clarinet_Bb/ordinario/ClBb-ord-F5-mf-N-N.wav -15 ]
+		[ note 325.057 Gtr harm_fngr B5 p 2c /PluckedStrings/Guitar/harmonic_fingering/Gtr-harm_fngr-B5-p-2c-N.wav 24 ]
+		[ note 325.057 Vc art_harm A6 mf 1c /Strings/Violoncello/artificial_harmonic/Vc-art_harm-A6-mf-1c-N.wav 6 ]
+	]
+]
+[ segment 603.696
+	[ solution 7
+	]
+]
+[ segment 789.478
+	[ solution 2
+		[ note 278.617 ClBb flatt_hi_reg A6 mf N /Winds/Clarinet_Bb/flatterzunge_high_register/ClBb-flatt_hi_reg-A6-mf-N-N.wav 3 ]
+		[ note 278.617 Vc trem D#3 mf 3c /Strings/Violoncello/tremolo/Vc-trem-D#3-mf-3c-N.wav -10 ]
+	]
+]
+[ segment 1068.1
+	[ solution 2
+		[ note 185.76 Gtr ord_hi_reg A6 mf 1c /PluckedStrings/Guitar/ordinario_high_register/Gtr-ord_hi_reg-A6-mf-1c-N.wav 1 ]
+		[ note 650.159 Vc pont F4 mf 2c /Strings/Violoncello/sul_ponticello/Vc-pont-F4-mf-2c-T13d.wav -19 ]
+	]
+]
+[ segment 1253.85
+	[ solution 1
+		[ note 464.399 ClBb aeol_and_ord F5 pp N /Winds/Clarinet_Bb/aeolian_and_ordinario/ClBb-aeol_and_ord-F5-pp-N-T11u.wav -22 ]
+		[ note 464.399 Gtr ord F5 pp 1c /PluckedStrings/Guitar/ordinario/Gtr-ord-F5-pp-1c-T13d.wav -22 ]
+	]
+]
+[ segment 1718.25
+	[ solution 2
+		[ note 185.76 ClBb flatt F4 mf N /Winds/Clarinet_Bb/flatterzunge/ClBb-flatt-F4-mf-N-N.wav -22 ]
+	]
+]
+[ segment 1904.04
+	[ solution 3
+		[ note 557.256 ClBb ord F5 mf N /Winds/Clarinet_Bb/ordinario/ClBb-ord-F5-mf-N-N.wav -24 ]
+		[ note 278.639 Gtr ord C5 pp 1c /PluckedStrings/Guitar/ordinario/Gtr-ord-C5-pp-1c-N.wav 34 ]
+		[ note 278.639 Vc trem D#3 pp 4c /Strings/Violoncello/tremolo/Vc-trem-D#3-pp-4c-N.wav -8 ]
+	]
+]
+[ segment 2182.68
+	[ solution 3
+		[ note 464.376 Gtr ord B5 mf 1c /PluckedStrings/Guitar/ordinario/Gtr-ord-B5-mf-1c-T10d.wav 17 ]
+		[ note 278.617 Vc trem F5 pp 1c /Strings/Violoncello/tremolo/Vc-trem-F5-pp-1c-N.wav -25 ]
+	]
+]
+[ segment 2461.29
+	[ solution 6
+	]
+]
+[ segment 2647.07
+	[ solution 1
+		[ note 232.177 ClBb flatt B5 mf N /Winds/Clarinet_Bb/flatterzunge/ClBb-flatt-B5-mf-N-N.wav 16 ]
+		[ note 232.177 Gtr ord D#3 mf 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-D#3-mf-4c-N.wav -11 ]
+		[ note 1207.37 Vc tasto_trem D#3 mf 4c /Strings/Violoncello/sul_tasto_tremolo/Vc-tasto_trem-D#3-mf-4c-T17u.wav -11 ]
+	]
+]
+[ segment 2879.25
+	[ solution 2
+		[ note 371.519 ClBb flatt F5 mf N /Winds/Clarinet_Bb/flatterzunge/ClBb-flatt-F5-mf-N-N.wav -27 ]
+		[ note 371.519 Gtr ord F5 pp 1c /PluckedStrings/Guitar/ordinario/Gtr-ord-F5-pp-1c-T13d.wav -27 ]
+	]
+]
+[ segment 3250.79
+	[ solution 4
+		[ note 278.617 ClBb flatt B5 pp N /Winds/Clarinet_Bb/flatterzunge/ClBb-flatt-B5-pp-N-N.wav 25 ]
+		[ note 417.937 Gtr ord B5 mf 1c /PluckedStrings/Guitar/ordinario/Gtr-ord-B5-mf-1c-T10d.wav 25 ]
+	]
+]
+[ segment 3529.41
+	[ solution 1
+		[ note 1300.25 ClBb sfz F5 f N /Winds/Clarinet_Bb/sforzato/ClBb-sfz-F5-f-N-T10u.wav -27 ]
+	]
+]
+[ segment 3668.75
+	[ solution 1
+		[ note 417.914 Gtr ord F5 pp 1c /PluckedStrings/Guitar/ordinario/Gtr-ord-F5-pp-1c-T13d.wav -26 ]
+	]
+]
+[ segment 3854.49
+	[ solution 1
+		[ note 232.177 Vc art_harm B5 mf 1c /Strings/Violoncello/artificial_harmonic/Vc-art_harm-B5-mf-1c-N.wav 17 ]
+	]
+]
+[ segment 4086.69
+	[ solution 4
+		[ note 232.2 Fl flatt F4 ff N /Winds/Flute/flatterzunge/Fl-flatt-F4-ff-N-N.wav -25 ]
+		[ note 743.016 Gtr ord B5 ff 1c /PluckedStrings/Guitar/ordinario/Gtr-ord-B5-ff-1c-N.wav 18 ]
+		[ note 232.2 Vc art_harm G#5 mf 2c /Strings/Violoncello/artificial_harmonic/Vc-art_harm-G#5-mf-2c-N.wav 25 ]
+	]
+]
+[ segment 4318.89
+	[ solution 4
+		[ note 2507.66 Fl aeol_and_ord B5 mf N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B5-mf-N-N.wav 18 ]
+		[ note 743.016 Vc pont_trem F4 mf 1c /Strings/Violoncello/sul_ponticello_tremolo/Vc-pont_trem-F4-mf-1c-N.wav -25 ]
+	]
+]
+[ segment 4829.73
+	[ solution 2
+		[ note 232.2 ClBb ord B5 pp N /Winds/Clarinet_Bb/ordinario/ClBb-ord-B5-pp-N-N.wav 31 ]
+		[ note 232.2 Gtr ord F5 pp 1c /PluckedStrings/Guitar/ordinario/Gtr-ord-F5-pp-1c-T13d.wav -25 ]
+	]
+]
+[ segment 5061.95
+	[ solution 2
+		[ note 185.737 ClBb flatt F5 mf N /Winds/Clarinet_Bb/flatterzunge/ClBb-flatt-F5-mf-N-N.wav -24 ]
+		[ note 185.737 Vc tasto_trem G#5 mf 1c /Strings/Violoncello/sul_tasto_tremolo/Vc-tasto_trem-G#5-mf-1c-N.wav 26 ]
+	]
+]
+[ segment 5247.71
+	[ solution 2
+		[ note 139.32 ClBb flatt B5 pp N /Winds/Clarinet_Bb/flatterzunge/ClBb-flatt-B5-pp-N-N.wav 18 ]
+		[ note 139.32 Gtr ord F5 mf 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-F5-mf-2c-T16d.wav -24 ]
+		[ note 139.32 Vc ord C5 pp 1c /Strings/Violoncello/ordinario/Vc-ord-C5-pp-1c-N.wav 33 ]
+	]
+]
+[ segment 5387.03
+	[ solution 5
+		[ note 232.177 ClBb flatt F5 mf N /Winds/Clarinet_Bb/flatterzunge/ClBb-flatt-F5-mf-N-N.wav -24 ]
+		[ note 789.456 Gtr ord B5 mf 1c /PluckedStrings/Guitar/ordinario/Gtr-ord-B5-mf-1c-T10d.wav 18 ]
+		[ note 232.177 Vc trem D#3 pp 4c /Strings/Violoncello/tremolo/Vc-trem-D#3-pp-4c-N.wav -6 ]
+	]
+]
+[ segment 5619.21
+	[ solution 4
+		[ note 232.2 ClBb flatt F4 mf N /Winds/Clarinet_Bb/flatterzunge/ClBb-flatt-F4-mf-N-N.wav -24 ]
+		[ note 232.2 Vc pizz_sec F4 pp 1c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F4-pp-1c-N.wav -24 ]
+	]
+]
+[ segment 5851.41
+	[ solution 3
+		[ note 325.079 ClBb ord B5 pp N /Winds/Clarinet_Bb/ordinario/ClBb-ord-B5-pp-N-N.wav 20 ]
+		[ note 325.079 Vc ord D#3 pp 2c /Strings/Violoncello/ordinario/Vc-ord-D#3-pp-2c-N.wav -4 ]
+	]
+]
+[ segment 6176.51
+	[ solution 1
+		[ note 882.313 ClBb flatt F5 pp N /Winds/Clarinet_Bb/flatterzunge/ClBb-flatt-F5-pp-N-N.wav -23 ]
+		[ note 325.079 Vc trem F4 pp 2c /Strings/Violoncello/tremolo/Vc-trem-F4-pp-2c-N.wav -23 ]
+	]
+]
+[ segment 6501.59
+	[ solution 3
+		[ note 185.737 Gtr ord B5 mf 1c /PluckedStrings/Guitar/ordinario/Gtr-ord-B5-mf-1c-T10d.wav 21 ]
+		[ note 1114.54 Vc tasto_trem D#3 mf 3c /Strings/Violoncello/sul_tasto_tremolo/Vc-tasto_trem-D#3-mf-3c-N.wav 0 ]
+	]
+]
+[ segment 6687.32
+	[ solution 1
+		[ note 139.32 Gtr ord F5 mf 1c /PluckedStrings/Guitar/ordinario/Gtr-ord-F5-mf-1c-T15d.wav -21 ]
+	]
+]
+[ segment 6826.67
+	[ solution 3
+		[ note 232.177 Gtr ord B5 pp 1c /PluckedStrings/Guitar/ordinario/Gtr-ord-B5-pp-1c-N.wav 20 ]
+	]
+]
+[ segment 7058.84
+	[ solution 1
+		[ note 557.302 Fl harm_fngr B5 f N /Winds/Flute/harmonic_fingering/Fl-harm_fngr-B5-f-N-N.wav 21 ]
+		[ note 557.302 ClBb ord B5 pp N /Winds/Clarinet_Bb/ordinario/ClBb-ord-B5-pp-N-N.wav 21 ]
+	]
+]

@@ -1,0 +1,48 @@
+[ orchestra Fl ASax Gtr Vc ]
+[ segment 0
+	[ solution 1
+		[ note 8359.16 Fl flatt C7 ff N /Winds/Flute/flatterzunge/Fl-flatt-C7-ff-N-N.wav 0 ]
+		[ note 8359.16 ASax ord_hi_reg C#6 ff N /Winds/Sax_Alto/ordinario_high_register/ASax-ord_hi_reg-C#6-ff-N-N.wav 0 ]
+		[ note 8359.16 Vc trem A3 ff 1c /Strings/Violoncello/tremolo/Vc-trem-A3-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 8359.16
+	[ solution 2
+		[ note 49640.8 Fl flatt C#7 ff N /Winds/Flute/flatterzunge/Fl-flatt-C#7-ff-N-N.wav 0 ]
+		[ note 5665.67 ASax ord D#5 ff N /Winds/Sax_Alto/ordinario/ASax-ord-D#5-ff-N-N.wav 0 ]
+		[ note 5665.67 Gtr pizz_bartok D#4 ff 2c /PluckedStrings/Guitar/pizzicato_bartok/Gtr-pizz_bartok-D#4-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 14024.9
+	[ solution 1
+		[ note 8823.56 ASax ord_hi_reg E6 mf N /Winds/Sax_Alto/ordinario_high_register/ASax-ord_hi_reg-E6-mf-N-N.wav 0 ]
+		[ note 8823.56 Gtr ord F4 ff 1c /PluckedStrings/Guitar/ordinario/Gtr-ord-F4-ff-1c-N.wav 0 ]
+		[ note 8823.56 Vc trem D4 ff 1c /Strings/Violoncello/tremolo/Vc-trem-D4-ff-1c-T20u.wav 0 ]
+	]
+]
+[ segment 22848.4
+	[ solution 1
+		[ note 5247.71 ASax ord_hi_reg D6 ff N /Winds/Sax_Alto/ordinario_high_register/ASax-ord_hi_reg-D6-ff-N-N.wav 0 ]
+		[ note 5247.71 Vc trem E4 ff 1c /Strings/Violoncello/tremolo/Vc-trem-E4-ff-1c-T11u.wav 0 ]
+	]
+]
+[ segment 28096.1
+	[ solution 3
+		[ note 11006.2 ASax ord D#5 ff N /Winds/Sax_Alto/ordinario/ASax-ord-D#5-ff-N-N.wav 0 ]
+		[ note 11006.2 Gtr pizz_bartok D#4 ff 2c /PluckedStrings/Guitar/pizzicato_bartok/Gtr-pizz_bartok-D#4-ff-2c-N.wav 0 ]
+		[ note 11006.2 Vc trem G#5 ff 1c /Strings/Violoncello/tremolo/Vc-trem-G#5-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 39102.4
+	[ solution 1
+		[ note 12771 ASax flatt F#5 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-F#5-mf-N-N.wav 0 ]
+		[ note 12771 Vc trem B3 ff 1c /Strings/Violoncello/tremolo/Vc-trem-B3-ff-1c-T16u.wav 0 ]
+	]
+]
+[ segment 51873.4
+	[ solution 1
+		[ note 6126.62 ASax ord D#5 ff N /Winds/Sax_Alto/ordinario/ASax-ord-D#5-ff-N-N.wav 0 ]
+		[ note 6126.62 Gtr ord_hi_reg A6 mf 1c /PluckedStrings/Guitar/ordinario_high_register/Gtr-ord_hi_reg-A6-mf-1c-N.wav 0 ]
+		[ note 6126.62 Vc sfz C4 fp 1c /Strings/Violoncello/sforzato/Vc-sfz-C4-fp-1c-R200u.wav 0 ]
+	]
+]

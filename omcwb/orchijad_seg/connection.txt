@@ -1,0 +1,1268 @@
+[ orchestra Fl ASax Gtr Vc ]
+[ segment 0
+	[ solution 1
+		[ note 371.451 Fl ord B3 mf N /Winds/Flute/ordinario/Fl-ord-B3-mf-N-N.wav 0 ]
+		[ note 92.8571 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+		[ note 185.714 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+		[ note 278.594 Vc pizz_sec A#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-A#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 92.8571
+	[ solution 1
+		[ note 92.8571 ASax bisb A#3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-A#3-mf-N-N.wav 0 ]
+	]
+]
+[ segment 185.737
+	[ solution 62
+		[ note 278.617 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+		[ note 185.737 Gtr ord B3 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-B3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 278.639
+	[ solution 29
+		[ note 185.737 Vc sfz G2 f 3c /Strings/Violoncello/sforzato/Vc-sfz-G2-f-3c-T17u.wav 0 ]
+	]
+]
+[ segment 371.497
+	[ solution 50
+		[ note 92.8798 Fl flatt C#4 ff N /Winds/Flute/flatterzunge/Fl-flatt-C#4-ff-N-N.wav 0 ]
+		[ note 185.76 Gtr pizz_bartok F#3 ff 4c /PluckedStrings/Guitar/pizzicato_bartok/Gtr-pizz_bartok-F#3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 464.399
+	[ solution 33
+		[ note 464.376 Fl ord D#5 ff N /Winds/Flute/ordinario/Fl-ord-D#5-ff-N-N.wav 0 ]
+		[ note 92.8798 ASax slap G3 f N /Winds/Sax_Alto/slap_pitched/ASax-slap-G3-f-N-N.wav 0 ]
+		[ note 92.8798 Vc pizz_sec C2 ff 4c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-C2-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 557.279
+	[ solution 68
+		[ note 92.8571 ASax dbl_tng F#3 mf N /Winds/Sax_Alto/double_tonguing/ASax-dbl_tng-F#3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord G#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G#3-ff-3c-T10d.wav 0 ]
+		[ note 185.737 Vc pizz_lv D#3 ff 2c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-D#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 650.136
+	[ solution 7
+		[ note 185.76 ASax ord D#4 ff N /Winds/Sax_Alto/ordinario/ASax-ord-D#4-ff-N-N.wav 0 ]
+		[ note 278.639 Gtr ord D#4 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-D#4-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 743.016
+	[ solution 63
+		[ note 92.8798 Vc pizz_lv D#4 ff 1c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-D#4-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 835.896
+	[ solution 1
+		[ note 92.8798 ASax ord D#3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-D#3-ff-N-N.wav 0 ]
+		[ note 92.8798 Vc pizz_lv D#3 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-D#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 928.798
+	[ solution 56
+		[ note 92.8571 Fl flatt D#4 ff N /Winds/Flute/flatterzunge/Fl-flatt-D#4-ff-N-N.wav 0 ]
+		[ note 92.8571 ASax bisb G3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-G3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord D#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-D#3-ff-4c-N.wav 0 ]
+		[ note 92.8571 Vc pizz_sec F#2 ff 4c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#2-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 1021.66
+	[ solution 74
+		[ note 92.8798 Fl aeol_and_ord E5 pp N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-E5-pp-N-N.wav 0 ]
+		[ note 185.737 ASax flatt F#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-F#3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_sec F#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 1114.56
+	[ solution 6
+		[ note 92.8571 Fl aeol_and_ord D#4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#4-ff-N-N.wav 0 ]
+		[ note 185.714 Gtr ord D#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-D#3-ff-4c-N.wav 0 ]
+		[ note 278.594 Vc pizz_lv D#3 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-D#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 1207.41
+	[ solution 43
+		[ note 185.737 Fl aeol_and_ord E4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-E4-ff-N-T17d.wav 0 ]
+		[ note 185.737 ASax dbl_tng D#3 mf N /Winds/Sax_Alto/double_tonguing/ASax-dbl_tng-D#3-mf-N-N.wav 0 ]
+	]
+]
+[ segment 1300.29
+	[ solution 71
+		[ note 92.8798 Gtr ord D2 mf 6c /PluckedStrings/Guitar/ordinario/Gtr-ord-D2-mf-6c-N.wav 0 ]
+	]
+]
+[ segment 1393.2
+	[ solution 13
+		[ note 92.8571 Fl ord B5 ff N /Winds/Flute/ordinario/Fl-ord-B5-ff-N-T20d.wav 0 ]
+		[ note 92.8571 ASax ord_hi_reg B6 mf N /Winds/Sax_Alto/ordinario_high_register/ASax-ord_hi_reg-B6-mf-N-N.wav 0 ]
+		[ note 185.737 Gtr ord E3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-E3-ff-4c-N.wav 0 ]
+		[ note 185.737 Vc pizz_lv F#3 ff 2c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 1486.05
+	[ solution 43
+		[ note 185.737 Fl flatt E4 ff N /Winds/Flute/flatterzunge/Fl-flatt-E4-ff-N-N.wav 0 ]
+		[ note 92.8798 ASax ord_hi_reg G#6 pp N /Winds/Sax_Alto/ordinario_high_register/ASax-ord_hi_reg-G#6-pp-N-N.wav 0 ]
+	]
+]
+[ segment 1578.96
+	[ solution 25
+		[ note 92.8571 ASax flatt G3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-G3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+		[ note 92.8571 Vc pizz_lv G2 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-G2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 1671.81
+	[ solution 12
+		[ note 92.8571 Fl aeol_and_ord D#4 mf N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#4-mf-N-N.wav 0 ]
+		[ note 278.594 ASax bisb F#3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-F#3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+		[ note 92.8571 Vc pizz_lv F#3 ff 2c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 1764.69
+	[ solution 28
+		[ note 92.8798 Fl aeol_and_ord C#5 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-C#5-ff-N-T20d.wav 0 ]
+		[ note 92.8798 Gtr ord F3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F3-ff-4c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_sec G3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-G3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 1857.6
+	[ solution 1
+		[ note 92.8571 Fl ord B5 ff N /Winds/Flute/ordinario/Fl-ord-B5-ff-N-T20d.wav 0 ]
+		[ note 185.714 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+		[ note 185.714 Vc pizz_sec F#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 1950.45
+	[ solution 83
+		[ note 92.8571 Fl sfz G#6 f N /Winds/Flute/sforzato/Fl-sfz-G#6-f-N-R200d.wav 0 ]
+		[ note 92.8571 ASax flatt D#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-D#3-mf-N-N.wav 0 ]
+	]
+]
+[ segment 2043.33
+	[ solution 10
+		[ note 92.8571 Fl flatt D#5 ff N /Winds/Flute/flatterzunge/Fl-flatt-D#5-ff-N-N.wav 0 ]
+		[ note 185.737 ASax ord D#4 ff N /Winds/Sax_Alto/ordinario/ASax-ord-D#4-ff-N-N.wav 0 ]
+		[ note 185.737 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+		[ note 92.8571 Vc pizz_lv D#3 ff 2c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-D#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 2136.21
+	[ solution 22
+		[ note 278.594 Fl aeol_and_ord D#4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#4-ff-N-N.wav 0 ]
+		[ note 92.8798 Vc pizz_lv D#4 ff 1c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-D#4-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 2229.12
+	[ solution 5
+		[ note 92.8571 ASax bisb F#3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-F#3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr harm_fngr A4 p 5c /PluckedStrings/Guitar/harmonic_fingering/Gtr-harm_fngr-A4-p-5c-N.wav 0 ]
+		[ note 371.429 Vc pizz_sec F#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 2322
+	[ solution 7
+		[ note 92.8571 ASax flatt G3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-G3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord A#2 mf 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#2-mf-5c-N.wav 0 ]
+	]
+]
+[ segment 2414.85
+	[ solution 1
+		[ note 278.594 Fl aeol_and_ord E4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-E4-ff-N-T17d.wav 0 ]
+		[ note 92.8571 ASax bisb F#3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-F#3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 2507.73
+	[ solution 14
+		[ note 92.8571 ASax ord E3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-E3-ff-N-N.wav 0 ]
+		[ note 185.737 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 2600.61
+	[ solution 26
+		[ note 92.8798 ASax flatt G3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-G3-mf-N-N.wav 0 ]
+		[ note 92.8798 Vc pizz_sec C2 ff 4c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-C2-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 2693.51
+	[ solution 21
+		[ note 464.308 Fl flatt B3 ff N /Winds/Flute/flatterzunge/Fl-flatt-B3-ff-N-N.wav 0 ]
+		[ note 278.571 ASax flatt A#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-A#3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord G#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G#3-ff-3c-T10d.wav 0 ]
+		[ note 92.8571 Vc pizz_sec A#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-A#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 2786.39
+	[ solution 41
+		[ note 92.8571 Gtr ord A3 mf 6c /PluckedStrings/Guitar/ordinario/Gtr-ord-A3-mf-6c-N.wav 0 ]
+		[ note 92.8571 Vc pizz_lv B2 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-B2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 2879.25
+	[ solution 16
+		[ note 92.8571 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+		[ note 650.023 Vc pizz_sec A#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-A#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 2972.13
+	[ solution 5
+		[ note 92.8571 ASax aeol C4 p N /Winds/Sax_Alto/aeolian/ASax-aeol-C4-p-N-R100d.wav 0 ]
+		[ note 92.8571 Gtr ord A#2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#2-ff-5c-T11d.wav 0 ]
+	]
+]
+[ segment 3065.01
+	[ solution 5
+		[ note 185.737 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord A2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A2-ff-5c-N.wav 0 ]
+	]
+]
+[ segment 3157.91
+	[ solution 1
+		[ note 185.714 Fl flatt C4 ff N /Winds/Flute/flatterzunge/Fl-flatt-C4-ff-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord A#2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#2-ff-5c-T11d.wav 0 ]
+	]
+]
+[ segment 3250.79
+	[ solution 4
+		[ note 278.571 ASax dsclrd_fngr A#3 pp N /Winds/Sax_Alto/discolored_fingering/ASax-dsclrd_fngr-A#3-pp-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord A2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A2-ff-5c-N.wav 0 ]
+	]
+]
+[ segment 3343.65
+	[ solution 6
+		[ note 278.594 Fl aeol_and_ord B3 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B3-ff-N-T20u.wav 0 ]
+		[ note 92.8571 Gtr pont E4 mf 1c /PluckedStrings/Guitar/sul_ponticello/Gtr-pont-E4-mf-1c-N.wav 0 ]
+	]
+]
+[ segment 3436.53
+	[ solution 8
+		[ note 92.8571 Gtr ord A#2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#2-ff-5c-T11d.wav 0 ]
+	]
+]
+[ segment 3529.41
+	[ solution 10
+		[ note 92.8798 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_lv B2 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-B2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 3622.31
+	[ solution 2
+		[ note 185.714 Fl flatt C4 ff N /Winds/Flute/flatterzunge/Fl-flatt-C4-ff-N-N.wav 0 ]
+		[ note 92.8571 ASax aeol C5 p N /Winds/Sax_Alto/aeolian/ASax-aeol-C5-p-N-R100d.wav 0 ]
+		[ note 92.8571 Gtr ord A#2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#2-ff-5c-T11d.wav 0 ]
+		[ note 464.286 Vc pizz_sec A#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-A#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 3715.19
+	[ solution 6
+		[ note 92.8571 ASax dbl_tng D3 mf N /Winds/Sax_Alto/double_tonguing/ASax-dbl_tng-D3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 3808.07
+	[ solution 4
+		[ note 92.8571 Fl ord B3 mf N /Winds/Flute/ordinario/Fl-ord-B3-mf-N-N.wav 0 ]
+		[ note 742.88 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+		[ note 185.714 Gtr ord A#2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#2-ff-5c-T11d.wav 0 ]
+	]
+]
+[ segment 3900.93
+	[ solution 43
+		[ note 92.8571 Fl aeol F4 p N /Winds/Flute/aeolian/Fl-aeol-F4-p-N-N.wav 0 ]
+	]
+]
+[ segment 3993.81
+	[ solution 32
+		[ note 371.451 Fl aeol_and_ord B3 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B3-ff-N-T20u.wav 0 ]
+		[ note 92.8571 Gtr ord B3 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-B3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 4086.69
+	[ solution 5
+		[ note 92.8571 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+		[ note 278.594 Vc pizz_lv B2 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-B2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 4179.57
+	[ solution 1
+		[ note 92.8571 Gtr ord B3 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-B3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 4272.45
+	[ solution 16
+		[ note 371.451 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 4365.35
+	[ solution 2
+		[ note 92.8571 Fl flatt C4 ff N /Winds/Flute/flatterzunge/Fl-flatt-C4-ff-N-N.wav 0 ]
+		[ note 371.429 Vc pizz_sec A#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-A#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 4458.23
+	[ solution 1
+		[ note 278.571 Fl ord B3 mf N /Winds/Flute/ordinario/Fl-ord-B3-mf-N-N.wav 0 ]
+	]
+]
+[ segment 4551.11
+	[ solution 2
+		[ note 185.714 ASax bisb A#3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-A#3-mf-N-N.wav 0 ]
+	]
+]
+[ segment 4643.99
+	[ solution 13
+		[ note 92.8571 Gtr ord B3 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-B3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 4736.87
+	[ solution 1
+		[ note 92.8571 Fl aeol_and_ord C4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-C4-ff-N-T18u.wav 0 ]
+		[ note 92.8571 ASax ord D3 pp N /Winds/Sax_Alto/ordinario/ASax-ord-D3-pp-N-N.wav 0 ]
+		[ note 185.714 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+		[ note 278.571 Vc pizz_sec B2 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-B2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 4829.73
+	[ solution 20
+		[ note 92.8571 Fl ord B3 mf N /Winds/Flute/ordinario/Fl-ord-B3-mf-N-N.wav 0 ]
+		[ note 92.8571 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+	]
+]
+[ segment 4922.61
+	[ solution 72
+		[ note 92.8571 Fl aeol_and_ord C4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-C4-ff-N-T18u.wav 0 ]
+		[ note 92.8571 ASax ord A#3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-A#3-ff-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord B3 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-B3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 5015.49
+	[ solution 29
+		[ note 92.8571 Fl aeol_and_ord C#5 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-C#5-ff-N-T20d.wav 0 ]
+		[ note 92.8571 ASax slap C#4 f N /Winds/Sax_Alto/slap_pitched/ASax-slap-C#4-f-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord A#2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#2-ff-5c-T11d.wav 0 ]
+		[ note 278.594 Vc pizz_sec C#2 ff 4c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-C#2-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 5108.37
+	[ solution 3
+		[ note 92.8571 Fl flatt C#4 ff N /Winds/Flute/flatterzunge/Fl-flatt-C#4-ff-N-N.wav 0 ]
+		[ note 185.737 ASax slap C#3 f N /Winds/Sax_Alto/slap_pitched/ASax-slap-C#3-f-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord C#3 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-C#3-ff-5c-N.wav 0 ]
+	]
+]
+[ segment 5201.25
+	[ solution 10
+		[ note 92.8798 Fl flatt C#5 ff N /Winds/Flute/flatterzunge/Fl-flatt-C#5-ff-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord C#4 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-C#4-ff-2c-T13d.wav 0 ]
+	]
+]
+[ segment 5294.15
+	[ solution 1
+		[ note 92.8571 Fl flatt D#5 ff N /Winds/Flute/flatterzunge/Fl-flatt-D#5-ff-N-N.wav 0 ]
+		[ note 278.571 ASax slap D#4 mf N /Winds/Sax_Alto/slap_pitched/ASax-slap-D#4-mf-N-N.wav 0 ]
+		[ note 278.571 Gtr ord D#4 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-D#4-ff-2c-N.wav 0 ]
+		[ note 92.8571 Vc pizz_sec C#3 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-C#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 5387.03
+	[ solution 2
+		[ note 185.714 Fl aeol_and_ord D#4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#4-ff-N-N.wav 0 ]
+		[ note 185.714 Vc pizz_sec D#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-D#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 5479.91
+	[ solution 36
+	]
+]
+[ segment 5572.79
+	[ solution 2
+		[ note 185.714 Fl flatt D#5 ff N /Winds/Flute/flatterzunge/Fl-flatt-D#5-ff-N-N.wav 0 ]
+		[ note 92.8571 ASax flatt D#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-D#3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord E3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-E3-ff-4c-N.wav 0 ]
+		[ note 92.8571 Vc pizz_sec D#4 ff 1c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-D#4-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 5665.67
+	[ solution 11
+		[ note 92.8571 ASax key_cl B3 p N /Winds/Sax_Alto/key_click/ASax-key_cl-B3-p-N-N.wav 0 ]
+		[ note 185.714 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+		[ note 185.714 Vc pizz_lv F#3 ff 2c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 5758.53
+	[ solution 14
+		[ note 278.571 Fl flatt D#4 ff N /Winds/Flute/flatterzunge/Fl-flatt-D#4-ff-N-N.wav 0 ]
+		[ note 371.429 ASax flatt D#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-D#3-mf-N-N.wav 0 ]
+	]
+]
+[ segment 5851.41
+	[ solution 5
+		[ note 92.8571 Gtr ord D#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-D#3-ff-4c-N.wav 0 ]
+		[ note 278.571 Vc pizz_sec D#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-D#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 5944.29
+	[ solution 12
+		[ note 185.714 Gtr ord E3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-E3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 6037.17
+	[ solution 11
+		[ note 185.737 Fl flatt F#4 ff N /Winds/Flute/flatterzunge/Fl-flatt-F#4-ff-N-N.wav 0 ]
+	]
+]
+[ segment 6130.05
+	[ solution 7
+		[ note 185.737 ASax slap F#4 f N /Winds/Sax_Alto/slap_pitched/ASax-slap-F#4-f-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_sec D#4 ff 1c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-D#4-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 6222.95
+	[ solution 20
+		[ note 278.571 Fl ord D#4 ff N /Winds/Flute/ordinario/Fl-ord-D#4-ff-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord F#2 ff 6c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#2-ff-6c-T22u.wav 0 ]
+		[ note 557.143 Vc pizz_sec F#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 6315.83
+	[ solution 2
+		[ note 742.857 ASax bisb F#3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-F#3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord F#4 mf 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#4-mf-3c-N.wav 0 ]
+	]
+]
+[ segment 6408.71
+	[ solution 4
+		[ note 92.8571 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 6501.59
+	[ solution 7
+		[ note 92.8571 Fl aeol_and_ord F#4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-F#4-ff-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 6594.47
+	[ solution 1
+		[ note 92.8571 Fl aeol_and_ord D#4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#4-ff-N-N.wav 0 ]
+		[ note 185.714 Gtr ord F3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 6687.32
+	[ solution 6
+		[ note 92.8571 Fl aeol_and_ord F4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-F4-ff-N-N.wav 0 ]
+	]
+]
+[ segment 6780.2
+	[ solution 9
+		[ note 92.8571 Fl ord B4 ff N /Winds/Flute/ordinario/Fl-ord-B4-ff-N-T10d.wav 0 ]
+		[ note 92.8571 Gtr pont A4 mf 1c /PluckedStrings/Guitar/sul_ponticello/Gtr-pont-A4-mf-1c-N.wav 0 ]
+		[ note 185.714 Vc pizz_sec F#2 ff 4c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#2-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 6873.08
+	[ solution 2
+		[ note 185.714 Fl ord B5 ff N /Winds/Flute/ordinario/Fl-ord-B5-ff-N-T20d.wav 0 ]
+		[ note 185.714 Gtr ord E3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-E3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 6965.96
+	[ solution 1
+		[ note 92.8571 Vc pizz_sec F#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 7058.84
+	[ solution 90
+		[ note 92.8571 Fl flatt F4 ff N /Winds/Flute/flatterzunge/Fl-flatt-F4-ff-N-N.wav 0 ]
+		[ note 92.8571 ASax ord B4 pp N /Winds/Sax_Alto/ordinario/ASax-ord-B4-pp-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord_hi_reg C6 mf 2c /PluckedStrings/Guitar/ordinario_high_register/Gtr-ord_hi_reg-C6-mf-2c-N.wav 0 ]
+		[ note 92.8571 Vc pizz_sec E4 ff 1c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-E4-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 7151.72
+	[ solution 4
+		[ note 92.8798 Fl ord D#4 ff N /Winds/Flute/ordinario/Fl-ord-D#4-ff-N-N.wav 0 ]
+		[ note 92.8798 ASax aeol F#3 p N /Winds/Sax_Alto/aeolian/ASax-aeol-F#3-p-N-R200d.wav 0 ]
+		[ note 185.737 Gtr ord D#4 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-D#4-ff-2c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_lv D#3 ff 2c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-D#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 7244.63
+	[ solution 38
+		[ note 185.714 Fl flatt D#5 ff N /Winds/Flute/flatterzunge/Fl-flatt-D#5-ff-N-N.wav 0 ]
+		[ note 557.143 ASax dbl_tng D#3 mf N /Winds/Sax_Alto/double_tonguing/ASax-dbl_tng-D#3-mf-N-N.wav 0 ]
+		[ note 185.714 Vc pizz_sec D#4 ff 1c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-D#4-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 7337.51
+	[ solution 24
+		[ note 92.8571 Gtr ord E3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-E3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 7430.39
+	[ solution 83
+		[ note 371.429 Fl flatt D#4 ff N /Winds/Flute/flatterzunge/Fl-flatt-D#4-ff-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord D5 mf 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-D5-mf-2c-T10d.wav 0 ]
+		[ note 92.8571 Vc pizz_lv D#3 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-D#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 7523.27
+	[ solution 1
+		[ note 92.8571 Gtr ord D#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-D#3-ff-4c-N.wav 0 ]
+		[ note 92.8571 Vc pizz_sec C2 ff 4c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-C2-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 7616.15
+	[ solution 49
+		[ note 92.8571 Gtr ord G#2 ff 6c /PluckedStrings/Guitar/ordinario/Gtr-ord-G#2-ff-6c-T20u.wav 0 ]
+		[ note 185.714 Vc pizz_sec D#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-D#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 7709
+	[ solution 28
+		[ note 92.8571 Gtr pizz_bartok F#3 ff 4c /PluckedStrings/Guitar/pizzicato_bartok/Gtr-pizz_bartok-F#3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 7801.88
+	[ solution 85
+		[ note 371.451 Fl flatt C4 ff N /Winds/Flute/flatterzunge/Fl-flatt-C4-ff-N-N.wav 0 ]
+		[ note 185.714 ASax ord G#3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-G#3-ff-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord E2 ff 6c /PluckedStrings/Guitar/ordinario/Gtr-ord-E2-ff-6c-T18u.wav 0 ]
+		[ note 278.594 Vc pizz_lv G#2 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-G#2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 7894.76
+	[ solution 2
+		[ note 371.474 Gtr ord A2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A2-ff-5c-N.wav 0 ]
+	]
+]
+[ segment 7987.64
+	[ solution 1
+		[ note 92.8798 ASax ord F#4 pp N /Winds/Sax_Alto/ordinario/ASax-ord-F#4-pp-N-N.wav 0 ]
+	]
+]
+[ segment 8080.54
+	[ solution 50
+		[ note 185.737 ASax flatt A#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-A#3-mf-N-N.wav 0 ]
+		[ note 92.8571 Vc pizz_sec A2 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-A2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 8173.4
+	[ solution 57
+		[ note 278.617 Fl flatt B3 ff N /Winds/Flute/flatterzunge/Fl-flatt-B3-ff-N-N.wav 0 ]
+		[ note 464.354 Vc pizz_lv A#3 ff 1c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-A#3-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 8266.3
+	[ solution 2
+		[ note 92.8571 ASax ord C#4 mf N /Winds/Sax_Alto/ordinario/ASax-ord-C#4-mf-N-N.wav 0 ]
+		[ note 278.594 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 8359.16
+	[ solution 1
+		[ note 92.8798 ASax flatt A#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-A#3-mf-N-N.wav 0 ]
+	]
+]
+[ segment 8452.06
+	[ solution 6
+		[ note 185.737 Fl flatt C4 ff N /Winds/Flute/flatterzunge/Fl-flatt-C4-ff-N-N.wav 0 ]
+		[ note 92.8571 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+	]
+]
+[ segment 8544.92
+	[ solution 4
+		[ note 92.8798 ASax aeol G#3 p N /Winds/Sax_Alto/aeolian/ASax-aeol-G#3-p-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord A#2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#2-ff-5c-T11d.wav 0 ]
+	]
+]
+[ segment 8637.8
+	[ solution 3
+		[ note 92.8798 Fl flatt C#4 mf N /Winds/Flute/flatterzunge/Fl-flatt-C#4-mf-N-N.wav 0 ]
+		[ note 185.737 ASax bisb A#3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-A#3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+		[ note 185.737 Vc pizz_lv B2 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-B2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 8730.7
+	[ solution 4
+		[ note 92.8571 Fl aeol_and_ord B3 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B3-ff-N-T20u.wav 0 ]
+		[ note 92.8571 Gtr ord A#2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#2-ff-5c-T11d.wav 0 ]
+	]
+]
+[ segment 8823.56
+	[ solution 17
+		[ note 92.8798 Fl flatt B4 ff N /Winds/Flute/flatterzunge/Fl-flatt-B4-ff-N-N.wav 0 ]
+		[ note 92.8798 ASax aeol G#3 p N /Winds/Sax_Alto/aeolian/ASax-aeol-G#3-p-N-N.wav 0 ]
+		[ note 185.737 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_sec A#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-A#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 8916.46
+	[ solution 6
+		[ note 92.8571 Fl aeol_and_ord B3 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B3-ff-N-T20u.wav 0 ]
+		[ note 92.8571 ASax flatt A#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-A#3-mf-N-N.wav 0 ]
+		[ note 650.091 Vc pizz_sec B2 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-B2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 9009.32
+	[ solution 13
+		[ note 92.8798 Fl aeol_and_ord B4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B4-ff-N-N.wav 0 ]
+		[ note 92.8798 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord B3 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-B3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 9102.22
+	[ solution 1
+		[ note 371.474 Fl aeol_and_ord C4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-C4-ff-N-T18u.wav 0 ]
+		[ note 92.8571 ASax dsclrd_fngr E3 p N /Winds/Sax_Alto/discolored_fingering/ASax-dsclrd_fngr-E3-p-N-N.wav 0 ]
+		[ note 185.737 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 9195.08
+	[ solution 1
+		[ note 92.8798 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+	]
+]
+[ segment 9287.98
+	[ solution 1
+		[ note 92.8571 ASax dbl_tng A#3 mf N /Winds/Sax_Alto/double_tonguing/ASax-dbl_tng-A#3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord B2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-B2-ff-5c-N.wav 0 ]
+	]
+]
+[ segment 9380.84
+	[ solution 12
+		[ note 185.76 ASax slap B3 f N /Winds/Sax_Alto/slap_pitched/ASax-slap-B3-f-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord A#2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#2-ff-5c-T11d.wav 0 ]
+	]
+]
+[ segment 9473.74
+	[ solution 18
+		[ note 371.474 Fl ord B3 mf N /Winds/Flute/ordinario/Fl-ord-B3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord A3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 9566.62
+	[ solution 4
+		[ note 278.594 ASax bisb A#3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-A#3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord B3 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-B3-ff-2c-N.wav 0 ]
+		[ note 278.594 Vc pizz_sec A#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-A#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 9659.48
+	[ solution 2
+		[ note 92.8798 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 9752.38
+	[ solution 60
+		[ note 92.8571 Gtr ord F4 mf 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F4-mf-4c-T11d.wav 0 ]
+	]
+]
+[ segment 9845.24
+	[ solution 2
+		[ note 185.737 Fl aeol_and_ord C#5 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-C#5-ff-N-T20d.wav 0 ]
+		[ note 92.8798 ASax ord_hi_reg G6 pp N /Winds/Sax_Alto/ordinario_high_register/ASax-ord_hi_reg-G6-pp-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+		[ note 278.617 Vc pizz_sec C#3 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-C#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 9938.14
+	[ solution 1
+		[ note 185.737 ASax slap C#3 f N /Winds/Sax_Alto/slap_pitched/ASax-slap-C#3-f-N-N.wav 0 ]
+		[ note 185.737 Gtr ord C#5 ff 1c /PluckedStrings/Guitar/ordinario/Gtr-ord-C#5-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 10031
+	[ solution 3
+		[ note 185.737 Fl ord C#4 ff N /Winds/Flute/ordinario/Fl-ord-C#4-ff-N-N.wav 0 ]
+	]
+]
+[ segment 10123.9
+	[ solution 94
+		[ note 278.594 ASax flatt F#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-F#3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord G#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G#3-ff-3c-T10d.wav 0 ]
+		[ note 92.8571 Vc pizz_sec C3 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-C3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 10216.8
+	[ solution 15
+		[ note 185.737 Fl flatt C#5 ff N /Winds/Flute/flatterzunge/Fl-flatt-C#5-ff-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_sec F#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 10309.7
+	[ solution 41
+		[ note 92.8571 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+		[ note 92.8571 Vc pizz_sec C#3 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-C#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 10402.5
+	[ solution 25
+		[ note 92.8798 Fl harm_fngr F#5 p N /Winds/Flute/harmonic_fingering/Fl-harm_fngr-F#5-p-N-N.wav 0 ]
+		[ note 92.8798 ASax dbl_tng D#3 mf N /Winds/Sax_Alto/double_tonguing/ASax-dbl_tng-D#3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord E3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-E3-ff-4c-N.wav 0 ]
+		[ note 185.76 Vc pizz_sec D#3 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-D#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 10495.4
+	[ solution 68
+		[ note 92.8798 Fl ord D#4 ff N /Winds/Flute/ordinario/Fl-ord-D#4-ff-N-N.wav 0 ]
+		[ note 185.737 ASax ord F#3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-F#3-ff-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord G#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G#3-ff-3c-T10d.wav 0 ]
+	]
+]
+[ segment 10588.3
+	[ solution 3
+		[ note 371.474 Fl flatt D#5 ff N /Winds/Flute/flatterzunge/Fl-flatt-D#5-ff-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord D#4 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-D#4-ff-2c-N.wav 0 ]
+		[ note 185.737 Vc pizz_sec D#4 ff 1c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-D#4-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 10681.2
+	[ solution 13
+		[ note 92.8798 ASax flatt D#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-D#3-mf-N-N.wav 0 ]
+		[ note 185.737 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 10774.1
+	[ solution 31
+		[ note 92.8571 ASax ord_hi_reg D6 pp N /Winds/Sax_Alto/ordinario_high_register/ASax-ord_hi_reg-D6-pp-N-N.wav 0 ]
+		[ note 92.8571 Vc pizz_sec G2 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-G2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 10866.9
+	[ solution 1
+		[ note 92.8798 ASax flatt G3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-G3-mf-N-N.wav 0 ]
+		[ note 185.737 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_sec F#2 ff 4c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#2-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 10959.8
+	[ solution 7
+		[ note 92.8571 Fl aeol_and_ord D#4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#4-ff-N-N.wav 0 ]
+		[ note 278.594 ASax flatt D#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-D#3-mf-N-N.wav 0 ]
+		[ note 278.594 Vc pizz_lv D#3 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-D#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 11052.7
+	[ solution 3
+		[ note 278.617 Fl flatt D#5 ff N /Winds/Flute/flatterzunge/Fl-flatt-D#5-ff-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 11145.6
+	[ solution 5
+		[ note 92.8571 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 11238.4
+	[ solution 1
+		[ note 92.8798 ASax ord G3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-G3-ff-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord D#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-D#3-ff-4c-N.wav 0 ]
+		[ note 650.091 Vc pizz_sec F#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 11331.3
+	[ solution 67
+		[ note 92.8571 Fl aeol_and_ord D#4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#4-ff-N-N.wav 0 ]
+		[ note 92.8571 ASax ord F#3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-F#3-ff-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord C3 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-C3-ff-5c-N.wav 0 ]
+	]
+]
+[ segment 11424.2
+	[ solution 7
+		[ note 185.76 Fl flatt F#4 mf N /Winds/Flute/flatterzunge/Fl-flatt-F#4-mf-N-N.wav 0 ]
+		[ note 92.8798 ASax ord G3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-G3-ff-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 11517.1
+	[ solution 4
+		[ note 557.211 ASax flatt F#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-F#3-mf-N-N.wav 0 ]
+		[ note 278.617 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 11610
+	[ solution 2
+		[ note 92.8571 Fl dsclrd_fngr D6 mf N /Winds/Flute/discolored_fingering/Fl-dsclrd_fngr-D6-mf-N-N.wav 0 ]
+	]
+]
+[ segment 11702.8
+	[ solution 2
+		[ note 92.8798 Fl aeol_and_ord D#4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#4-ff-N-N.wav 0 ]
+	]
+]
+[ segment 11795.7
+	[ solution 83
+		[ note 92.8571 Fl flatt B3 ff N /Winds/Flute/flatterzunge/Fl-flatt-B3-ff-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 11888.6
+	[ solution 2
+		[ note 185.737 Fl aeol_and_ord B5 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B5-ff-N-T27d.wav 0 ]
+		[ note 185.737 Gtr ord E3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-E3-ff-4c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_sec F#2 ff 4c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#2-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 11981.5
+	[ solution 5
+		[ note 185.737 Vc pizz_lv F#3 ff 2c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 12074.4
+	[ solution 35
+		[ note 185.737 Fl aeol_and_ord E4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-E4-ff-N-T17d.wav 0 ]
+		[ note 92.8798 ASax ord G3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-G3-ff-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 12167.3
+	[ solution 63
+		[ note 278.617 ASax flatt F#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-F#3-mf-N-N.wav 0 ]
+		[ note 185.737 Gtr pizz_bartok F#3 ff 4c /PluckedStrings/Guitar/pizzicato_bartok/Gtr-pizz_bartok-F#3-ff-4c-N.wav 0 ]
+		[ note 92.8571 Vc pizz_sec F#2 ff 4c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#2-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 12260.1
+	[ solution 27
+		[ note 92.8798 Fl flatt F#4 ff N /Winds/Flute/flatterzunge/Fl-flatt-F#4-ff-N-N.wav 0 ]
+		[ note 185.76 Vc pizz_sec F#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 12353
+	[ solution 3
+		[ note 92.8798 Fl aeol_and_ord B5 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B5-ff-N-T27d.wav 0 ]
+		[ note 92.8798 Gtr ord E3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-E3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 12445.9
+	[ solution 60
+		[ note 92.8571 Fl sfz G6 f N /Winds/Flute/sforzato/Fl-sfz-G6-f-N-T13d_R100u.wav 0 ]
+		[ note 92.8571 ASax bisb A3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-A3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+		[ note 92.8571 Vc pizz_sec D#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-D#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 12538.8
+	[ solution 28
+		[ note 371.474 Fl aeol_and_ord D#5 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#5-ff-N-N.wav 0 ]
+		[ note 92.8798 ASax ord D#4 ff N /Winds/Sax_Alto/ordinario/ASax-ord-D#4-ff-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord D#4 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-D#4-ff-2c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_lv G3 mf 2c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-G3-mf-2c-N.wav 0 ]
+	]
+]
+[ segment 12631.7
+	[ solution 6
+		[ note 185.737 ASax ord D#3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-D#3-ff-N-N.wav 0 ]
+		[ note 185.737 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+		[ note 185.737 Vc pizz_sec D#4 ff 1c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-D#4-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 12724.5
+	[ solution 3
+	]
+]
+[ segment 12817.4
+	[ solution 58
+		[ note 92.8571 ASax flatt G3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-G3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+		[ note 92.8571 Vc pizz_lv G2 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-G2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 12910.3
+	[ solution 4
+		[ note 92.8798 Fl aeol_and_ord D#4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#4-ff-N-N.wav 0 ]
+		[ note 92.8798 ASax bisb F#3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-F#3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+		[ note 278.617 Vc pizz_sec F#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 13003.2
+	[ solution 10
+		[ note 92.8571 Fl flatt F#4 ff N /Winds/Flute/flatterzunge/Fl-flatt-F#4-ff-N-N.wav 0 ]
+		[ note 185.737 ASax flatt G3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-G3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 13096
+	[ solution 8
+		[ note 92.8798 Fl flatt D#4 ff N /Winds/Flute/flatterzunge/Fl-flatt-D#4-ff-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 13188.9
+	[ solution 7
+		[ note 92.8571 Fl aeol_and_ord C#5 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-C#5-ff-N-T20d.wav 0 ]
+		[ note 92.8571 ASax ord D#3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-D#3-ff-N-N.wav 0 ]
+		[ note 185.737 Gtr ord G#2 ff 6c /PluckedStrings/Guitar/ordinario/Gtr-ord-G#2-ff-6c-T20u.wav 0 ]
+		[ note 92.8571 Vc pizz_sec G2 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-G2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 13281.8
+	[ solution 2
+		[ note 92.8798 Fl flatt F#4 ff N /Winds/Flute/flatterzunge/Fl-flatt-F#4-ff-N-N.wav 0 ]
+		[ note 92.8798 ASax ord F#3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-F#3-ff-N-N.wav 0 ]
+		[ note 464.354 Vc pizz_sec A2 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-A2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 13374.7
+	[ solution 2
+		[ note 92.8798 Fl aeol_and_ord D#4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#4-ff-N-N.wav 0 ]
+		[ note 185.737 ASax flatt G3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-G3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord A2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A2-ff-5c-N.wav 0 ]
+	]
+]
+[ segment 13467.6
+	[ solution 4
+		[ note 92.8571 Fl aeol_and_ord B3 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B3-ff-N-T20u.wav 0 ]
+		[ note 278.594 Gtr ord G#2 ff 6c /PluckedStrings/Guitar/ordinario/Gtr-ord-G#2-ff-6c-T20u.wav 0 ]
+	]
+]
+[ segment 13560.4
+	[ solution 1
+		[ note 278.617 Fl aeol_and_ord D#5 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#5-ff-N-N.wav 0 ]
+		[ note 278.617 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+	]
+]
+[ segment 13653.3
+	[ solution 1
+	]
+]
+[ segment 13746.2
+	[ solution 5
+		[ note 185.737 Gtr ord A2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A2-ff-5c-N.wav 0 ]
+		[ note 185.737 Vc pizz_lv B2 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-B2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 13839.1
+	[ solution 56
+		[ note 92.8571 Fl aeol_and_ord B3 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B3-ff-N-T20u.wav 0 ]
+		[ note 185.737 ASax slap A#3 f N /Winds/Sax_Alto/slap_pitched/ASax-slap-A#3-f-N-N.wav 0 ]
+	]
+]
+[ segment 13932
+	[ solution 3
+		[ note 92.8798 Fl aeol_and_ord C4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-C4-ff-N-T18u.wav 0 ]
+		[ note 92.8798 Gtr ord B3 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-B3-ff-2c-N.wav 0 ]
+		[ note 371.474 Vc pizz_sec A#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-A#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 14024.9
+	[ solution 1
+		[ note 278.594 Fl aeol_and_ord B3 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B3-ff-N-T20u.wav 0 ]
+		[ note 92.8571 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+		[ note 185.737 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 14117.7
+	[ solution 23
+		[ note 185.737 ASax bisb A#3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-A#3-mf-N-N.wav 0 ]
+	]
+]
+[ segment 14210.6
+	[ solution 8
+		[ note 92.8571 Gtr ord A#2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#2-ff-5c-T11d.wav 0 ]
+	]
+]
+[ segment 14303.5
+	[ solution 6
+		[ note 92.8798 Fl flatt C4 ff N /Winds/Flute/flatterzunge/Fl-flatt-C4-ff-N-N.wav 0 ]
+		[ note 92.8798 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord A2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A2-ff-5c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_sec A#2 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-A#2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 14396.3
+	[ solution 4
+		[ note 92.8798 Fl aeol_and_ord B3 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B3-ff-N-T20u.wav 0 ]
+		[ note 92.8798 ASax bisb A#3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-A#3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord A#2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#2-ff-5c-T11d.wav 0 ]
+		[ note 92.8798 Vc pizz_sec A#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-A#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 14489.3
+	[ solution 14
+		[ note 92.8571 Fl ord D#5 ff N /Winds/Flute/ordinario/Fl-ord-D#5-ff-N-N.wav 0 ]
+		[ note 92.8571 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+		[ note 185.737 Gtr ord G#2 ff 6c /PluckedStrings/Guitar/ordinario/Gtr-ord-G#2-ff-6c-T20u.wav 0 ]
+		[ note 92.8571 Vc pizz_sec A2 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-A2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 14582.1
+	[ solution 4
+		[ note 185.737 Fl aeol_and_ord B3 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B3-ff-N-T20u.wav 0 ]
+		[ note 278.617 ASax slap A#3 f N /Winds/Sax_Alto/slap_pitched/ASax-slap-A#3-f-N-N.wav 0 ]
+		[ note 742.971 Vc pizz_lv B2 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-B2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 14675
+	[ solution 6
+		[ note 92.8571 Gtr ord A#2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#2-ff-5c-T11d.wav 0 ]
+	]
+]
+[ segment 14767.9
+	[ solution 2
+		[ note 92.8798 Fl aeol_and_ord D#5 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#5-ff-N-N.wav 0 ]
+		[ note 185.737 Gtr ord A2 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-A2-ff-5c-N.wav 0 ]
+	]
+]
+[ segment 14860.8
+	[ solution 23
+		[ note 371.474 Fl flatt C4 ff N /Winds/Flute/flatterzunge/Fl-flatt-C4-ff-N-N.wav 0 ]
+		[ note 92.8571 ASax bisb B3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-B3-mf-N-N.wav 0 ]
+	]
+]
+[ segment 14953.6
+	[ solution 19
+		[ note 92.8798 ASax ord G#5 mf N /Winds/Sax_Alto/ordinario/ASax-ord-G#5-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord D2 mf 6c /PluckedStrings/Guitar/ordinario/Gtr-ord-D2-mf-6c-N.wav 0 ]
+	]
+]
+[ segment 15046.5
+	[ solution 3
+		[ note 92.8571 ASax aeol F#5 p N /Winds/Sax_Alto/aeolian/ASax-aeol-F#5-p-N-R200d.wav 0 ]
+		[ note 92.8571 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 15139.4
+	[ solution 1
+		[ note 278.617 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord B3 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-B3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 15232.3
+	[ solution 2
+		[ note 371.474 Fl aeol_and_ord B3 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B3-ff-N-T20u.wav 0 ]
+		[ note 464.354 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 15325.2
+	[ solution 2
+		[ note 557.211 Vc pizz_sec A#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-A#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 15418
+	[ solution 1
+		[ note 92.8798 ASax aeol D#4 p N /Winds/Sax_Alto/aeolian/ASax-aeol-D#4-p-N-R200u.wav 0 ]
+	]
+]
+[ segment 15510.9
+	[ solution 2
+		[ note 92.8571 ASax flatt A#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-A#3-mf-N-N.wav 0 ]
+	]
+]
+[ segment 15603.8
+	[ solution 11
+		[ note 92.8798 Fl flatt C4 ff N /Winds/Flute/flatterzunge/Fl-flatt-C4-ff-N-N.wav 0 ]
+		[ note 92.8798 ASax key_cl E3 p N /Winds/Sax_Alto/key_click/ASax-key_cl-E3-p-N-N.wav 0 ]
+	]
+]
+[ segment 15696.7
+	[ solution 5
+		[ note 185.737 Fl aeol_and_ord B3 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-B3-ff-N-T20u.wav 0 ]
+		[ note 92.8571 ASax flatt B3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-B3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord B3 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-B3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 15789.5
+	[ solution 4
+		[ note 92.8798 ASax slap D3 mf N /Winds/Sax_Alto/slap_pitched/ASax-slap-D3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord A#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-A#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 15882.4
+	[ solution 30
+		[ note 92.8571 Fl flatt C#4 ff N /Winds/Flute/flatterzunge/Fl-flatt-C#4-ff-N-N.wav 0 ]
+		[ note 185.737 ASax flatt C#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-C#3-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord C3 ff 5c /PluckedStrings/Guitar/ordinario/Gtr-ord-C3-ff-5c-N.wav 0 ]
+		[ note 185.737 Vc pizz_sec C#2 ff 4c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-C#2-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 15975.3
+	[ solution 5
+		[ note 92.8798 Fl aeol_and_ord C#5 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-C#5-ff-N-T20d.wav 0 ]
+		[ note 92.8798 Gtr ord B3 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-B3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 16068.2
+	[ solution 2
+		[ note 92.8798 Fl flatt C#4 ff N /Winds/Flute/flatterzunge/Fl-flatt-C#4-ff-N-N.wav 0 ]
+		[ note 371.497 ASax ord F#3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-F#3-ff-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord C#4 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-C#4-ff-2c-T13d.wav 0 ]
+		[ note 92.8798 Vc pizz_sec C#3 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-C#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 16161.1
+	[ solution 27
+		[ note 185.737 Fl flatt C#5 ff N /Winds/Flute/flatterzunge/Fl-flatt-C#5-ff-N-N.wav 0 ]
+		[ note 371.497 Gtr pizz_bartok F#3 ff 4c /PluckedStrings/Guitar/pizzicato_bartok/Gtr-pizz_bartok-F#3-ff-4c-N.wav 0 ]
+		[ note 185.737 Vc pizz_lv F#3 ff 2c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 16254
+	[ solution 31
+	]
+]
+[ segment 16346.8
+	[ solution 15
+		[ note 92.8798 Fl flatt C#4 ff N /Winds/Flute/flatterzunge/Fl-flatt-C#4-ff-N-N.wav 0 ]
+		[ note 92.8798 Vc pizz_lv C#2 ff 4c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-C#2-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 16439.7
+	[ solution 11
+		[ note 92.8798 Fl ord D#4 ff N /Winds/Flute/ordinario/Fl-ord-D#4-ff-N-N.wav 0 ]
+		[ note 92.8798 ASax ord C#3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-C#3-ff-N-N.wav 0 ]
+		[ note 185.76 Vc pizz_sec D#3 ff 3c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-D#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 16532.6
+	[ solution 32
+		[ note 185.737 Fl flatt D#5 ff N /Winds/Flute/flatterzunge/Fl-flatt-D#5-ff-N-N.wav 0 ]
+		[ note 92.8798 ASax slap F4 f N /Winds/Sax_Alto/slap_pitched/ASax-slap-F4-f-N-N.wav 0 ]
+		[ note 185.737 Gtr ord D#4 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-D#4-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 16625.5
+	[ solution 22
+		[ note 92.8571 ASax ord F#3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-F#3-ff-N-N.wav 0 ]
+		[ note 185.737 Vc pizz_sec D#4 ff 1c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-D#4-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 16718.3
+	[ solution 31
+		[ note 92.8798 Fl flatt A4 mf N /Winds/Flute/flatterzunge/Fl-flatt-A4-mf-N-N.wav 0 ]
+		[ note 185.76 ASax slap D#3 f N /Winds/Sax_Alto/slap_pitched/ASax-slap-D#3-f-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 16811.2
+	[ solution 12
+		[ note 185.76 Fl ord D#4 ff N /Winds/Flute/ordinario/Fl-ord-D#4-ff-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_lv D#3 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-D#3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 16904.1
+	[ solution 18
+		[ note 92.8798 ASax ord G3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-G3-ff-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord E3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-E3-ff-4c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_sec D#4 ff 1c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-D#4-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 16997
+	[ solution 15
+		[ note 92.8571 Fl aeol_and_ord D#5 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#5-ff-N-N.wav 0 ]
+		[ note 92.8571 ASax kiss N f N /Winds/Sax_Alto/kiss/ASax-kiss-N-f-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+		[ note 92.8571 Vc pizz_sec F#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 17089.9
+	[ solution 14
+		[ note 185.76 Fl flatt D#4 ff N /Winds/Flute/flatterzunge/Fl-flatt-D#4-ff-N-N.wav 0 ]
+		[ note 464.376 ASax slap F#3 mf N /Winds/Sax_Alto/slap_pitched/ASax-slap-F#3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_lv G2 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-G2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 17182.7
+	[ solution 28
+		[ note 92.8798 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_sec F#2 ff 4c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#2-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 17275.6
+	[ solution 15
+		[ note 92.8798 Fl flatt B4 mf N /Winds/Flute/flatterzunge/Fl-flatt-B4-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+		[ note 278.617 Vc pizz_lv F#3 ff 2c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 17368.5
+	[ solution 4
+		[ note 92.8798 Fl flatt C#5 ff N /Winds/Flute/flatterzunge/Fl-flatt-C#5-ff-N-N.wav 0 ]
+		[ note 278.617 Gtr ord E3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-E3-ff-4c-N.wav 0 ]
+	]
+]
+[ segment 17461.4
+	[ solution 22
+		[ note 92.8571 Fl aeol_and_ord F#4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-F#4-ff-N-N.wav 0 ]
+	]
+]
+[ segment 17554.3
+	[ solution 31
+		[ note 92.8798 Fl aeol_and_ord G4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-G4-ff-N-T17d.wav 0 ]
+		[ note 185.76 ASax slap F#4 f N /Winds/Sax_Alto/slap_pitched/ASax-slap-F#4-f-N-N.wav 0 ]
+		[ note 92.8798 Vc trem E3 pp 2c /Strings/Violoncello/tremolo/Vc-trem-E3-pp-2c-N.wav 0 ]
+	]
+]
+[ segment 17647.1
+	[ solution 2
+		[ note 185.76 Fl aeol_and_ord F#4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-F#4-ff-N-N.wav 0 ]
+		[ note 185.76 Gtr ord F#2 ff 6c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#2-ff-6c-T22u.wav 0 ]
+		[ note 185.76 Vc pizz_sec F#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 17740
+	[ solution 7
+		[ note 92.8798 ASax ord F#3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-F#3-ff-N-N.wav 0 ]
+	]
+]
+[ segment 17832.9
+	[ solution 87
+		[ note 185.737 Fl aeol_and_ord D#4 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#4-ff-N-N.wav 0 ]
+		[ note 185.737 ASax bisb D#4 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-D#4-mf-N-N.wav 0 ]
+		[ note 92.8571 Gtr ord G#3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G#3-ff-3c-T10d.wav 0 ]
+		[ note 92.8571 Vc pizz_lv G#2 ff 3c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-G#2-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 17925.8
+	[ solution 25
+		[ note 92.8798 Gtr ord D#4 ff 2c /PluckedStrings/Guitar/ordinario/Gtr-ord-D#4-ff-2c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_lv F#3 ff 2c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 18018.7
+	[ solution 20
+		[ note 185.76 Fl aeol_and_ord D#5 ff N /Winds/Flute/aeolian_and_ordinario/Fl-aeol_and_ord-D#5-ff-N-N.wav 0 ]
+		[ note 92.8798 ASax bisb D#5 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-D#5-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+		[ note 185.76 Vc pizz_lv D#4 ff 1c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-D#4-ff-1c-N.wav 0 ]
+	]
+]
+[ segment 18111.6
+	[ solution 11
+		[ note 185.76 ASax bisb F#3 mf N /Winds/Sax_Alto/bisbigliando/ASax-bisb-F#3-mf-N-N.wav 0 ]
+		[ note 92.8798 Gtr ord G3 ff 3c /PluckedStrings/Guitar/ordinario/Gtr-ord-G3-ff-3c-N.wav 0 ]
+	]
+]
+[ segment 18204.4
+	[ solution 48
+		[ note 185.737 Fl ord D#4 ff N /Winds/Flute/ordinario/Fl-ord-D#4-ff-N-N.wav 0 ]
+		[ note 256.599 Gtr ord F#3 ff 4c /PluckedStrings/Guitar/ordinario/Gtr-ord-F#3-ff-4c-N.wav 0 ]
+		[ note 92.8798 Vc pizz_sec F#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#3-ff-2c-N.wav 0 ]
+	]
+]
+[ segment 18297.3
+	[ solution 3
+		[ note 92.8571 ASax ord D#3 ff N /Winds/Sax_Alto/ordinario/ASax-ord-D#3-ff-N-N.wav 0 ]
+		[ note 92.8571 Vc pizz_lv G3 mf 2c /Strings/Violoncello/pizzicato_l_vib/Vc-pizz_lv-G3-mf-2c-N.wav 0 ]
+	]
+]
+[ segment 18390.2
+	[ solution 4
+		[ note 70.8617 Fl flatt D#5 ff N /Winds/Flute/flatterzunge/Fl-flatt-D#5-ff-N-N.wav 0 ]
+		[ note 70.8617 ASax flatt F#3 mf N /Winds/Sax_Alto/flatterzunge/ASax-flatt-F#3-mf-N-N.wav 0 ]
+		[ note 70.8617 Vc pizz_sec F#3 ff 2c /Strings/Violoncello/pizzicato_secco/Vc-pizz_sec-F#3-ff-2c-N.wav 0 ]
+	]
+]
