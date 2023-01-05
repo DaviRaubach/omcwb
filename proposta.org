@@ -1,0 +1,34 @@
+#+title: Oficina de Música de Curitiba 2023
+
+* Ideia para composição
+A notação musical tradicional está baseada na contagem métrica do tempo. As pulsações são agrupadas e formam métricas sobre as quais o ritmo é construído. Desta forma, a leitura musical se dá sobre uma contagem do tempo baseada nesta "régua". 
+
+Da perspectiva de quem ouve, a percepção do tempo pode estar mais ou menos atrelada a esta configuração básica. Um recurso bastante utilizado na composição é escrever ritmos sobre esta régua mas que não a explicitem, que tragam ambiguidade métrica. O ritmo escrito pode inclusive proporcionar a percepção de pulsações e métricas distintas e múltiplas em relação à base de pulsações sobre as quais as figuras rítmicas são escritas. Não se trata de uma relação contraditória, não se trata de tentar "implodir" a métrica, mas de uma procura por uma complexidade do decorrer do tempo. Ele não passa com contagens regulares, mas com contagens regulares sobrepostas, quiálteras, quiálteras dentro de quiálteras, etc. Neste sentido, há uma complexidade na leitura rítmica que é um valor estético e que em alguns casos pode gerar uma relação conflituosa entre métrica e ritmo.  Os estudos para piano de Ligeti, por exemplo, apresentam tal desconexão em muitos momentos, embora, em geral, há uma justificativa métrica para ao menos algum dos (poli)ritmos escritos.
+
+A pergunta crucial para as técnicas que tenho desenvolvido é: haveria outra maneira de o/a performer contar este tempo ou de se localizar nele? Ou melhor, haveriam outros recursos de definição temporal e rítmica que não este? Haveria outro tipo de régua? Ou a possibilidade de não utilizar uma régua?
+
+A contagem em segundos com notação proporcional é uma alternativa. Neste caso há uma atenção a um cronômetro ou simplesmente a sensação de pulso em 60 BPM. E a mesma desconexão entre a régua (neste caso, o tempo cronológico) e o ritmo pode aparecer. A notação métrica tradicional com grandes variações de andamento pode também ser uma opção.
+
+A alternativa que desenvolvi assume uma outra "contradição". Isso porque requer uma leitura paralela à leitura musical. Trata-se de usar a leitura de um texto verbal como régua para a escritura rítmica. As figuras rítmicas são escritas em relação a sílabas deste texto que deve ser lido mentalmente (ou não) pelo/a performer. O texto deve ser lido com o ritmo "natural" da fala que pode variar entre uma fala lenta e rápida, mas não pode submeter esse ritmo a uma métrica. A experiência deve ser menos parecida com a canção e mais parecida com a fala cotidiana.
+
+Na peça Chão de outono (2017-2018), para flauta e computador, sendo o computador dependente da flauta para a execução, a técnica funcionou sem maiores problemas quanto à sincronia. No momento de preparar a peça, podia pensar junto com a Valentina Daldegan, flautista, diferentes maneiras de ler o texto.
+
+Numa implementação anterior, em Meu trecho predileto (2016), para acordeão, violão e fala, a leitura do texto deveria ser combinada previamente para que houvesse sincronia. Alguns recursos utilizados para isso foram:
+ * conversa: tocar um de cada vez, o material musical alternava entre os instrumentos e os performers precisavam esperar o outro terminar para começar sua parte
+ * elisão: a primeira nota de um gesto em um instrumento coincidia com a última de outro
+ * fermatas: as fermatas serviam como momentos após os quais se retomava a sincronia
+
+Na última implementação desta técnica, em As vozes das páginas (2022), para ensemble e eletrônicos, encontrei outros recursos:
+ * gestos associados a sílabas específicas deixando outras sem um respectivo gesto instrumental
+ * longos trechos "sem sincronia" com fermata ao final para finalização em sincronia
+
+Em todas as peças, o uso da notação tradicional aparece em alguns trechos.
+
+Para esta composição, gostaria de lapidar estes meios. Os recursos mencionados acima devem ser reutilizados. Mas, além deles, gostaria de implementar ainda o ritornelo como recurso para retomada de sincronia. A parte escrita terminaria com um ritornelo com material simples que permita a/o performer atentar para os outros integrantes do grupo até que se alcance as condições para continuar em relativa sincronia.
+
+
+A técnica apresentada tem uma dimensão de questionamento sobre a prática compositiva, sobre o papel do/a compositor/a e sua relação com os/as performers. Especialmente, apresenta a abertura, a demanda de uma procura performativa muito particular. O material não está dado, precisa ser encontrado e, por isso, depende da  sensibilidade e envolvimento dos/as performers. 
+
+Diferente da música, na leitura de um texto verbal as palavras seguintes "ficam esperando". Não há um tempo exato em que precisam ser lidas, o risco de se perder o tempo, de se frustrar pelo erro, como é o caso da leitura rítmica estrita, é bem diferente. Quando comecei a utilizar esta técnica, meu intuito era criar ritmos complexos de maneira facilitada. No momento atual, penso que a técnica abre espaço para reflexões mais interessantes, como por exemplo, os paralelos entre leitura musical e leitura textual.
+
+
