@@ -1,7 +1,8 @@
 Projeto da peça para a Oficina de Música de Curitiba 2023
 
-[[file:proposta.org][Proposta inicial]]
-[[file:omcwb/pre_comp.org][Pré-Composição - 1]]
-[[file:omcwb/pre_comp2.org][Pré-Composição - 2]]
+- [[file:proposta.org][Proposta inicial]]
+- [[file:omcwb/pre_comp.org][Pré-Composição - 1]]
+- [[file:omcwb/pre_comp2.org][Pré-Composição - 2]]
 
+  
 [[file:omcwb/omcwb_score.pdf][Partitura (em progresso)]]
