@@ -10,7 +10,7 @@
         {
             % BEFORE:
             % COMMANDS:
-            \tempo \markup {Tempo de leitura: \bold {poético}}
+            \tempo \markup {Tempo de leitura: \italic {poético}}
             % OPENING:
             % COMMANDS:
             \time 7/8
@@ -225,8 +225,6 @@
                         \tweak stencil \minima
                         ef'''8.
                         % AFTER:
-                        % ARTICULATIONS:
-                        - \staccato
                         % SPANNER_STARTS:
                         ~
                     % CLOSE_BRACKETS:
@@ -477,16 +475,16 @@
                         c'16
                         c'16
                         c'32
-                        c'32
                         c'16
+                        c'32
                         r16
                         c'32
                         c'32
                         c'16
                         c'16
                         c'32
-                        c'32
                         c'16
+                        c'32
                         r32
                         % AFTER:
                         % COMMANDS:
@@ -511,7 +509,7 @@
             {
             % OPENING:
                 % COMMANDS:
-                \lyricsto "Fl_Voice_2" { \lyricmode { \override LyricText.self-alignment-X = #CENTER \markup \scratched Pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched (sal -- \markup \scratched ta, \markup \scratched sal -- \markup \scratched ta, \markup \scratched vo -- \markup \scratched a) \markup \scratched a -- \markup \scratched ti -- \markup \scratched ra -- \markup \scratched da \markup \scratched con -- \markup \scratched tra \markup \scratched a‿á -- \markup \scratched gua \markup \scratched (le -- \markup \scratched ve, \markup \scratched le -- \markup \scratched ve, \markup \scratched le -- \markup \scratched ve) \markup \scratched Sal -- \markup \scratched ta, \markup \scratched sal -- \markup \scratched ta, \markup \scratched vo -- \markup \scratched a... \markup \scratched pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched a -- \markup \scratched ti -- \markup \scratched ra -- \markup \scratched da \markup \scratched Pou -- \markup \scratched sa \markup \scratched so -- \markup \scratched bre‿as \markup \scratched nu -- \markup \scratched vens... \markup \scratched Pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched con -- \markup \scratched tra \markup \scratched á -- \markup \scratched gua \markup \scratched mer -- \markup \scratched gu -- \markup \scratched lha \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched fun -- \markup \scratched do... \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched al -- \markup \scratched to... \markup \scratched a \markup \scratched pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched seduz \markup \scratched a \markup \scratched lín -- \markup \scratched gua \markup \scratched e \markup \scratched es --  \markup \scratched cor -- \markup \scratched re, \markup \scratched e \markup \scratched es --  \markup \scratched cor -- \markup \scratched re, \markup \scratched e \markup \scratched es --  \markup \scratched cor -- \markup \scratched re, \markup \scratched e \markup \scratched es --  \markup \scratched cor -- \markup \scratched re, \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched so -- \markup \scratched nha -- \markup \scratched da \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched so -- \markup \scratched nha -- \markup \scratched da}}
+                \lyricsto "Fl_Voice_2" { \lyricmode { \override LyricText.self-alignment-X = #CENTER \markup \scratched Pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched (sal -- \markup \scratched ta, \markup \scratched sal -- \markup \scratched ta, \markup \scratched vo -- \markup \scratched a) \markup \scratched a -- \markup \scratched ti -- \markup \scratched ra -- \markup \scratched da \markup \scratched con -- \markup \scratched tra \markup \scratched a‿á -- \markup \scratched gua \markup \scratched (le -- \markup \scratched ve, \markup \scratched le -- \markup \scratched ve, \markup \scratched le -- \markup \scratched ve) \markup \scratched Sal -- \markup \scratched ta, \markup \scratched sal -- \markup \scratched ta, \markup \scratched vo -- \markup \scratched a... \markup \scratched pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched a -- \markup \scratched ti -- \markup \scratched ra -- \markup \scratched da \markup \scratched Pou -- \markup \scratched sa \markup \scratched so -- \markup \scratched bre‿as \markup \scratched nu -- \markup \scratched vens... \markup \scratched Pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched con -- \markup \scratched tra \markup \scratched á -- \markup \scratched gua \markup \scratched mer -- \markup \scratched gu -- \markup \scratched lha \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched fun -- \markup \scratched do... \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched al -- \markup \scratched to... \markup \scratched a \markup \scratched pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched seduz \markup \scratched a \markup \scratched lín -- \markup \scratched gua \markup \scratched e \markup \scratched es -- \markup \scratched cor -- \markup \scratched re, \markup \scratched e \markup \scratched es -- \markup \scratched cor -- \markup \scratched re, \markup \scratched e \markup \scratched es -- \markup \scratched cor -- \markup \scratched re, \markup \scratched e \markup \scratched es -- \markup \scratched cor -- \markup \scratched re, \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched so -- \markup \scratched nha -- \markup \scratched da \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched so -- \markup \scratched nha -- \markup \scratched da}}
             % CLOSE_BRACKETS:
             }
         % CLOSE_BRACKETS:
@@ -562,6 +560,450 @@
             {
                 % OPEN_BRACKETS:
                 {
+                    % OPEN_BRACKETS:
+                    {   % A_0
+                        % BEFORE:
+                        % COMMANDS:
+                        \ottava 2
+                        % OPENING:
+                        % COMMANDS:
+                        \clef "treble_8"
+                        bf''32
+                        % AFTER:
+                        % ARTICULATIONS:
+                        \f
+                        % MARKUP:
+                        ^ \markup "com slide"
+                        % SPANNER_STARTS:
+                        \glissando
+                        aqs''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        c'''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        bf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        aqs''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        c'''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        bf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        aqs''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        c'''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        bf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        aqs''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        c'''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        bf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        aqs''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        c'''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        bf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                    % CLOSE_BRACKETS:
+                    }   % A_0
+                    % OPEN_BRACKETS:
+                    {   % B_0
+                        bqs''32
+                        bqs''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        cs'''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqs''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        b''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqs''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        b''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r16
+                        bqs''32
+                        bqs''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        cs'''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqs''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        b''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqs''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        b''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r16
+                        bqs''32
+                        bqs''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        cs'''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqs''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        b''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqs''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        b''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r16
+                        bqs''32
+                        bqs''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        cs'''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqs''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        b''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqs''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        b''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                    % CLOSE_BRACKETS:
+                    }   % B_0
+                    % OPEN_BRACKETS:
+                    {   % C_0
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        cs'''16.
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        fs'''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        aqf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        ef'''16.
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        cs'''16.
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        fs'''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        aqf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                    % CLOSE_BRACKETS:
+                    }   % C_0
+                    % OPEN_BRACKETS:
+                    {   % D_0
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        cs'''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        fs'''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        aqf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        ef'''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        cs'''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        fs'''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        aqf''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        ef'''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                    % CLOSE_BRACKETS:
+                    }   % D_0
+                    % OPEN_BRACKETS:
+                    {   % E_0
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        c'''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqf''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        c'''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        c'''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        bqf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        c'''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        c'''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqf''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        c'''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        c'''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        bqf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        c'''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqf''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        r32
+                        g''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        c'''32
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        bqf''16
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        \glissando
+                        g''32
+                        % AFTER:
+                        % COMMANDS:
+                        \ottava 0
+                    % CLOSE_BRACKETS:
+                    }   % E_0
                 % CLOSE_BRACKETS:
                 }
             % CLOSE_BRACKETS:
@@ -571,6 +1013,170 @@
             {
                 % OPEN_BRACKETS:
                 {
+                    % OPEN_BRACKETS:
+                    {   % A_0
+                        % OPENING:
+                        % COMMANDS:
+                         \override Voice.NoteHead.stencil = ##f
+                         \override Voice.Rest.stencil = ##f
+                         \override Voice.Stem.stencil = ##f
+                         \override Voice.Flag.stencil = ##f
+                         \omit TupletNumber
+                         \omit Voice.Dots
+                         \override Voice.TupletBracket.stencil = ##f
+                         \override Voice.Beam.stencil = ##f
+                         \omit Voice.Accidental
+                         \override LyricText.self-alignment-X = #LEFT
+                        c'32
+                        c'32
+                        c'16
+                        c'32
+                        r32
+                        c'32
+                        c'32
+                        c'16
+                        c'32
+                        r32
+                        c'32
+                        c'32
+                        c'16
+                        c'32
+                        r32
+                        c'32
+                        c'32
+                        c'16
+                        c'32
+                        r32
+                        c'32
+                        c'32
+                        c'16
+                        c'32
+                        r32
+                        c'32
+                    % CLOSE_BRACKETS:
+                    }   % A_0
+                    % OPEN_BRACKETS:
+                    {   % B_0
+                        c'32
+                        c'32
+                        c'16
+                        c'16
+                        c'32
+                        c'16
+                        c'32
+                        r16
+                        c'32
+                        c'32
+                        c'16
+                        c'16
+                        c'32
+                        c'16
+                        c'32
+                        r16
+                        c'32
+                        c'32
+                        c'16
+                        c'16
+                        c'32
+                        c'16
+                        c'32
+                        r16
+                        c'32
+                        c'32
+                        c'16
+                        c'16
+                        c'32
+                        c'16
+                        c'32
+                    % CLOSE_BRACKETS:
+                    }   % B_0
+                    % OPEN_BRACKETS:
+                    {   % C_0
+                        c'32
+                        c'16.
+                        c'32
+                        r32
+                        c'32
+                        c'32
+                        c'16
+                        c'16.
+                        r32
+                        c'32
+                        c'16.
+                        c'32
+                        r32
+                        c'32
+                    % CLOSE_BRACKETS:
+                    }   % C_0
+                    % OPEN_BRACKETS:
+                    {   % D_0
+                        c'32
+                        c'16
+                        c'32
+                        c'32
+                        c'32
+                        c'32
+                        c'32
+                        c'32
+                        c'32
+                        r32
+                        c'32
+                        c'16
+                        c'32
+                        c'32
+                        c'32
+                    % CLOSE_BRACKETS:
+                    }   % D_0
+                    % OPEN_BRACKETS:
+                    {   % E_0
+                        c'32
+                        c'32
+                        c'16
+                        c'32
+                        r32
+                        c'32
+                        c'32
+                        c'16
+                        c'32
+                        r32
+                        c'32
+                        c'32
+                        c'16
+                        c'32
+                        r32
+                        c'32
+                        c'32
+                        c'16
+                        c'32
+                        r32
+                        c'32
+                        c'32
+                        c'16
+                        c'32
+                        r32
+                        c'32
+                        c'32
+                        c'16
+                        c'32
+                        r32
+                        c'32
+                        c'32
+                        c'16
+                        c'32
+                        % AFTER:
+                        % COMMANDS:
+                         \revert Voice.NoteHead.stencil
+                         \revert Voice.Rest.stencil
+                         \revert Voice.Stem.stencil
+                         \revert Voice.Flag.stencil
+                         \revert Voice.Dots.stencil
+                         \undo \omit Voice.TupletNumber
+                         \undo \omit Voice.Dots
+                         \revert Voice.TupletBracket.stencil
+                         \revert Voice.Beam.stencil
+                         \undo \omit Voice.Accidental
+                    % CLOSE_BRACKETS:
+                    }   % E_0
                 % CLOSE_BRACKETS:
                 }
             % CLOSE_BRACKETS:
@@ -578,6 +1184,9 @@
             % OPEN_BRACKETS:
             \context Lyrics = "Vlao_Voice_2_Lyrics"
             {
+            % OPENING:
+                % COMMANDS:
+                \lyricsto "Vlao_Voice_2" { \lyricmode { \override LyricText.self-alignment-X = #CENTER E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, E  ca -- da vez mais so -- nha -- da ca -- da vez mais so -- nha -- da ca -- da vez mais so -- nha -- da ca -- da vez mais so -- nha -- da  Pa -- la -- vra con -- tra a‿á -- gua. Pa -- la -- vra con --  Mer -- gu -- lha ca -- da vez mais fun -- do... Mer -- gu -- lha ca -- da  E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, }}
             % CLOSE_BRACKETS:
             }
         % CLOSE_BRACKETS:
@@ -611,13 +1220,8 @@
                         s8.
                         % OPENING:
                         % COMMANDS:
-                        \clef "bass"
-                        <
-                            \tweak stencil \minima
-                            aqs
-                            \tweak style #'harmonic
-                            dqs'
-                        >8
+                        \clef "treble"
+                        <aqs''>8
                         % AFTER:
                         % ARTICULATIONS:
                         \p
@@ -625,79 +1229,44 @@
                         ~
                         % OPENING:
                         % COMMANDS:
-                        \clef "bass"
-                        <
-                            \tweak stencil \minima
-                            aqs
-                            \tweak style #'harmonic
-                            dqs'
-                        >32
+                        \clef "treble"
+                        <aqs''>32
+                        s32
+                        % OPENING:
+                        % COMMANDS:
+                        \clef "treble^8"
+                        <g'''>8
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        ~
+                        % OPENING:
+                        % COMMANDS:
+                        \clef "treble^8"
+                        <g'''>32
                         s32
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
-                        <
-                            \tweak stencil \minima
-                            g'
-                            \tweak style #'harmonic
-                            c''
-                        >8
+                        <cs'''>4
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
-                        <
-                            \tweak stencil \minima
-                            g'
-                            \tweak style #'harmonic
-                            c''
-                        >32
-                        s32
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble"
-                        <
-                            \tweak stencil \minima
-                            cs'
-                            \tweak style #'harmonic
-                            fs'
-                        >4
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        ~
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble"
-                        <
-                            \tweak stencil \minima
-                            cs'
-                            \tweak style #'harmonic
-                            fs'
-                        >16
+                        <cs'''>16
                         s16
                         % OPENING:
                         % COMMANDS:
-                        \clef "bass"
-                        <
-                            \tweak stencil \minima
-                            aqs
-                            \tweak style #'harmonic
-                            dqs'
-                        >4
+                        \clef "treble"
+                        <aqs''>4
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         % OPENING:
                         % COMMANDS:
-                        \clef "bass"
-                        <
-                            \tweak stencil \minima
-                            aqs
-                            \tweak style #'harmonic
-                            dqs'
-                        >16
+                        \clef "treble"
+                        <aqs''>16
                         s16
                     % CLOSE_BRACKETS:
                     }   % A_0
@@ -712,26 +1281,16 @@
                         b32
                         % OPENING:
                         % COMMANDS:
-                        \clef "bass"
-                        <
-                            \tweak stencil \minima
-                            fs
-                            \tweak style #'harmonic
-                            b
-                        >8.
+                        \clef "treble"
+                        <fs''>8.
                         % OPENING:
                         % COMMANDS:
                         \clef "bass"
                         cqs16.
                         % OPENING:
                         % COMMANDS:
-                        \clef "bass"
-                        <
-                            \tweak stencil \minima
-                            c
-                            \tweak style #'harmonic
-                            f
-                        >8.
+                        \clef "treble"
+                        <c''>8.
                         s32
                     % CLOSE_BRACKETS:
                     }   % B_0
@@ -746,13 +1305,8 @@
                         c'32
                         % OPENING:
                         % COMMANDS:
-                        \clef "bass"
-                        <
-                            \tweak stencil \minima
-                            bf
-                            \tweak style #'harmonic
-                            ef'
-                        >8..
+                        \clef "treble"
+                        <bf''>8..
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
@@ -773,12 +1327,7 @@
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
-                        <
-                            \tweak stencil \minima
-                            d'
-                            \tweak style #'harmonic
-                            g'
-                        >8..
+                        <d'''>8..
                         s32
                     % CLOSE_BRACKETS:
                     }   % C_0
@@ -812,12 +1361,7 @@
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
-                        <
-                            \tweak stencil \minima
-                            d'
-                            \tweak style #'harmonic
-                            g'
-                        >8
+                        <d'''>8
                         s32
                         % OPENING:
                         % COMMANDS:
@@ -825,13 +1369,8 @@
                         c'32
                         % OPENING:
                         % COMMANDS:
-                        \clef "bass"
-                        <
-                            \tweak stencil \minima
-                            bf
-                            \tweak style #'harmonic
-                            ef'
-                        >8
+                        \clef "treble"
+                        <bf''>8
                         s16
                         % OPENING:
                         % COMMANDS:
@@ -866,12 +1405,7 @@
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
-                        <
-                            \tweak stencil \minima
-                            fs'
-                            \tweak style #'harmonic
-                            b'
-                        >8
+                        <fs'''>8
                         s32
                         % OPENING:
                         % COMMANDS:
@@ -879,13 +1413,8 @@
                         ef32
                         % OPENING:
                         % COMMANDS:
-                        \clef "bass"
-                        <
-                            \tweak stencil \minima
-                            g
-                            \tweak style #'harmonic
-                            c'
-                        >8.
+                        \clef "treble"
+                        <g''>8.
                         s32
                     % CLOSE_BRACKETS:
                     }   % D_0
@@ -1005,16 +1534,16 @@
                         c''''16
                         c''''16
                         c''''32
-                        c''''32
                         c''''16
+                        c''''32
                         r16
                         c''''32
                         c''''32
                         c''''16
                         c''''16
                         c''''32
-                        c''''32
                         c''''16
+                        c''''32
                         r16
                     % CLOSE_BRACKETS:
                     }   % A_0
@@ -1143,7 +1672,7 @@
             {
             % OPENING:
                 % COMMANDS:
-                \lyricsto "Vc_Voice_2" { \lyricmode { \override LyricText.self-alignment-X = #CENTER \markup \scratched E \markup \scratched es --  \markup \scratched cor -- \markup \scratched re, \markup \scratched e \markup \scratched es --  \markup \scratched cor -- \markup \scratched re, \markup \scratched e \markup \scratched es --  \markup \scratched cor -- \markup \scratched re, \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched so -- \markup \scratched nha -- \markup \scratched da \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched so -- \markup \scratched nha -- \markup \scratched da \markup \scratched a \markup \scratched pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched seduz \markup \scratched a \markup \scratched lín -- \markup \scratched gua \markup \scratched e \markup \scratched es --  \markup \scratched cor -- \markup \scratched re, \markup \scratched mer -- \markup \scratched gu -- \markup \scratched lha \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched fun -- \markup \scratched do... \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched al -- \markup \scratched to... \markup \scratched Sal -- \markup \scratched ta, \markup \scratched sal -- \markup \scratched ta, \markup \scratched vo -- \markup \scratched a... \markup \scratched pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched a -- \markup \scratched ti -- \markup \scratched ra -- \markup \scratched da \markup \scratched Pou -- \markup \scratched sa \markup \scratched so -- \markup \scratched bre‿as \markup \scratched nu -- \markup \scratched vens... \markup \scratched Pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched con -- \markup \scratched tra \markup \scratched á -- \markup \scratched gua \markup \scratched Pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched (sal -- \markup \scratched ta, \markup \scratched sal -- \markup \scratched ta, \markup \scratched vo -- \markup \scratched a) \markup \scratched a -- \markup \scratched ti -- \markup \scratched ra -- \markup \scratched da \markup \scratched con -- \markup \scratched tra \markup \scratched a‿á -- \markup \scratched gua \markup \scratched (le -- \markup \scratched ve, \markup \scratched le -- \markup \scratched ve, \markup \scratched le -- \markup \scratched ve)}}
+                \lyricsto "Vc_Voice_2" { \lyricmode { \override LyricText.self-alignment-X = #CENTER \markup \scratched E \markup \scratched es -- \markup \scratched cor -- \markup \scratched re, \markup \scratched e \markup \scratched es -- \markup \scratched cor -- \markup \scratched re, \markup \scratched e \markup \scratched es -- \markup \scratched cor -- \markup \scratched re, \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched so -- \markup \scratched nha -- \markup \scratched da \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched so -- \markup \scratched nha -- \markup \scratched da \markup \scratched a \markup \scratched pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched seduz \markup \scratched a \markup \scratched lín -- \markup \scratched gua \markup \scratched e \markup \scratched es -- \markup \scratched cor -- \markup \scratched re, \markup \scratched mer -- \markup \scratched gu -- \markup \scratched lha \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched fun -- \markup \scratched do... \markup \scratched ca -- \markup \scratched da \markup \scratched vez \markup \scratched mais \markup \scratched al -- \markup \scratched to... \markup \scratched Sal -- \markup \scratched ta, \markup \scratched sal -- \markup \scratched ta, \markup \scratched vo -- \markup \scratched a... \markup \scratched pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched a -- \markup \scratched ti -- \markup \scratched ra -- \markup \scratched da \markup \scratched Pou -- \markup \scratched sa \markup \scratched so -- \markup \scratched bre‿as \markup \scratched nu -- \markup \scratched vens... \markup \scratched Pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched con -- \markup \scratched tra \markup \scratched á -- \markup \scratched gua \markup \scratched Pa -- \markup \scratched la -- \markup \scratched vra \markup \scratched (sal -- \markup \scratched ta, \markup \scratched sal -- \markup \scratched ta, \markup \scratched vo -- \markup \scratched a) \markup \scratched a -- \markup \scratched ti -- \markup \scratched ra -- \markup \scratched da \markup \scratched con -- \markup \scratched tra \markup \scratched a‿á -- \markup \scratched gua \markup \scratched (le -- \markup \scratched ve, \markup \scratched le -- \markup \scratched ve, \markup \scratched le -- \markup \scratched ve)}}
             % CLOSE_BRACKETS:
             }
         % CLOSE_BRACKETS:

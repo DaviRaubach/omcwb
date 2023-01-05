@@ -152,7 +152,7 @@ def vc2(mat: muda.Material, timespans, time_signatures):
 vc2.apply_to = [materials.vc2.name]
 
 
-def vlao(mat: muda.Material, timespans, time_signatures, pivot="C5"):
+def vlao(mat: muda.Material, timespans, time_signatures):
     mat_makers = {
         "A": rmakers.vlao_a,
         "B": rmakers.vlao_b,
@@ -162,13 +162,14 @@ def vlao(mat: muda.Material, timespans, time_signatures, pivot="C5"):
     }
 
     mat.alternating_materials(timespans, mat_makers)
+    # mat.annotate_material_names()
     # print(timespans)
     # print(time_signatures)
-    mat.rewrite_meter(time_signatures)
-    mat.write_time_signatures(time_signatures)
+    # mat.rewrite_meter(time_signatures)
+    # mat.write_time_signatures(time_signatures)
 
 
-vlao.apply_to = [materials.vlao.name]
+vlao.apply_to = [materials.vlao.name, materials.vlao2.name]
 
 
 def sx(mat: muda.Material, timespans, time_signatures, pivot="C5"):

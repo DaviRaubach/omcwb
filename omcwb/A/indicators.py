@@ -1,7 +1,7 @@
 import muda
 import abjad
 from omcwb.A import materials
-from omcwb.A import lyrics
+from omcwb.A import write_lyrics
 
 
 def slash_on_grace(selection):
@@ -42,22 +42,22 @@ def articulation_tonica(container, articulation):
         abjad.attach(articulation, lt[0])
 
 
-def dur_line(container):
+def remove_stacc_long_notes(container):
     selection = abjad.select.notes(container)
     selection = [
         note for note in selection if note.written_duration >= abjad.Duration(4, 32)]
-    for note in selection:
-        if not abjad.get.indicator(note, abjad.Tie) and note.written_duration >= abjad.Duration(4, 32):
-            abjad.attach(abjad.BendAfter(0), note)
+    # for note in selection:
+    # if not abjad.get.indicator(note, abjad.Tie) and note.written_duration >= abjad.Duration(4, 32):
+    # abjad.attach(abjad.BendAfter(0), note)
 
-    lts = abjad.select.logical_ties(container)
+    # lts = abjad.select.logical_ties(container)
 
     stacs = [abjad.get.indicator(note, abjad.Articulation("."))
              for note in selection]
 
     for art, note in zip(stacs, selection):
         if art:
-            print("ART")
+            # print("ART")
             abjad.detach(abjad.Articulation("."), note)
 
     # for a in art:
@@ -66,7 +66,7 @@ def dur_line(container):
 
 
 def gl(mat: muda.Material):
-    markup = abjad.Markup(r'\markup {Tempo de leitura: \bold {poético}}')
+    markup = abjad.Markup(r'\markup {Tempo de leitura: \italic {poético}}')
     mark = abjad.MetronomeMark(
         reference_duration=(1, 4),
         units_per_minute=(45 - 50),
@@ -84,6 +84,8 @@ def fl(mat: muda.Material):
     breath_after_run(mat.select("A"))
     articulation_beggining_end(mat.container, abjad.Articulation("."))
     articulation_tonica(mat.container, abjad.Articulation(">"))
+    remove_stacc_long_notes(mat.container)
+
     # dur_line(mat.container)
     # mat.annotate_material_names(
     # material_name=["A", "B"],
@@ -97,7 +99,7 @@ fl.apply_to = [materials.fl.name]
 
 
 def fl_lyrics(lyr: muda.Lyrics):
-    lyr.write_lyrics(lyrics.fl_lyrics)
+    lyr.write_lyrics(write_lyrics.fl_lyrics)
 
     # lyr.align = "LEFT"
 
@@ -108,7 +110,7 @@ fl_lyrics.apply_to = [
 
 
 def vc_lyrics(lyr: muda.Lyrics):
-    lyr.write_lyrics(lyrics.vc_lyrics)
+    lyr.write_lyrics(write_lyrics.vc_lyrics)
 
     # lyr.align = "LEFT"
 

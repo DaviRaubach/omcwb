@@ -30,7 +30,7 @@ def voz2_override(mat: muda.Material):
 voz2_override.apply_to = [
     materials.fl2.name,
     # materials.sx2.name,
-    #     materials.vlao2.name,
+    materials.vlao2.name,
     materials.vc2.name
 ]
 

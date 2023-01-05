@@ -32,7 +32,7 @@ def macro_pitches(pitches, outline, pitch_range=False, select_range=[0, 1]):
     pitches_ = [abjad.NamedPitch(_).number for _ in pitches]
     pitches_ = list(dict.fromkeys(pitches_))
     pitches_.sort()
-    print("macro pitches sorted:", pitches_)
+    print("sorted pitches:", pitches_)
     # pitches_ = muda.ring_modulation(
     #     abjad.PitchSegment(pitches_), pitch_range
     # )
@@ -56,7 +56,8 @@ def macro_pitches(pitches, outline, pitch_range=False, select_range=[0, 1]):
         toprint = [_.number for _ in pitches_]
     else:
         toprint = pitches_
-    print("macro pitches outlined:", toprint)
+    print("used pitches:", toprint)
+    # muda.see_pitches(pitches_)
 
     return pitches_
 
@@ -216,7 +217,7 @@ def vlao_pitch(mat: muda.Material):
 
     pa = transpose_neiborgh_octaves(
         multi_pitches.multi_2_mod,
-        abjad.PitchRange("[G5, G6]"),
+        abjad.PitchRange("[G5, A6]"),
 
     )
 
@@ -239,12 +240,14 @@ def vlao_pitch(mat: muda.Material):
 
     pitchesA = macro_pitches(
         pa,
-        frase1 + frase2,
+        [2, 1, 4, 0] * 8,  # e escorre
+        select_range=[0.5, 1]
     )
 
     pitchesB = macro_pitches(
         pb,
-        frase3 + frase4,
+        [3, 2, 4, 2, 1, 3, 0] * 8,
+        select_range=[0.3, 1]
     )
     pitchesC = macro_pitches(
         pc,
@@ -420,8 +423,8 @@ def vc_pitch(mat: muda.Material):
     chords = abjad.select.chords(mat.container)
 
     # Test MIDI
-    # for chord in chords:
-    # chord.written_pitches = [chord.written_pitches[0] + 24]
+    for chord in chords:
+        chord.written_pitches = [chord.written_pitches[0] + 24]
 
     first_note = abjad.select.chord(mat.container, 0)
     abjad.attach(abjad.Dynamic("p"), first_note)

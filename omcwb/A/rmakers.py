@@ -1,6 +1,7 @@
 import muda
 import abjad
 from abjadext import rmakers as r
+from itertools import cycle
 
 
 def make_rest(divisions):
@@ -105,7 +106,7 @@ fl_d_counts = \
 sum_fl_rule_d = sum([abs(_) for _ in fl_rule_d_counts])
 
 rule_e_escorre_x3 = [1, 1, 2, 1, -1] * 3
-rule_cada_vez_mais_sonhada = [1, 1, 2, 2, 1, 1, 2, -2]
+rule_cada_vez_mais_sonhada = [1, 1, 2, 2, 1, 2, 1, -2]
 
 e_escorre_x3 = [-6] + [5, -1] * 2
 cada_vez_mais_sonhada = [10, -2]
@@ -269,6 +270,7 @@ def vlao_b(divisions):
         divisions,
         rule_cada_vez_mais_sonhada,
     )
+
     return result
 
 

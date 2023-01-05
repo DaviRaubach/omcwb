@@ -52,11 +52,11 @@ def timespans() -> dict:
     fl_d = [rmakers.sum_fl_rule_d, 0, 0, 0]
     fl_e = [rmakers.sum_fl_rule_e, 0, 0, 0]
 
-    vlao_a = [rmakers.sum_vlao_rule_a, 0, 0, 0]
-    vlao_b = [rmakers.sum_vlao_rule_b, 0, 0, 0]
-    vlao_c = [rmakers.sum_vlao_rule_c, 0, 0, 0]
-    vlao_d = [rmakers.sum_vlao_rule_d, 0, 0, 0]
-    vlao_e = [rmakers.sum_vlao_rule_e, 0, 0, 0]
+    vlao_a = [rmakers.sum_fl_rule_a, 0, 0, 0]
+    vlao_b = [rmakers.sum_fl_rule_b, 0, 0, 0]
+    vlao_c = [rmakers.sum_fl_rule_c, 0, 0, 0]
+    vlao_d = [rmakers.sum_fl_rule_d, 0, 0, 0]
+    vlao_e = [rmakers.sum_fl_rule_e, 0, 0, 0]
 
     sx_a = [0, 4, 0, 0]
     sx_b = [0, 0, 44, 0]
@@ -100,11 +100,11 @@ def timespans() -> dict:
     vlao_ts = timespans_durations(
         muda.make_alternations(
             total_duration,
-            [vlao_a, vlao_b, vlao_c, vlao_d],
+            [vlao_a, vlao_b, vlao_c, vlao_d, vlao_e],
             32
         ),
         32,
-        ["A", "B", "C", "D"],
+        ["A", "B", "C", "D", "E"],
         subdivision=subdivision
     )
     result["Vlao_Voice_1"] = vlao_ts[1]
@@ -154,7 +154,8 @@ def timespans() -> dict:
     abjad.persist.as_ly(ly_file, "timespans_illustration.ly")
     abjad.persist.as_pdf(ly_file, "timespans_illustration.pdf")
 
-    _timespans = [fl_ts[0], vc_ts[0]]  # sx_ts[0], vlao_ts[0], vc_ts[0]]
+    # sx_ts[0], vlao_ts[0], vc_ts[0]]
+    _timespans = [fl_ts[0], vc_ts[0], vlao_ts[0]]
     # print(_timespans)
     for ts in _timespans:
         assert ts.duration == total_duration
