@@ -35,7 +35,7 @@ Mergulha cada vez mais fundo\\
 Cada vez mais alto\\
 Seduz a língua e escoa\\
 Escoa, salta, voa\\
-Cada vez mais sonhada\\
+Cada vez mais sonhada
 
 *Duração* c. 4 min
 
@@ -48,21 +48,22 @@ Cada vez mais sonhada\\
 
 Cabeça de nota como de semínima representa a leitura de uma sílaba para cada nota (notas mais curtas). Cabeça de nota como de mínimas representam notas que se estendem por várias sílabas (notas mais longas):
 
-#+begin_src lilypond :file exemplo_tempo_fala.pdf
-  \version "2.23.6"
-  \language "english"
-  \include "/Users/Davi/.pyenv/versions/abjad14/lib/python3.10/site-packages/abjad/scm/abjad.ily"
-  \include "/Users/Davi/Composição/2023/base-omcwb/omcwb/stylesheet.ily"
+#+begin_src lilypond :file exemplo_tempo_fala.svg
+   \version "2.23.6"
+   \language "english"
+   \include "/Users/Davi/.pyenv/versions/abjad14/lib/python3.10/site-packages/abjad/scm/abjad.ily"
+   \include "/Users/Davi/Composição/2023/base-omcwb/omcwb/stylesheet.ily"
+  #(ly:set-option 'backend 'svg)
   #(set-global-staff-size 10)
-  \paper { page-breaking = #ly:one-line-auto-height-breaking }
-  \score {
-    \include "exemplo_tempo_fala.ily"
-  }
+   \paper { page-breaking = #ly:one-line-auto-height-breaking }
+   \score {
+     \include "exemplo_tempo_fala.ily"
+   }
 
 #+end_src
 
 #+RESULTS:
-[[file:exemplo_tempo_fala.pdf]]
+[[file:exemplo_tempo_fala.svg]]
 
   Em geral, o ritmo instrumental deve se submeter ao ritmo da leitura. Entretanto, também deve-se levar em consideração que alguns gestos precisam de tempo hábil para a exeucução e nestes casos não há problema em suspender o tempo da leitura.
 
