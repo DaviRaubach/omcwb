@@ -6,3 +6,5 @@ Projeto da peça para a Oficina de Música de Curitiba 2023
 
   
 [[file:omcwb/omcwb_score.pdf][Partitura (em progresso)]]
+
+[[file:omcwb/score.org][Teste]]

@@ -362,3 +362,50 @@ On ne se guéritjamais d’avoir rêvé près d’une eau dormante...
 
 #+RESULTS:
 [[file:test3.png]]
+
+
+
+
+* Texto
+
+
+Palavra atirada contra a água
+Salta, salta, voa
+Pousa sobre as nuvens
+Mergulha cada vez mais fundo
+Cada vez mais alto
+Seduz a língua e escoa
+Escoa, salta, voa
+Cada vez mais sonhada
+
+
+Piccolo:*
+
+Palavra +salta, salta, voa+
+
+atirada contra a água +leve, leve, leve+
+
+\
+
+salta, salta, voa
+
+_palavra_ a - _tirada_
+
+pousa sobre as nuvens
+
+pa - _lavra_ con - _tra a água_
+
+\
+
+mer - _gulha cada vez mais_ fundo
+
+cada _vez mais alto_
+
+\
+
+a _palavra seduz_ a _língua e escorre_
+
++e escorre+, _e escorre, e escorre_
+
+_cada vez mais sonhada_
+

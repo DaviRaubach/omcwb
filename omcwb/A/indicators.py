@@ -81,7 +81,7 @@ gl.apply_to = [materials.gl.name]
 
 
 def fl(mat: muda.Material):
-    breath_after_run(mat.select("A"))
+    breath_after_run(mat.container)
     articulation_beggining_end(mat.container, abjad.Articulation("."))
     articulation_tonica(mat.container, abjad.Articulation(">"))
     remove_stacc_long_notes(mat.container)
@@ -94,6 +94,14 @@ def fl(mat: muda.Material):
 
 fl.apply_to = [materials.fl.name]
 
+
+def vc(mat: muda.Material):
+    breath_after_run(mat.container)
+    articulation_tonica(mat.container, abjad.Articulation(">"))
+    remove_stacc_long_notes(mat.container)
+
+
+vc.apply_to = [materials.vc.name]
 
 # print(lyrics.fl_lyrics)
 

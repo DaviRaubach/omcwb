@@ -62,43 +62,43 @@
                          \omit Voice.TupletNumber
                          \omit Voice.TupletBracket
                          \omit Voice.Dots
-                        b''32
-                        g'''16.
+                        b'32
+                        g''16.
                         % AFTER:
                         % ARTICULATIONS:
                         - \accent
-                        cs'''32
+                        cs''32
                         % AFTER:
                         % COMMANDS:
                         \breathe
                         s16.
                         s8
-                        b''32
+                        b'32
                         % AFTER:
                         % ARTICULATIONS:
                         - \staccato
-                        aqs''32
-                        cs'''16
+                        aqs'32
+                        cs''16
                         % AFTER:
                         % ARTICULATIONS:
                         - \accent
-                        c'''32
+                        c''32
                         % AFTER:
                         % ARTICULATIONS:
                         - \staccato
                         % COMMANDS:
                         \breathe
                         s32
-                        b''32
+                        b'32
                         % AFTER:
                         % ARTICULATIONS:
                         - \staccato
-                        aqs''32
-                        c'''16.
+                        aqs'32
+                        c''16.
                         % AFTER:
                         % ARTICULATIONS:
                         - \accent
-                        fs''32
+                        fs'32
                         % AFTER:
                         % ARTICULATIONS:
                         - \staccato
@@ -117,66 +117,85 @@
                     }   % A_0
                     % OPEN_BRACKETS:
                     {   % B_0
-                        cs'''16
+                        cs''16
                         % AFTER:
                         % ARTICULATIONS:
                         - \staccato
-                        bqs''32
-                        b''16
+                        bqs'32
+                        b'16
+                        fs'32
                         fs''32
-                        fs'''32
                         % AFTER:
                         % ARTICULATIONS:
                         - \accent
-                        cs'''32
+                        cs''32
                         % AFTER:
                         % ARTICULATIONS:
                         - \staccato
+                        % COMMANDS:
+                        \breathe
                         s32
                         \tweak stencil \minima
-                        bqs''32
+                        bqs'32
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         \tweak stencil \minima
-                        bqs''16.
+                        bqs'16.
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
-                        cs'''32
+                        cs''32
                         \tweak stencil \minima
-                        b''8
+                        b'8
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
                         s32
-                        bqs''16
-                        fs''32
+                        bqs'16
+                        fs'32
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
                     % CLOSE_BRACKETS:
                     }   % B_0
                     % OPEN_BRACKETS:
                     {   % B_0
-                        g'''32
+                        g''32
                         % AFTER:
                         % ARTICULATIONS:
                         - \staccato
-                        fs''32
-                        cs'''32
+                        fs'32
+                        cs''32
                         % AFTER:
                         % ARTICULATIONS:
                         - \accent
                         % SPANNER_STARTS:
                         ~
-                        cs'''32
-                        bqs''32
+                        cs''32
+                        bqs'32
                         % AFTER:
                         % ARTICULATIONS:
                         - \staccato
+                        % COMMANDS:
+                        \breathe
                         s16
-                        b''32
+                        b'32
                         \tweak stencil \minima
-                        fs''8
+                        fs'8
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
-                        fs'''32
+                        fs''32
                         \tweak stencil \minima
-                        cs'''8.
+                        cs''8.
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
                     % CLOSE_BRACKETS:
                     }   % B_0
@@ -185,12 +204,12 @@
                      \undo \omit Staff.BarLine
                     % OPEN_BRACKETS:
                     {   % C_0
-                        e''32
+                        e'32
                         % AFTER:
                         % ARTICULATIONS:
                         - \staccato
                         \tweak stencil \minima
-                        bqs''16
+                        bqs'16
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
@@ -199,31 +218,33 @@
                     % OPEN_BRACKETS:
                     {   % C_0
                         \tweak stencil \minima
-                        bqs''8
+                        bqs'8
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         \tweak stencil \minima
-                        bqs''32
-                        fs'''32
+                        bqs'32
+                        fs''32
                         % AFTER:
                         % ARTICULATIONS:
                         - \accent
-                        g''32
+                        g'32
                         % AFTER:
                         % ARTICULATIONS:
                         - \staccato
+                        % COMMANDS:
+                        \breathe
                         s32
-                        a''32
+                        a'32
                         % AFTER:
                         % ARTICULATIONS:
                         - \staccato
-                        e''32
+                        e'32
                         % AFTER:
                         % ARTICULATIONS:
                         - \accent
                         \tweak stencil \minima
-                        ef'''8.
+                        ef''8.
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
@@ -232,36 +253,42 @@
                     % OPEN_BRACKETS:
                     {   % C_0
                         \tweak stencil \minima
-                        ef'''32
+                        ef''32
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
                     % CLOSE_BRACKETS:
                     }   % C_0
                     % OPEN_BRACKETS:
                     {   % D_0
-                        e''32
+                        e'32
                         % AFTER:
                         % ARTICULATIONS:
                         - \staccato
                         \tweak stencil \minima
-                        bqs''8.
-                        fs'''16.
+                        bqs'8.
+                        fs''16.
                         % AFTER:
                         % ARTICULATIONS:
                         - \accent
                         \tweak stencil \minima
-                        g''32
+                        g'32
                         % AFTER:
                         % ARTICULATIONS:
                         - \staccato
                         % SPANNER_STARTS:
                         ~
                         \tweak stencil \minima
-                        g''8
+                        g'8
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         \tweak stencil \minima
-                        g''32
+                        g'32
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
                     % CLOSE_BRACKETS:
                     }   % D_0
@@ -272,47 +299,59 @@
                     {
                         s8.
                         \tweak stencil \minima
-                        e''16.
+                        e'16.
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         \tweak stencil \minima
-                        e''16
+                        e'16
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
                         \tweak stencil \minima
-                        bqf''32
+                        bqf'32
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         \tweak stencil \minima
-                        bqf''8
+                        bqf'8
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
                         \tweak stencil \minima
-                        e''16.
+                        e'16.
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         \tweak stencil \minima
-                        e''8
+                        e'8
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         \tweak stencil \minima
-                        e''16.
+                        e'16.
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
                         s32
                         \tweak stencil \minima
-                        bqf''16.
+                        bqf'16.
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         \tweak stencil \minima
-                        bqf''8
+                        bqf'8
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         \tweak stencil \minima
-                        bqf''16.
+                        bqf'16.
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
                     % CLOSE_BRACKETS:
                     }
@@ -560,450 +599,6 @@
             {
                 % OPEN_BRACKETS:
                 {
-                    % OPEN_BRACKETS:
-                    {   % A_0
-                        % BEFORE:
-                        % COMMANDS:
-                        \ottava 2
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble_8"
-                        bf''32
-                        % AFTER:
-                        % ARTICULATIONS:
-                        \f
-                        % MARKUP:
-                        ^ \markup "com slide"
-                        % SPANNER_STARTS:
-                        \glissando
-                        aqs''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        c'''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        bf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        aqs''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        c'''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        bf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        aqs''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        c'''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        bf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        aqs''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        c'''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        bf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        aqs''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        c'''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        bf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                    % CLOSE_BRACKETS:
-                    }   % A_0
-                    % OPEN_BRACKETS:
-                    {   % B_0
-                        bqs''32
-                        bqs''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        cs'''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqs''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        b''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqs''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        b''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r16
-                        bqs''32
-                        bqs''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        cs'''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqs''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        b''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqs''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        b''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r16
-                        bqs''32
-                        bqs''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        cs'''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqs''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        b''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqs''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        b''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r16
-                        bqs''32
-                        bqs''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        cs'''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqs''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        b''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqs''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        b''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                    % CLOSE_BRACKETS:
-                    }   % B_0
-                    % OPEN_BRACKETS:
-                    {   % C_0
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        cs'''16.
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        fs'''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        aqf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        ef'''16.
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        cs'''16.
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        fs'''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        aqf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                    % CLOSE_BRACKETS:
-                    }   % C_0
-                    % OPEN_BRACKETS:
-                    {   % D_0
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        cs'''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        fs'''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        aqf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        ef'''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        cs'''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        fs'''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        aqf''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        ef'''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                    % CLOSE_BRACKETS:
-                    }   % D_0
-                    % OPEN_BRACKETS:
-                    {   % E_0
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        c'''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqf''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        c'''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        c'''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        bqf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        c'''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        c'''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqf''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        c'''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        c'''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        bqf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        c'''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqf''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        r32
-                        g''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        c'''32
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        bqf''16
-                        % AFTER:
-                        % SPANNER_STARTS:
-                        \glissando
-                        g''32
-                        % AFTER:
-                        % COMMANDS:
-                        \ottava 0
-                    % CLOSE_BRACKETS:
-                    }   % E_0
                 % CLOSE_BRACKETS:
                 }
             % CLOSE_BRACKETS:
@@ -1013,170 +608,6 @@
             {
                 % OPEN_BRACKETS:
                 {
-                    % OPEN_BRACKETS:
-                    {   % A_0
-                        % OPENING:
-                        % COMMANDS:
-                         \override Voice.NoteHead.stencil = ##f
-                         \override Voice.Rest.stencil = ##f
-                         \override Voice.Stem.stencil = ##f
-                         \override Voice.Flag.stencil = ##f
-                         \omit TupletNumber
-                         \omit Voice.Dots
-                         \override Voice.TupletBracket.stencil = ##f
-                         \override Voice.Beam.stencil = ##f
-                         \omit Voice.Accidental
-                         \override LyricText.self-alignment-X = #LEFT
-                        c'32
-                        c'32
-                        c'16
-                        c'32
-                        r32
-                        c'32
-                        c'32
-                        c'16
-                        c'32
-                        r32
-                        c'32
-                        c'32
-                        c'16
-                        c'32
-                        r32
-                        c'32
-                        c'32
-                        c'16
-                        c'32
-                        r32
-                        c'32
-                        c'32
-                        c'16
-                        c'32
-                        r32
-                        c'32
-                    % CLOSE_BRACKETS:
-                    }   % A_0
-                    % OPEN_BRACKETS:
-                    {   % B_0
-                        c'32
-                        c'32
-                        c'16
-                        c'16
-                        c'32
-                        c'16
-                        c'32
-                        r16
-                        c'32
-                        c'32
-                        c'16
-                        c'16
-                        c'32
-                        c'16
-                        c'32
-                        r16
-                        c'32
-                        c'32
-                        c'16
-                        c'16
-                        c'32
-                        c'16
-                        c'32
-                        r16
-                        c'32
-                        c'32
-                        c'16
-                        c'16
-                        c'32
-                        c'16
-                        c'32
-                    % CLOSE_BRACKETS:
-                    }   % B_0
-                    % OPEN_BRACKETS:
-                    {   % C_0
-                        c'32
-                        c'16.
-                        c'32
-                        r32
-                        c'32
-                        c'32
-                        c'16
-                        c'16.
-                        r32
-                        c'32
-                        c'16.
-                        c'32
-                        r32
-                        c'32
-                    % CLOSE_BRACKETS:
-                    }   % C_0
-                    % OPEN_BRACKETS:
-                    {   % D_0
-                        c'32
-                        c'16
-                        c'32
-                        c'32
-                        c'32
-                        c'32
-                        c'32
-                        c'32
-                        c'32
-                        r32
-                        c'32
-                        c'16
-                        c'32
-                        c'32
-                        c'32
-                    % CLOSE_BRACKETS:
-                    }   % D_0
-                    % OPEN_BRACKETS:
-                    {   % E_0
-                        c'32
-                        c'32
-                        c'16
-                        c'32
-                        r32
-                        c'32
-                        c'32
-                        c'16
-                        c'32
-                        r32
-                        c'32
-                        c'32
-                        c'16
-                        c'32
-                        r32
-                        c'32
-                        c'32
-                        c'16
-                        c'32
-                        r32
-                        c'32
-                        c'32
-                        c'16
-                        c'32
-                        r32
-                        c'32
-                        c'32
-                        c'16
-                        c'32
-                        r32
-                        c'32
-                        c'32
-                        c'16
-                        c'32
-                        % AFTER:
-                        % COMMANDS:
-                         \revert Voice.NoteHead.stencil
-                         \revert Voice.Rest.stencil
-                         \revert Voice.Stem.stencil
-                         \revert Voice.Flag.stencil
-                         \revert Voice.Dots.stencil
-                         \undo \omit Voice.TupletNumber
-                         \undo \omit Voice.Dots
-                         \revert Voice.TupletBracket.stencil
-                         \revert Voice.Beam.stencil
-                         \undo \omit Voice.Accidental
-                    % CLOSE_BRACKETS:
-                    }   % E_0
                 % CLOSE_BRACKETS:
                 }
             % CLOSE_BRACKETS:
@@ -1184,9 +615,6 @@
             % OPEN_BRACKETS:
             \context Lyrics = "Vlao_Voice_2_Lyrics"
             {
-            % OPENING:
-                % COMMANDS:
-                \lyricsto "Vlao_Voice_2" { \lyricmode { \override LyricText.self-alignment-X = #CENTER E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, E  ca -- da vez mais so -- nha -- da ca -- da vez mais so -- nha -- da ca -- da vez mais so -- nha -- da ca -- da vez mais so -- nha -- da  Pa -- la -- vra con -- tra a‿á -- gua. Pa -- la -- vra con --  Mer -- gu -- lha ca -- da vez mais fun -- do... Mer -- gu -- lha ca -- da  E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, E es -- cor -- re, }}
             % CLOSE_BRACKETS:
             }
         % CLOSE_BRACKETS:
@@ -1218,55 +646,89 @@
                         % COMMANDS:
                         \clef "bass"
                         s8.
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble"
-                        <aqs''>8
+                        <
+                            \tweak stencil \minima
+                            aqs
+                            \tweak style #'harmonic
+                            dqs'
+                        >8
                         % AFTER:
                         % ARTICULATIONS:
                         \p
                         % SPANNER_STARTS:
                         ~
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble"
-                        <aqs''>32
-                        s32
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble^8"
-                        <g'''>8
+                        <
+                            \tweak stencil \minima
+                            aqs
+                            \tweak style #'harmonic
+                            dqs'
+                        >32
                         % AFTER:
-                        % SPANNER_STARTS:
-                        ~
-                        % OPENING:
                         % COMMANDS:
-                        \clef "treble^8"
-                        <g'''>32
+                        \breathe
                         s32
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
-                        <cs'''>4
+                        <
+                            \tweak stencil \minima
+                            g'
+                            \tweak style #'harmonic
+                            c''
+                        >8
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
-                        % OPENING:
+                        <
+                            \tweak stencil \minima
+                            g'
+                            \tweak style #'harmonic
+                            c''
+                        >32
+                        % AFTER:
                         % COMMANDS:
-                        \clef "treble"
-                        <cs'''>16
+                        \breathe
+                        s32
+                        <
+                            \tweak stencil \minima
+                            cs'
+                            \tweak style #'harmonic
+                            fs'
+                        >4
+                        % AFTER:
+                        % SPANNER_STARTS:
+                        ~
+                        <
+                            \tweak stencil \minima
+                            cs'
+                            \tweak style #'harmonic
+                            fs'
+                        >16
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s16
                         % OPENING:
                         % COMMANDS:
-                        \clef "treble"
-                        <aqs''>4
+                        \clef "bass"
+                        <
+                            \tweak stencil \minima
+                            aqs
+                            \tweak style #'harmonic
+                            dqs'
+                        >4
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
-                        % OPENING:
+                        <
+                            \tweak stencil \minima
+                            aqs
+                            \tweak style #'harmonic
+                            dqs'
+                        >16
+                        % AFTER:
                         % COMMANDS:
-                        \clef "treble"
-                        <aqs''>16
+                        \breathe
                         s16
                     % CLOSE_BRACKETS:
                     }   % A_0
@@ -1279,18 +741,28 @@
                         % COMMANDS:
                         \clef "bass"
                         b32
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble"
-                        <fs''>8.
+                        <
+                            \tweak stencil \minima
+                            fs
+                            \tweak style #'harmonic
+                            b
+                        >8.
                         % OPENING:
                         % COMMANDS:
                         \clef "bass"
                         cqs16.
-                        % OPENING:
+                        % AFTER:
+                        % ARTICULATIONS:
+                        - \accent
+                        <
+                            \tweak stencil \minima
+                            c
+                            \tweak style #'harmonic
+                            f
+                        >8.
+                        % AFTER:
                         % COMMANDS:
-                        \clef "treble"
-                        <c''>8.
+                        \breathe
                         s32
                     % CLOSE_BRACKETS:
                     }   % B_0
@@ -1299,22 +771,24 @@
                      \undo \omit Staff.BarLine
                     % OPEN_BRACKETS:
                     {   % C_0
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "bass"
                         c'32
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble"
-                        <bf''>8..
+                        <
+                            \tweak stencil \minima
+                            bf
+                            \tweak style #'harmonic
+                            ef'
+                        >8..
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
                         fs''32
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble"
+                        % AFTER:
+                        % ARTICULATIONS:
+                        - \accent
                         ef''32
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
                         % OPENING:
                         % COMMANDS:
@@ -1322,12 +796,20 @@
                         g'32
                         % OPENING:
                         % COMMANDS:
-                        \clef "bass"
-                        c'32
-                        % OPENING:
-                        % COMMANDS:
                         \clef "treble"
-                        <d'''>8..
+                        c'32
+                        % AFTER:
+                        % ARTICULATIONS:
+                        - \accent
+                        <
+                            \tweak stencil \minima
+                            d'
+                            \tweak style #'harmonic
+                            g'
+                        >8..
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
                     % CLOSE_BRACKETS:
                     }   % C_0
@@ -1341,9 +823,6 @@
                         % COMMANDS:
                         \clef "treble"
                         bf''32
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble"
                         fs''16
                         % OPENING:
                         % COMMANDS:
@@ -1353,24 +832,37 @@
                         % COMMANDS:
                         \clef "treble"
                         g'32
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "bass"
+                        % AFTER:
+                        % ARTICULATIONS:
+                        - \accent
                         c'32
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
-                        <d'''>8
+                        <
+                            \tweak stencil \minima
+                            d'
+                            \tweak style #'harmonic
+                            g'
+                        >8
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s32
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "bass"
                         c'32
-                        % OPENING:
+                        <
+                            \tweak stencil \minima
+                            bf
+                            \tweak style #'harmonic
+                            ef'
+                        >8
+                        % AFTER:
                         % COMMANDS:
-                        \clef "treble"
-                        <bf''>8
+                        \breathe
                         s16
                         % OPENING:
                         % COMMANDS:
@@ -1380,10 +872,10 @@
                         % COMMANDS:
                         \clef "treble"
                         ef''32
-                        s32
-                        % OPENING:
+                        % AFTER:
                         % COMMANDS:
-                        \clef "treble"
+                        \breathe
+                        s32
                         g''32
                         % OPENING:
                         % COMMANDS:
@@ -1393,45 +885,55 @@
                         % COMMANDS:
                         \clef "treble"
                         d''16
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble"
+                        % AFTER:
+                        % ARTICULATIONS:
+                        - \accent
                         c''32
+                        % AFTER:
+                        % COMMANDS:
+                        \breathe
                         s16
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
                         bf'32
-                        % OPENING:
+                        <
+                            \tweak stencil \minima
+                            fs'
+                            \tweak style #'harmonic
+                            b'
+                        >8
+                        % AFTER:
                         % COMMANDS:
-                        \clef "treble"
-                        <fs'''>8
+                        \breathe
                         s32
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "bass"
                         ef32
-                        % OPENING:
+                        <
+                            \tweak stencil \minima
+                            g
+                            \tweak style #'harmonic
+                            c'
+                        >8.
+                        % AFTER:
                         % COMMANDS:
-                        \clef "treble"
-                        <g''>8.
+                        \breathe
                         s32
                     % CLOSE_BRACKETS:
                     }   % D_0
                     % OPEN_BRACKETS:
                     {   % E_0
+                        bqf''32
+                        g'''16.
+                        % AFTER:
+                        % ARTICULATIONS:
+                        - \accent
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
-                        c''32
-                        % OPENING:
+                        f'''32
+                        % AFTER:
                         % COMMANDS:
-                        \clef "treble"
-                        a''16.
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble"
-                        af''32
+                        \breathe
                         s32
                         s32
                         s32
@@ -1439,39 +941,33 @@
                         s32
                         s32
                         s32
+                        bqf''32
+                        g'''32
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
-                        c''32
-                        % OPENING:
+                        f'''16
+                        % AFTER:
+                        % ARTICULATIONS:
+                        - \accent
+                        bqf''32
+                        % AFTER:
                         % COMMANDS:
-                        \clef "treble"
-                        a''32
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble"
-                        af''16
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble"
-                        c''32
+                        \breathe
                         s32
+                        g'''32
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
-                        a''32
-                        % OPENING:
+                        f'''32
+                        bqf''16.
+                        % AFTER:
+                        % ARTICULATIONS:
+                        - \accent
+                        g'''32
+                        % AFTER:
                         % COMMANDS:
-                        \clef "treble"
-                        af''32
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble"
-                        c''16.
-                        % OPENING:
-                        % COMMANDS:
-                        \clef "treble"
-                        a''32
+                        \breathe
                         s32
                         s32
                         s32

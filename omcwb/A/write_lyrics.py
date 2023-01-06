@@ -225,12 +225,12 @@ fl_lyrics = scratched(fl_lyrics)
 vc_lyrics = scratched(vc_lyrics)
 
 
-e_escorre = r"""E
+e_escorre = r""" E
 es --
 cor --
 re,"""
 
-cada_vez_mais_sonhada = r"""ca --
+cada_vez_mais_sonhada = r""" ca --
 da
 vez
 mais
@@ -238,7 +238,7 @@ so --
 nha --
 da"""
 
-palavra_contra_agua = """Pa --
+palavra_contra_agua = """ Pa --
 la --
 vra
 con --
@@ -246,7 +246,7 @@ tra
 a‿á --
 gua."""
 
-mergulha_cada_vez_mais_fundo = """Mer --
+mergulha_cada_vez_mais_fundo = """ Mer --
 gu --
 lha
 ca --

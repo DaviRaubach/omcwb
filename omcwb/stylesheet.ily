@@ -84,14 +84,15 @@ minima = #(lambda (grob)(grob-interpret-markup grob
 				% \override HorizontalBracket.direction = #UP
 				% \override NoteHead.duration-log = 2
 				% \remove Forbid_line_break_engraver
-    \accidentalStyle modern-voice-cautionary
+    % \accidentalStyle modern-voice-cautionary
+    \accidentalStyle dodecaphonic
     % \consists Duration_line_engraver
 				% \override LyricText.self-alignment-X = #CENTER
     \consists "Horizontal_bracket_engraver"
     \override HorizontalBracket.direction = #UP
 				% \override NoteHead.duration-log = 2
     \remove Forbid_line_break_engraver
-    \accidentalStyle modern-voice
+    % \accidentalStyle modern-voice
 
     
   }
