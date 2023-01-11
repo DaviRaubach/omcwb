@@ -1,0 +1,179 @@
+
+* Fragmento B
+Encontrei um material interessante experimentando no violão: fixo uma posição (usando as 4 cordas mais graves) na mão esquerda e movimento essa posição sobre a boca do violão até a 12ª casa como se estivesse tocando harmônicos. Os harmônicos são ocasionais, o som predominante é o som do ataque das unhas sobre as cordas. Dos harmônicos saiu também as alturas que vou utilizar nesse fragmento.
+** Alturas
+#+begin_src python :results none
+  gtr_strings = {
+      82.41: [],
+      110: [],
+      146.83: [],
+      196.00: [],
+  }
+  pitches = []
+
+  for key in gtr_strings.keys():
+      gtr_strings[key] = [key * i for i in range(7, 14)]
+      pitches.extend([abjad.NumberedPitch.from_hertz(_)
+                     for _ in gtr_strings[key]])
+  gtr_strings = {
+      82.41: [],
+      110: [],
+      146.83: []
+  }
+  pitches = []
+
+  for key in gtr_strings.keys():
+      gtr_strings[key] = [key * i for i in range(7, 14)]
+      pitches.extend([abjad.NumberedPitch.from_hertz(_)
+                     for _ in gtr_strings[key]])
+
+#+end_src
+
+#+begin_src lilypond :file pitches_B.pdf
+  \include "org_stylesheet.ily"
+  \score {
+\new StaffGroup
+<<
+    \new Staff
+    {
+        \clef "treble"
+        d''1
+        \clef "treble"
+        e''1
+        fs''1
+        g''1
+        af''1
+        a''1
+        aqs''1
+        b''1
+        b''1
+        c'''1
+        cqs'''1
+        cs'''1
+        d'''1
+        dqs'''1
+        e'''1
+        e'''1
+        f'''1
+        fqs'''1
+        fs'''1
+        \clef "treble^8"
+        g'''1
+        \clef "treble^8"
+        gqs'''1
+        \clef "treble^8"
+        a'''1
+        \clef "treble^8"
+        a'''1
+        \clef "treble^8"
+        bqf'''1
+        \clef "treble^8"
+        b'''1
+        \clef "treble^8"
+        cqs''''1
+        \clef "treble^8"
+        d''''1
+        \clef "treble^8"
+        eqf''''1
+    }
+    \new Staff
+    {
+        s1
+        - 0
+        s1
+        - 1
+        s1
+        - 2
+        s1
+        - 3
+        s1
+        - 4
+        s1
+        - 5
+        s1
+        - 6
+        s1
+        - 7
+        s1
+        - 8
+        s1
+        - 9
+        s1
+        - 10
+        s1
+        - 11
+        s1
+        - 12
+        s1
+        - 13
+        s1
+        - 14
+        s1
+        - 15
+        s1
+        - 16
+        s1
+        - 17
+        s1
+        - 18
+        s1
+        - 19
+        s1
+        - 20
+        s1
+        - 21
+        s1
+        - 22
+        s1
+        - 23
+        s1
+        - 24
+        s1
+        - 25
+        s1
+        - 26
+        s1
+        - 27
+    }
+>>
+}
+
+#+end_src
+
+#+RESULTS:
+[[file:pitches_B.pdf]]
+* Estrutura repensada
+Assisti a um vídeo de uma análise do quarteto de cordas de Lachenmann "Reigen seilige geister".
+
+A ideia de oposições identificadas nesse quarteto me fez pensar nas oposições com as quais eu estou trabalhando.
+
+No fragmento A, tenho gestos de notas curtas e agudas vs. gestos de multifônicos continuos - ainda que explorando variações dentro das possibilidades do multifônico. Os primeiros são "projeções" dos segundos em se tratando de alturas. Quer dizer, a oposição se mantém dentro de uma abordagem monolítica.
+
+Minha ideia para o fragmento B já incluia o uso de sons residuais (como o do arrastar dos dedos sobre as cordas do violão na mudança de posição), depois do vídeo fiquei mais propenso à exploração desses sons. Lachenmann pode ser um contágio.
+
+
+
+
+
+#+begin_src lilypond :file foot_note_test.png
+    \include "org_stylesheet.ily"
+
+  \book {
+    \header { tagline = ##f }
+    \relative c' {
+      
+      <a' \footnote "*" #'(0.5 . -2) \markup { \italic "* The first note" } e> 4 b8
+      \footnote \markup { \super "$" } #'(0.5 . 1)
+        \markup { \super "$" \italic " The second note" } e
+      c4
+      \once \override Score.Footnote.annotation-line = ##f
+      b-\footnote \markup \tiny "+" #'(0.1 . 0.1)
+        \markup { \super "+" \italic " Editorial" } \p
+    }
+  }
+  
+#+end_src
+
+#+RESULTS:
+[[file:foot_note_test.png]]
+

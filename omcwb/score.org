@@ -1,34 +1,24 @@
 #+title: omcwb
 #+author: Davi Raubach
 #+OPTIONS: num:nil toc:nil date:nil
-# #+LATEX_HEADER: \usepackage[cm]{fullpage}
 #+PROPERTY: header-args:lilypond :noweb yes
 #+EXCLUDE_TAGS: noexport
 #+LATEX_HEADER: \usepackage{nopageno}
-#+SETUPFILE: latexport.org
-#+ATTR_LATEX: :options [label={}, itemjoin={,}, itemjoin*={, and}]
-#+LATEX_CLASS: article
-#+LATEX_CLASS_OPTIONS: [a4paper]
-# #+LATEX_HEADER: \usepackage[margin=0in]{geometry}
 #+LaTeX_HEADER: \usepackage{pdfpages}
 
+#+INCLUDE: abntex2.org             :only-contents t
+#+INCLUDE: abntex2-meta.org        :only-contents t
+#+INCLUDE: abntex2-pretextual.org  :only-contents t
 
-
-#+name: includes
-#+begin_src org :exports none
-  \version "2.23.6"
-  \language "english"
-  \include "/Users/Davi/.pyenv/versions/abjad14/lib/python3.10/site-packages/abjad/scm/abjad.ily"
-  \include "/Users/Davi/Composição/2023/base-omcwb/omcwb/stylesheet.ily"
-  \paper { page-breaking = #ly:one-line-auto-height-breaking }
-#+end_src
 
 * Prefácio
 Nesta composição, a leitura de um texto verbal ocupa uma posição de geração de material musical e de organizador relativo da temporalidade. Em boa parte da peça, o passar do tempo é articulado pela leitura do texto.
 
 O poema abaixo cumpre essa função na peça foi escrito para essa ocasião.
 
-Palavra atirada contra a água \\
+#+begin_center
+
+Palavra atirada contra a água\\
 Salta, salta, voa\\
 Pousa sobre as nuvens\\
 Mergulha cada vez mais fundo\\
@@ -36,73 +26,39 @@ Cada vez mais alto\\
 Seduz a língua e escoa\\
 Escoa, salta, voa\\
 Cada vez mais sonhada
+#+end_center
 
-*Duração* c. 4 min
 
 * Notas de Performance
 
-** Notação rítmica
+*Duração* c. 4 min
 
-*Tempo Estrito*: Notado tradicionalmente
-*Tempo de fala*: Gestos instrumentais estão associados às sílabas do texto. O/A intérprete deve executar a música levando em conta sua associação com o texto. Uma leitura mental é que determina quando tocar. Pontos e vírgulas podem ser interpretados como pausas, fraseseado e dinâmicas podem derivar também do texto.
+** Notação rítmica
+*** Tempo estrito
+Notado tradicionalmente
+*** Tempo de fala
+Gestos instrumentais estão associados às sílabas do texto. O/A intérprete deve executar a música levando em conta sua associação com o texto. Uma leitura mental é que determina quando tocar. Pontos e vírgulas podem ser interpretados como pausas, fraseseado e dinâmicas podem derivar também do texto.
 
 Cabeça de nota como de semínima representa a leitura de uma sílaba para cada nota (notas mais curtas). Cabeça de nota como de mínimas representam notas que se estendem por várias sílabas (notas mais longas):
 
-#+begin_src lilypond :file exemplo_tempo_fala.svg
-   \include "org_stylesheet.ily"
-   \score {
-     \include "exemplo_tempo_fala.ily"
-   }
+#+begin_src lilypond :file exemplo_tempo_fala.pdf :results none :exports none
+  \include "org_stylesheet.ily"
+% #(ly:set-option 'backend 'svg)
+  #(set-global-staff-size 12)
+  \score {
+    \include "exemplo_tempo_fala.ily"
+  }
 
 #+end_src
 
-#+RESULTS:
-[[file:exemplo_tempo_fala.svg]]
+#+ATTR_LATEX: :width 7cm
+[[file:exemplo_tempo_fala.pdf]]
+
 
   Em geral, o ritmo instrumental deve se submeter ao ritmo da leitura. Entretanto, também deve-se levar em consideração que alguns gestos precisam de tempo hábil para a exeucução e nestes casos não há problema em suspender o tempo da leitura.
 
 
-
-#+begin_src lilypond :file score_org.pdf :results none
-  \version "2.23.6"
-  \language "english"
-
-  \include "/Users/Davi/.pyenv/versions/abjad14/lib/python3.10/site-packages/abjad/scm/abjad.ily"
-  \include "/Users/Davi/Composição/2023/base-omcwb/omcwb/stylesheet.ily"
-  % \paper {
-  %   top-margin = 20
-  %   bottom-margin = 20
-  %   left-margin = 60
-  %   right-margin = 60
-  % }
-  % \include "/Users/Davi/Composição/2023/base-omcwb/omcwb/preface.ily"
-
-  \paper {
-    top-margin = 20
-    bottom-margin = 20
-    left-margin = 20
-    right-margin = 20
-  }
-
-
-  \score {
-    \header {
-                                  % piece = "As Vozes das Páginas"
-      composer = "Davi Raubach"
-    }
-    {
-                                  % \include "segments/omcwb_midi.ly"
-      \include "segments/omcwb_A.ly"
-                                  % \include "segments/omcwb_orchijad_seg.ly"
-    }
-    \layout { }
-    \midi { }
-  }
-
-
-#+end_src
-
-#+LATEX: \includepdf[pages=-,pagecommand={}]{score_org.pdf}
+#+LATEX: \includepdf[pages=-,pagecommand={}]{omcwb_score.pdf}
 
 
 

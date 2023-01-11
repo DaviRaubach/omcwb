@@ -18,10 +18,10 @@ minima = #(lambda (grob)(grob-interpret-markup grob
 % rs = \markup \strikethrough
 
 #(set-global-staff-size 15)
-#(set-default-paper-size "a4")
+% #(set-default-paper-size "a4" 'landscape)
 
 \paper {
-  % #(set-paper-size "a4landscape")
+  % #(set-paper-size "a3landscape")
   scoreTitleMarkup = \markup {
     \fill-line {
       \null
@@ -84,15 +84,15 @@ minima = #(lambda (grob)(grob-interpret-markup grob
 				% \override HorizontalBracket.direction = #UP
 				% \override NoteHead.duration-log = 2
 				% \remove Forbid_line_break_engraver
-    % \accidentalStyle modern-voice-cautionary
-    \accidentalStyle dodecaphonic
+    \accidentalStyle modern-voice-cautionary
+    % \accidentalStyle dodecaphonic
+    % \accidentalStyle modern-voice
     % \consists Duration_line_engraver
 				% \override LyricText.self-alignment-X = #CENTER
     \consists "Horizontal_bracket_engraver"
     \override HorizontalBracket.direction = #UP
 				% \override NoteHead.duration-log = 2
     \remove Forbid_line_break_engraver
-    % \accidentalStyle modern-voice
 
     
   }

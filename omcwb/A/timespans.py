@@ -58,10 +58,11 @@ def timespans() -> dict:
     vlao_d = [rmakers.sum_fl_rule_d, 0, 0, 0]
     vlao_e = [rmakers.sum_fl_rule_e, 0, 0, 0]
 
-    sx_a = [0, 4, 0, 0]
-    sx_b = [0, 0, 44, 0]
-    sx_c = [0, 0, 0, 0]
-    sx_d = [16, 0, 48, 0]
+    sx_a = [rmakers.sum_fl_rule_a, 0, 0, 0]
+    sx_b = [rmakers.sum_fl_rule_b, 0, 0, 0]
+    sx_c = [rmakers.sum_fl_rule_c, 0, 0, 0]
+    sx_d = [rmakers.sum_fl_rule_d, 0, 0, 0]
+    sx_e = [rmakers.sum_fl_rule_e, 0, 0, 0]
 
     vc_a = [rmakers.sum_fl_rule_e, 0, 0, 0]
     vc_b = [rmakers.sum_fl_rule_d, 0, 0, 0]
@@ -87,11 +88,11 @@ def timespans() -> dict:
     sx_ts = timespans_durations(
         muda.make_alternations(
             total_duration,
-            [sx_a, sx_b, sx_c, sx_d],
+            [sx_a, sx_b, sx_c, sx_d, sx_e],
             32
         ),
         32,
-        ["A", "B", "C", "D"],
+        ["A", "B", "C", "D", "E"],
         subdivision=subdivision
     )
     result["Sx_Voice_1"] = sx_ts[1]

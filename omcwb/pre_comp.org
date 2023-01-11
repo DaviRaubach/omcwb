@@ -118,7 +118,8 @@ Tarefas:
 
 **** Chaves e sua notação
 
-#+ATTR_LATEX: :width 5cm 
+#+ATTR_LATEX: :width 5cm
+
 [[file:images/Captura de Tela 2022-12-24 às 07.36.20.png]]
 
 #+begin_src 
@@ -175,31 +176,46 @@ rh
 #+end_src
 
 #+begin_src lilypond :file mf_sax.png :result output :export both
-  \version "2.23.6"
-  \paper { page-breaking = #ly:one-line-auto-height-breaking }
-  #(print-keys-verbose 'soprano-saxophone (current-error-port))
-  \score
-  {
-    s4^\markup {
-      \override #'(graphical . #f)
-      \override #'(woodwind-diagram-details . ((text-trill-circled . #f)))
-      \center-column {
-        'soprano-saxophone
-        " "
-        \woodwind-diagram
-        #'saxophone
-        #'((cc . (one two three four five))
-                       (lh . (b))
-                       (rh . (ees)))
-      }
-    }
+      \version "2.23.6"
+      \language "english"
+      \paper { page-breaking = #ly:one-line-auto-height-breaking }
+      #(print-keys-verbose 'soprano-saxophone (current-error-port))
+      \score
+      {
+
+    \new Staff
+    {
+      \set glissandoMap = #'((2 . 0) (3 . 1) (4 . 2) (5 . 3) (6. 4) (7 . 5))
+      \once \override Glissando.style = #'dashed-line
+        <\parenthesize gqf' \parenthesize af' af'' ef''' f''' g''' a'''>4^\markup {
+          % \override #'(graphical . #f)
+          \override #'(size . 0.8)
+          \override #'(woodwind-diagram-details . ((text-trill-circled . #f)))
+          \center-column {
+            " "
+            \woodwind-diagram
+            #'saxophone
+            #'((cc . (one two three four five six))
+                           (lh . (b))
+                           (rh . (ees bes)))
+          }
+          
+        }
+      \glissando
+      s2
+       \hide NoteHead
+      \hide Stem
+       \override NoteHead.no-ledgers = ##t
+
+         <af'' ef''' f''' g''' a'''>4
   }
+      }
 #+end_src
 
 #+RESULTS:
-
-#+ATTR_LATEX: :width 5cm 
 [[file:mf_sax.png]]
+
+
 
 *** Piccolo
 
@@ -334,3 +350,5 @@ rh
 #+ATTR_LATEX: :width 5cm
 [[file:sync_line.png]]
 
+
+rg 

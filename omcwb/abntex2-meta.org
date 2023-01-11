@@ -1,0 +1,16 @@
+#   abntex2-meta.org
+#   Parte do projeto org-abntex2.
+#   Copyright (c) 2019 Lucas Vieira.
+#   Este arquivo é provido sob a licença BSD 2-Clause (simplificada).
+#   Leia o arquivo LICENSE para mais informações.
+
+
+
+#     Metadados    #
+# ATENÇÃO: Altere estes campos a rigor. É imprescindível que não haja
+# quebras de linha aqui! Caso você precise quebrar linhas no
+# preâmbulo, use \par.
+#+LATEX_HEADER: \titulo{Partitura para Oficina de Música de Curitiba 2023}
+#+LATEX_HEADER: \author{Davi Raubach}
+#+LATEX_HEADER: \local{Pelotas}
+

@@ -4,7 +4,11 @@ Projeto da peça para a Oficina de Música de Curitiba 2023
 - [[file:omcwb/pre_comp.org][Pré-Composição - 1]]
 - [[file:omcwb/pre_comp2.org][Pré-Composição - 2]]
 
-  
-[[file:omcwb/omcwb_score.pdf][Partitura (em progresso)]]
+Em progresso:
+[[file:omcwb/score.pdf][Partitura PDF]]
+[[file:omcwb/score.org][Partitura ORG]]
 
-[[file:omcwb/score.org][Teste]]
+
+Emails:
+[[file:omcwb/emails/sax.org][Sax]]
+

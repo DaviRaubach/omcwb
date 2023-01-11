@@ -1,0 +1,49 @@
+#+OPTIONS: num:nil toc:nil 
+Bom dia, Sérgio
+
+Espero que tudo bem por aí e que tenhas começado um ótimo ano.
+
+Gostaria de te apresentar no que estou trabalhando e perguntar algumas coisas.
+
+O arquivo "score" tem algumas instruções e uma parte da peça. Para a parte do sax, onde está escrito um dó serão os multifônicos. Estou te enviando um arquivo com os multifônicos que usei (retirados de WEISS, Marcus; NETTI, Giorgio. The techniques of saxophone playing. Bärenreiter, 2010). Utilizei as alturas descritas no livro para gerar materiais para os outros instrumentos então seria interessante encontrar algo dentro daquelas alturas, mesmo no caso de ter que alterar (ou eu posso alterar as notas tbm, é possível).
+
+Estou pensando em algo como aparece na peça do Netti (https://youtu.be/VOx0IdL7LE4), explorando variações sonoras dentro do multifônico e conectando bastante . Minha ideia é que seja possível "mirar" nas notas mais agudas desses multifônicos, encontrando contornos, enfatizando mais este ou aquele som (ainda dentro da região mais aguda). Talvez possamos pensar em alterações de chaves que modifiquem minimamente o som (dentro da ideia de um som dinâmico e não de um bloco).
+
+Multi31 (não usei ainda):
+
+#+attr_html: :width 250px
+[[file:~/Composição/2023/base-omcwb/omcwb/images/multi31.png]]
+
+
+Multi77:
+
+#+attr_html: :width 250px
+file:~/Composição/2023/base-omcwb/omcwb/images/multi77.png]]
+
+Multi1:
+
+#+attr_html: :width 250px
+[[file:~/Composição/2023/base-omcwb/omcwb/images/multi1.png]]
+
+Multi2:
+
+#+attr_html: :width 250px
+[[file:~/Composição/2023/base-omcwb/omcwb/images/multi2.png]]
+
+*A primeira pergunta* é então se seria possível tocar privilegiando a região mais aguda do multifônico.
+
+Pensei em notar dessa maneira:
+
+#+attr_html: :width 250px
+[[file:~/Composição/2023/base-omcwb/omcwb/mf_sax.png]]
+
+
+(Por favor, confira se o diagrama está de acordo com o Multi31.)
+
+*A segunda questão* é sobre outra parte da peça em que estou trabalhando com sons muito sutis: harmônicos no violão, whistle tone no picolo e um som abafado no cello. Eu queria que dessa seção mais silenciosa fossem "nascendo" aos poucos esses multifônicos no sax.
+
+Pensei em sair do ar e começar a incluir mais som de nota mas pelo que li a gradação do ar nos instrumentos de palheta é complicada. Vi também a possibilidade de usar o dente, que daria pra fazer umas notas bem agudas, mas eu precisaria que fosse /pp/... Talvez, mesmo conseguindo uma dinâmica piano o sax fure muito fácil a textura de whistle tone e etc. Pergunto se você tem alguma sugestão. Talvez poderia ser mais grave em /ppp/ e crescendo para a seção de multifônicos agudos...
+
+Abaixo a imagem dessa textura:
+[[file:~/Composição/2023/base-omcwb/omcwb/segments/0111_omcwb_B.png]]
+

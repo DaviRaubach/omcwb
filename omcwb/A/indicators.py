@@ -95,6 +95,14 @@ def fl(mat: muda.Material):
 fl.apply_to = [materials.fl.name]
 
 
+def sx(mat: muda.Material):
+    breath_after_run(mat.container)
+    remove_stacc_long_notes(mat.container)
+
+
+sx.apply_to = [materials.sx.name]
+
+
 def vc(mat: muda.Material):
     breath_after_run(mat.container)
     articulation_tonica(mat.container, abjad.Articulation(">"))
@@ -103,29 +111,12 @@ def vc(mat: muda.Material):
 
 vc.apply_to = [materials.vc.name]
 
-# print(lyrics.fl_lyrics)
+
+def vlao(mat: muda.Material):
+    breath_after_run(mat.container)
 
 
-def fl_lyrics(lyr: muda.Lyrics):
-    lyr.write_lyrics(write_lyrics.fl_lyrics)
-
-    # lyr.align = "LEFT"
-
-
-fl_lyrics.apply_to = [
-    "Fl_Voice_2_Lyrics",
-]
-
-
-def vc_lyrics(lyr: muda.Lyrics):
-    lyr.write_lyrics(write_lyrics.vc_lyrics)
-
-    # lyr.align = "LEFT"
-
-
-vc_lyrics.apply_to = [
-    "Vc_Voice_2_Lyrics",
-]
+vlao.apply_to = [materials.vlao.name]
 
 
 def voz_indicators(mat: muda.Material):

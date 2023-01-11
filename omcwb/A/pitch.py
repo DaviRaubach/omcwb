@@ -110,24 +110,24 @@ def transpose_neiborgh_octaves(pitches, pitch_range):
 
 def fl_pitch(mat: muda.Material):
     pa = transpose_neiborgh_octaves(
-        multi_pitches.multi_2_mod,
+        multi_pitches.multi_77_mod,
         abjad.PitchRange("[C5, G6]"),
 
     )
 
     pa = muda.filter_pitches(pa, abjad.PitchRange("[E5, G6]"))
 
-    pb = multi_pitches.multi_2_mod + multi_pitches.multi_3
+    pb = multi_pitches.multi_77_mod + multi_pitches.multi_1
     pb = muda.filter_pitches(pb, abjad.PitchRange("[E5, G6]"))
 
     pc = transpose_neiborgh_octaves(
-        multi_pitches.multi_3_mod,
+        multi_pitches.multi_1_mod,
         abjad.PitchRange("[C5, G6]"),
     )
     pc = muda.filter_pitches(pc, abjad.PitchRange("[E5, G6]"))
 
     pd = transpose_neiborgh_octaves(
-        multi_pitches.multi_4_mod,
+        multi_pitches.multi_77_mod,
         abjad.PitchRange("[C5, G6]")
     )
     pd = muda.filter_pitches(pd, abjad.PitchRange("[E5, G6]"))
@@ -187,7 +187,7 @@ def fl2_pitch(mat: muda.Material):
 
 
 def sx_pitch(mat: muda.Material):
-    p = multi_pitches.multi_2
+    p = multi_pitches.multi_77
     # mat.write_chords_pitches(tuple(p))
 
     first_note = abjad.select.note(mat.container, 0)
@@ -212,30 +212,30 @@ def sx_pitch(mat: muda.Material):
     abjad.glissando(mat.container[1:])
 
 
-sx_pitch.apply_to = [materials.sx.name]
+# sx_pitch.apply_to = [materials.sx.name]
 
 
 def vlao_pitch(mat: muda.Material):
-    pa = multi_pitches.multi_2_mod
+    pa = multi_pitches.multi_77_mod
     # pa = transpose_neiborgh_octaves(
-    #     multi_pitches.multi_2_mod,
+    #     multi_pitches.multi_77_mod,
     #     abjad.PitchRange("[G5, G6]"),
 
     # )
 
     pa = muda.filter_pitches(pa, abjad.PitchRange("[C5, G6]"))
 
-    pb = multi_pitches.multi_2_mod + multi_pitches.multi_3
+    pb = multi_pitches.multi_77_mod + multi_pitches.multi_1
     pb = muda.filter_pitches(pb, abjad.PitchRange("[G5, G6]"))
 
     pc = transpose_neiborgh_octaves(
-        multi_pitches.multi_3_mod,
+        multi_pitches.multi_1_mod,
         abjad.PitchRange("[G5, G6]"),
     )
     # pc = muda.filter_pitches(pc, abjad.PitchRange("[C5, G6]"))
 
     pd = transpose_neiborgh_octaves(
-        multi_pitches.multi_4_mod,
+        multi_pitches.multi_77_mod,
         abjad.PitchRange("[G5, G6]")
     )
     # pd = muda.filter_pitches(pd, abjad.PitchRange("[E5, G6]"))
@@ -315,24 +315,24 @@ vlao_pitch.apply_to = [materials.vlao.name]
 def vc_pitch(mat: muda.Material):
 
     pa = transpose_neiborgh_octaves(
-        multi_pitches.multi_2_mod,
+        multi_pitches.multi_77_mod,
         abjad.PitchRange("[C5, G6]"),
 
     )
 
     # pa = muda.filter_pitches(pa, abjad.PitchRange("[C5, G6]"))
 
-    pb = multi_pitches.multi_2_mod + multi_pitches.multi_3
+    pb = multi_pitches.multi_77_mod + multi_pitches.multi_1
     pb = muda.filter_pitches(pb, abjad.PitchRange("[C5, G6]"))
 
     pc = transpose_neiborgh_octaves(
-        multi_pitches.multi_3_mod,
+        multi_pitches.multi_1_mod,
         abjad.PitchRange("[C5, G6]"),
     )
     # pc = muda.filter_pitches(pc, abjad.PitchRange("[C5, G6]"))
 
     pd = transpose_neiborgh_octaves(
-        multi_pitches.multi_4_mod,
+        multi_pitches.multi_77_mod,
         abjad.PitchRange("[C5, G6]")
     )
     # pd = muda.filter_pitches(pd, abjad.PitchRange("[E5, G6]"))
