@@ -3,7 +3,7 @@ Bom dia, Sérgio
 
 Espero que tudo bem por aí e que tenhas começado um ótimo ano.
 
-Gostaria de te apresentar no que estou trabalhando e perguntar algumas coisas.
+Gostaria de te apresentar no que estou trabalhando para a oficina de música e perguntar algumas coisas.
 
 O arquivo "score" tem algumas instruções e uma parte da peça. Para a parte do sax, onde está escrito um dó serão os multifônicos. Estou te enviando um arquivo com os multifônicos que usei (retirados de WEISS, Marcus; NETTI, Giorgio. The techniques of saxophone playing. Bärenreiter, 2010). Utilizei as alturas descritas no livro para gerar materiais para os outros instrumentos então seria interessante encontrar algo dentro daquelas alturas, mesmo no caso de ter que alterar (ou eu posso alterar as notas tbm, é possível).
 
@@ -12,30 +12,30 @@ Estou pensando em algo como aparece na peça do Netti (https://youtu.be/VOx0IdL7
 Multi31 (não usei ainda):
 
 #+attr_html: :width 250px
-[[file:~/Composição/2023/base-omcwb/omcwb/images/multi31.png]]
+[[file:../images/multi31.png]]
 
 
 Multi77:
 
 #+attr_html: :width 250px
-file:~/Composição/2023/base-omcwb/omcwb/images/multi77.png]]
+file:../images/multi77.png
 
 Multi1:
 
 #+attr_html: :width 250px
-[[file:~/Composição/2023/base-omcwb/omcwb/images/multi1.png]]
+[[file:../images/multi1.png]]
 
 Multi2:
 
 #+attr_html: :width 250px
-[[file:~/Composição/2023/base-omcwb/omcwb/images/multi2.png]]
+[[file:../images/multi2.png]]
 
 *A primeira pergunta* é então se seria possível tocar privilegiando a região mais aguda do multifônico.
 
 Pensei em notar dessa maneira:
 
 #+attr_html: :width 250px
-[[file:~/Composição/2023/base-omcwb/omcwb/mf_sax.png]]
+[[file:../mf_sax.png]]
 
 
 (Por favor, confira se o diagrama está de acordo com o Multi31.)
