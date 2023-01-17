@@ -64,32 +64,27 @@ normal = uma nota para cada sílaba
 
 __sublinhado__ = notas que se extendem por várias sílabas
 
-\n
 
 *Piccolo:*
 
 Palavra +salta, salta, voa+ \\
 atirada contra a água +leve, leve, leve+ \\
 
-\n
 
 salta, salta, voa\\
 _palavra_ a - _tirada_ \\
 pousa sobre as nuvens
 pa - _lavra_ con - _tra a água_\\
 
-\n
 
 mer - _gulha cada vez mais_ fundo\\
 cada _vez mais alto_\\
 
-\n
 
 a _palavra seduz_ a _língua e escorre\\_
 +e escorre+, _e escorre, e escorre_\\
 _cada vez mais sonhada_\\
 
-\n
 
 
 *Cello:* (retrógrado)
@@ -98,24 +93,21 @@ a _palavra seduz_ a _língua e escorre_\\
 +e escorre+, _e escorre, e escorre_\\
 _cada vez mais sonhada_\\
 
-\n
 
 mer - _gulha cada vez mais_ fundo\\
 cada _vez mais alto_\\
 
-\n
 
 salta, salta, voa\\
 _palavra_ a - _tirada_\\
 pousa sobre as nuvens\\
 pa - _lavra_ con - _tra a água_\\
 
-\n
 
 Palavra +salta, salta, voa+\\
 atirada contra a água +leve, leve, leve+
 
-\n
+
 *** Funciona?
 Faltou dizer na pré-composição 1 que se trata de leitura mental, o texto não será ouvido. Uso o texto tachado na partitura para indicar isso (falta fazer as notas de performance onde isso deve ficar claro).
 
