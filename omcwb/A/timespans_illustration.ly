@@ -10,28 +10,47 @@
 \overlay {
 \translate #'(1.0 . 1)
 \sans \fontsize #-3 \center-align \fraction 0 1
-\translate #'(30.80769230769231 . 1)
-\sans \fontsize #-3 \center-align \fraction 31 32
+\translate #'(16.340909090909093 . 1)
+\sans \fontsize #-3 \center-align \fraction 9 8
+\translate #'(23.15909090909091 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 8
+\translate #'(38.5 . 1)
+\sans \fontsize #-3 \center-align \fraction 11 4
 }
-\pad-to-box #'(0 . 28.80769230769231) #'(0 . 2.5)
+\pad-to-box #'(0 . 36.5) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
 1 0.5 moveto
-30.80769230769231 0.5 lineto
+16.340909090909093 0.5 lineto
 stroke
 1 1.25 moveto
 1 -0.25 lineto
 stroke
-30.80769230769231 1.25 moveto
-30.80769230769231 -0.25 lineto
+16.340909090909093 1.25 moveto
+16.340909090909093 -0.25 lineto
+stroke
+23.15909090909091 0.5 moveto
+38.5 0.5 lineto
+stroke
+23.15909090909091 1.25 moveto
+23.15909090909091 -0.25 lineto
+stroke
+38.5 1.25 moveto
+38.5 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
 1 2.5 moveto
 1 1 lineto
 stroke
-30.80769230769231 2.5 moveto
-30.80769230769231 1 lineto
+16.340909090909093 2.5 moveto
+16.340909090909093 1 lineto
+stroke
+23.15909090909091 2.5 moveto
+23.15909090909091 1 lineto
+stroke
+38.5 2.5 moveto
+38.5 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -43,30 +62,87 @@ stroke"
 \vspace #0.5
 \column {
 \overlay {
-\translate #'(30.80769230769231 . 1)
-\sans \fontsize #-3 \center-align \fraction 31 32
-\translate #'(75.03846153846155 . 1)
-\sans \fontsize #-3 \center-align \fraction 77 32
+\translate #'(16.340909090909093 . 1)
+\sans \fontsize #-3 \center-align \fraction 9 8
+\translate #'(23.15909090909091 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 8
+\translate #'(38.5 . 1)
+\sans \fontsize #-3 \center-align \fraction 11 4
+\translate #'(45.31818181818182 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 4
+\translate #'(89.63636363636364 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 2
+\translate #'(103.27272727272728 . 1)
+\sans \fontsize #-3 \center-align \fraction 15 2
+\translate #'(137.36363636363637 . 1)
+\sans \fontsize #-3 \center-align \fraction 10 1
+\translate #'(151.0 . 1)
+\sans \fontsize #-3 \center-align \fraction 11 1
 }
-\pad-to-box #'(0 . 73.03846153846155) #'(0 . 2.5)
+\pad-to-box #'(0 . 149.0) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
-30.80769230769231 0.5 moveto
-75.03846153846155 0.5 lineto
+16.340909090909093 0.5 moveto
+23.15909090909091 0.5 lineto
 stroke
-30.80769230769231 1.25 moveto
-30.80769230769231 -0.25 lineto
+16.340909090909093 1.25 moveto
+16.340909090909093 -0.25 lineto
 stroke
-75.03846153846155 1.25 moveto
-75.03846153846155 -0.25 lineto
+23.15909090909091 1.25 moveto
+23.15909090909091 -0.25 lineto
+stroke
+38.5 0.5 moveto
+45.31818181818182 0.5 lineto
+stroke
+38.5 1.25 moveto
+38.5 -0.25 lineto
+stroke
+45.31818181818182 1.25 moveto
+45.31818181818182 -0.25 lineto
+stroke
+89.63636363636364 0.5 moveto
+103.27272727272728 0.5 lineto
+stroke
+89.63636363636364 1.25 moveto
+89.63636363636364 -0.25 lineto
+stroke
+103.27272727272728 1.25 moveto
+103.27272727272728 -0.25 lineto
+stroke
+137.36363636363637 0.5 moveto
+151 0.5 lineto
+stroke
+137.36363636363637 1.25 moveto
+137.36363636363637 -0.25 lineto
+stroke
+151 1.25 moveto
+151 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
-30.80769230769231 2.5 moveto
-30.80769230769231 1 lineto
+16.340909090909093 2.5 moveto
+16.340909090909093 1 lineto
 stroke
-75.03846153846155 2.5 moveto
-75.03846153846155 1 lineto
+23.15909090909091 2.5 moveto
+23.15909090909091 1 lineto
+stroke
+38.5 2.5 moveto
+38.5 1 lineto
+stroke
+45.31818181818182 2.5 moveto
+45.31818181818182 1 lineto
+stroke
+89.63636363636364 2.5 moveto
+89.63636363636364 1 lineto
+stroke
+103.27272727272728 2.5 moveto
+103.27272727272728 1 lineto
+stroke
+137.36363636363637 2.5 moveto
+137.36363636363637 1 lineto
+stroke
+151 2.5 moveto
+151 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -78,30 +154,68 @@ stroke"
 \vspace #0.5
 \column {
 \overlay {
-\translate #'(75.03846153846155 . 1)
-\sans \fontsize #-3 \center-align \fraction 77 32
-\translate #'(95.23076923076923 . 1)
-\sans \fontsize #-3 \center-align \fraction 49 16
+\translate #'(45.31818181818182 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 4
+\translate #'(60.659090909090914 . 1)
+\sans \fontsize #-3 \center-align \fraction 35 8
+\translate #'(74.29545454545455 . 1)
+\sans \fontsize #-3 \center-align \fraction 43 8
+\translate #'(89.63636363636364 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 2
+\translate #'(103.27272727272728 . 1)
+\sans \fontsize #-3 \center-align \fraction 15 2
+\translate #'(116.9090909090909 . 1)
+\sans \fontsize #-3 \center-align \fraction 17 2
 }
-\pad-to-box #'(0 . 93.23076923076923) #'(0 . 2.5)
+\pad-to-box #'(0 . 114.9090909090909) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
-75.03846153846155 0.5 moveto
-95.23076923076923 0.5 lineto
+45.31818181818182 0.5 moveto
+60.659090909090914 0.5 lineto
 stroke
-75.03846153846155 1.25 moveto
-75.03846153846155 -0.25 lineto
+45.31818181818182 1.25 moveto
+45.31818181818182 -0.25 lineto
 stroke
-95.23076923076923 1.25 moveto
-95.23076923076923 -0.25 lineto
+60.659090909090914 1.25 moveto
+60.659090909090914 -0.25 lineto
+stroke
+74.29545454545455 0.5 moveto
+89.63636363636364 0.5 lineto
+stroke
+74.29545454545455 1.25 moveto
+74.29545454545455 -0.25 lineto
+stroke
+89.63636363636364 1.25 moveto
+89.63636363636364 -0.25 lineto
+stroke
+103.27272727272728 0.5 moveto
+116.9090909090909 0.5 lineto
+stroke
+103.27272727272728 1.25 moveto
+103.27272727272728 -0.25 lineto
+stroke
+116.9090909090909 1.25 moveto
+116.9090909090909 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
-75.03846153846155 2.5 moveto
-75.03846153846155 1 lineto
+45.31818181818182 2.5 moveto
+45.31818181818182 1 lineto
 stroke
-95.23076923076923 2.5 moveto
-95.23076923076923 1 lineto
+60.659090909090914 2.5 moveto
+60.659090909090914 1 lineto
+stroke
+74.29545454545455 2.5 moveto
+74.29545454545455 1 lineto
+stroke
+89.63636363636364 2.5 moveto
+89.63636363636364 1 lineto
+stroke
+103.27272727272728 2.5 moveto
+103.27272727272728 1 lineto
+stroke
+116.9090909090909 2.5 moveto
+116.9090909090909 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -113,65 +227,49 @@ stroke"
 \vspace #0.5
 \column {
 \overlay {
-\translate #'(95.23076923076923 . 1)
-\sans \fontsize #-3 \center-align \fraction 49 16
-\translate #'(111.57692307692308 . 1)
-\sans \fontsize #-3 \center-align \fraction 115 32
+\translate #'(60.659090909090914 . 1)
+\sans \fontsize #-3 \center-align \fraction 35 8
+\translate #'(74.29545454545455 . 1)
+\sans \fontsize #-3 \center-align \fraction 43 8
+\translate #'(116.9090909090909 . 1)
+\sans \fontsize #-3 \center-align \fraction 17 2
+\translate #'(137.36363636363637 . 1)
+\sans \fontsize #-3 \center-align \fraction 10 1
 }
-\pad-to-box #'(0 . 109.57692307692308) #'(0 . 2.5)
+\pad-to-box #'(0 . 135.36363636363637) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
-95.23076923076923 0.5 moveto
-111.57692307692308 0.5 lineto
+60.659090909090914 0.5 moveto
+74.29545454545455 0.5 lineto
 stroke
-95.23076923076923 1.25 moveto
-95.23076923076923 -0.25 lineto
+60.659090909090914 1.25 moveto
+60.659090909090914 -0.25 lineto
 stroke
-111.57692307692308 1.25 moveto
-111.57692307692308 -0.25 lineto
+74.29545454545455 1.25 moveto
+74.29545454545455 -0.25 lineto
+stroke
+116.9090909090909 0.5 moveto
+137.36363636363637 0.5 lineto
+stroke
+116.9090909090909 1.25 moveto
+116.9090909090909 -0.25 lineto
+stroke
+137.36363636363637 1.25 moveto
+137.36363636363637 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
-95.23076923076923 2.5 moveto
-95.23076923076923 1 lineto
+60.659090909090914 2.5 moveto
+60.659090909090914 1 lineto
 stroke
-111.57692307692308 2.5 moveto
-111.57692307692308 1 lineto
+74.29545454545455 2.5 moveto
+74.29545454545455 1 lineto
 stroke
-0 0 moveto
-0.99 setgray
-0 0.01 rlineto
-stroke"
-}
-\vspace #0.5
-\fontsize #-1 \sans \line { "E:" }
-\vspace #0.5
-\column {
-\overlay {
-\translate #'(111.57692307692308 . 1)
-\sans \fontsize #-3 \center-align \fraction 115 32
-\translate #'(151.0 . 1)
-\sans \fontsize #-3 \center-align \fraction 39 8
-}
-\pad-to-box #'(0 . 149.0) #'(0 . 2.5)
-\postscript #"
-0.2 setlinewidth
-111.57692307692308 0.5 moveto
-151 0.5 lineto
+116.9090909090909 2.5 moveto
+116.9090909090909 1 lineto
 stroke
-111.57692307692308 1.25 moveto
-111.57692307692308 -0.25 lineto
-stroke
-151 1.25 moveto
-151 -0.25 lineto
-stroke
-0.1 setlinewidth
-[ 0.1 0.2 ] 0 setdash
-111.57692307692308 2.5 moveto
-111.57692307692308 1 lineto
-stroke
-151 2.5 moveto
-151 1 lineto
+137.36363636363637 2.5 moveto
+137.36363636363637 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -188,28 +286,47 @@ stroke"
 \overlay {
 \translate #'(1.0 . 1)
 \sans \fontsize #-3 \center-align \fraction 0 1
-\translate #'(30.80769230769231 . 1)
-\sans \fontsize #-3 \center-align \fraction 31 32
+\translate #'(16.340909090909093 . 1)
+\sans \fontsize #-3 \center-align \fraction 9 8
+\translate #'(23.15909090909091 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 8
+\translate #'(38.5 . 1)
+\sans \fontsize #-3 \center-align \fraction 11 4
 }
-\pad-to-box #'(0 . 28.80769230769231) #'(0 . 2.5)
+\pad-to-box #'(0 . 36.5) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
 1 0.5 moveto
-30.80769230769231 0.5 lineto
+16.340909090909093 0.5 lineto
 stroke
 1 1.25 moveto
 1 -0.25 lineto
 stroke
-30.80769230769231 1.25 moveto
-30.80769230769231 -0.25 lineto
+16.340909090909093 1.25 moveto
+16.340909090909093 -0.25 lineto
+stroke
+23.15909090909091 0.5 moveto
+38.5 0.5 lineto
+stroke
+23.15909090909091 1.25 moveto
+23.15909090909091 -0.25 lineto
+stroke
+38.5 1.25 moveto
+38.5 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
 1 2.5 moveto
 1 1 lineto
 stroke
-30.80769230769231 2.5 moveto
-30.80769230769231 1 lineto
+16.340909090909093 2.5 moveto
+16.340909090909093 1 lineto
+stroke
+23.15909090909091 2.5 moveto
+23.15909090909091 1 lineto
+stroke
+38.5 2.5 moveto
+38.5 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -221,30 +338,87 @@ stroke"
 \vspace #0.5
 \column {
 \overlay {
-\translate #'(30.80769230769231 . 1)
-\sans \fontsize #-3 \center-align \fraction 31 32
-\translate #'(75.03846153846155 . 1)
-\sans \fontsize #-3 \center-align \fraction 77 32
+\translate #'(16.340909090909093 . 1)
+\sans \fontsize #-3 \center-align \fraction 9 8
+\translate #'(23.15909090909091 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 8
+\translate #'(38.5 . 1)
+\sans \fontsize #-3 \center-align \fraction 11 4
+\translate #'(45.31818181818182 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 4
+\translate #'(89.63636363636364 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 2
+\translate #'(103.27272727272728 . 1)
+\sans \fontsize #-3 \center-align \fraction 15 2
+\translate #'(137.36363636363637 . 1)
+\sans \fontsize #-3 \center-align \fraction 10 1
+\translate #'(151.0 . 1)
+\sans \fontsize #-3 \center-align \fraction 11 1
 }
-\pad-to-box #'(0 . 73.03846153846155) #'(0 . 2.5)
+\pad-to-box #'(0 . 149.0) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
-30.80769230769231 0.5 moveto
-75.03846153846155 0.5 lineto
+16.340909090909093 0.5 moveto
+23.15909090909091 0.5 lineto
 stroke
-30.80769230769231 1.25 moveto
-30.80769230769231 -0.25 lineto
+16.340909090909093 1.25 moveto
+16.340909090909093 -0.25 lineto
 stroke
-75.03846153846155 1.25 moveto
-75.03846153846155 -0.25 lineto
+23.15909090909091 1.25 moveto
+23.15909090909091 -0.25 lineto
+stroke
+38.5 0.5 moveto
+45.31818181818182 0.5 lineto
+stroke
+38.5 1.25 moveto
+38.5 -0.25 lineto
+stroke
+45.31818181818182 1.25 moveto
+45.31818181818182 -0.25 lineto
+stroke
+89.63636363636364 0.5 moveto
+103.27272727272728 0.5 lineto
+stroke
+89.63636363636364 1.25 moveto
+89.63636363636364 -0.25 lineto
+stroke
+103.27272727272728 1.25 moveto
+103.27272727272728 -0.25 lineto
+stroke
+137.36363636363637 0.5 moveto
+151 0.5 lineto
+stroke
+137.36363636363637 1.25 moveto
+137.36363636363637 -0.25 lineto
+stroke
+151 1.25 moveto
+151 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
-30.80769230769231 2.5 moveto
-30.80769230769231 1 lineto
+16.340909090909093 2.5 moveto
+16.340909090909093 1 lineto
 stroke
-75.03846153846155 2.5 moveto
-75.03846153846155 1 lineto
+23.15909090909091 2.5 moveto
+23.15909090909091 1 lineto
+stroke
+38.5 2.5 moveto
+38.5 1 lineto
+stroke
+45.31818181818182 2.5 moveto
+45.31818181818182 1 lineto
+stroke
+89.63636363636364 2.5 moveto
+89.63636363636364 1 lineto
+stroke
+103.27272727272728 2.5 moveto
+103.27272727272728 1 lineto
+stroke
+137.36363636363637 2.5 moveto
+137.36363636363637 1 lineto
+stroke
+151 2.5 moveto
+151 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -256,30 +430,68 @@ stroke"
 \vspace #0.5
 \column {
 \overlay {
-\translate #'(75.03846153846155 . 1)
-\sans \fontsize #-3 \center-align \fraction 77 32
-\translate #'(95.23076923076923 . 1)
-\sans \fontsize #-3 \center-align \fraction 49 16
+\translate #'(45.31818181818182 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 4
+\translate #'(60.659090909090914 . 1)
+\sans \fontsize #-3 \center-align \fraction 35 8
+\translate #'(74.29545454545455 . 1)
+\sans \fontsize #-3 \center-align \fraction 43 8
+\translate #'(89.63636363636364 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 2
+\translate #'(103.27272727272728 . 1)
+\sans \fontsize #-3 \center-align \fraction 15 2
+\translate #'(116.9090909090909 . 1)
+\sans \fontsize #-3 \center-align \fraction 17 2
 }
-\pad-to-box #'(0 . 93.23076923076923) #'(0 . 2.5)
+\pad-to-box #'(0 . 114.9090909090909) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
-75.03846153846155 0.5 moveto
-95.23076923076923 0.5 lineto
+45.31818181818182 0.5 moveto
+60.659090909090914 0.5 lineto
 stroke
-75.03846153846155 1.25 moveto
-75.03846153846155 -0.25 lineto
+45.31818181818182 1.25 moveto
+45.31818181818182 -0.25 lineto
 stroke
-95.23076923076923 1.25 moveto
-95.23076923076923 -0.25 lineto
+60.659090909090914 1.25 moveto
+60.659090909090914 -0.25 lineto
+stroke
+74.29545454545455 0.5 moveto
+89.63636363636364 0.5 lineto
+stroke
+74.29545454545455 1.25 moveto
+74.29545454545455 -0.25 lineto
+stroke
+89.63636363636364 1.25 moveto
+89.63636363636364 -0.25 lineto
+stroke
+103.27272727272728 0.5 moveto
+116.9090909090909 0.5 lineto
+stroke
+103.27272727272728 1.25 moveto
+103.27272727272728 -0.25 lineto
+stroke
+116.9090909090909 1.25 moveto
+116.9090909090909 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
-75.03846153846155 2.5 moveto
-75.03846153846155 1 lineto
+45.31818181818182 2.5 moveto
+45.31818181818182 1 lineto
 stroke
-95.23076923076923 2.5 moveto
-95.23076923076923 1 lineto
+60.659090909090914 2.5 moveto
+60.659090909090914 1 lineto
+stroke
+74.29545454545455 2.5 moveto
+74.29545454545455 1 lineto
+stroke
+89.63636363636364 2.5 moveto
+89.63636363636364 1 lineto
+stroke
+103.27272727272728 2.5 moveto
+103.27272727272728 1 lineto
+stroke
+116.9090909090909 2.5 moveto
+116.9090909090909 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -291,65 +503,49 @@ stroke"
 \vspace #0.5
 \column {
 \overlay {
-\translate #'(95.23076923076923 . 1)
-\sans \fontsize #-3 \center-align \fraction 49 16
-\translate #'(111.57692307692308 . 1)
-\sans \fontsize #-3 \center-align \fraction 115 32
+\translate #'(60.659090909090914 . 1)
+\sans \fontsize #-3 \center-align \fraction 35 8
+\translate #'(74.29545454545455 . 1)
+\sans \fontsize #-3 \center-align \fraction 43 8
+\translate #'(116.9090909090909 . 1)
+\sans \fontsize #-3 \center-align \fraction 17 2
+\translate #'(137.36363636363637 . 1)
+\sans \fontsize #-3 \center-align \fraction 10 1
 }
-\pad-to-box #'(0 . 109.57692307692308) #'(0 . 2.5)
+\pad-to-box #'(0 . 135.36363636363637) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
-95.23076923076923 0.5 moveto
-111.57692307692308 0.5 lineto
+60.659090909090914 0.5 moveto
+74.29545454545455 0.5 lineto
 stroke
-95.23076923076923 1.25 moveto
-95.23076923076923 -0.25 lineto
+60.659090909090914 1.25 moveto
+60.659090909090914 -0.25 lineto
 stroke
-111.57692307692308 1.25 moveto
-111.57692307692308 -0.25 lineto
+74.29545454545455 1.25 moveto
+74.29545454545455 -0.25 lineto
+stroke
+116.9090909090909 0.5 moveto
+137.36363636363637 0.5 lineto
+stroke
+116.9090909090909 1.25 moveto
+116.9090909090909 -0.25 lineto
+stroke
+137.36363636363637 1.25 moveto
+137.36363636363637 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
-95.23076923076923 2.5 moveto
-95.23076923076923 1 lineto
+60.659090909090914 2.5 moveto
+60.659090909090914 1 lineto
 stroke
-111.57692307692308 2.5 moveto
-111.57692307692308 1 lineto
+74.29545454545455 2.5 moveto
+74.29545454545455 1 lineto
 stroke
-0 0 moveto
-0.99 setgray
-0 0.01 rlineto
-stroke"
-}
-\vspace #0.5
-\fontsize #-1 \sans \line { "E:" }
-\vspace #0.5
-\column {
-\overlay {
-\translate #'(111.57692307692308 . 1)
-\sans \fontsize #-3 \center-align \fraction 115 32
-\translate #'(151.0 . 1)
-\sans \fontsize #-3 \center-align \fraction 39 8
-}
-\pad-to-box #'(0 . 149.0) #'(0 . 2.5)
-\postscript #"
-0.2 setlinewidth
-111.57692307692308 0.5 moveto
-151 0.5 lineto
+116.9090909090909 2.5 moveto
+116.9090909090909 1 lineto
 stroke
-111.57692307692308 1.25 moveto
-111.57692307692308 -0.25 lineto
-stroke
-151 1.25 moveto
-151 -0.25 lineto
-stroke
-0.1 setlinewidth
-[ 0.1 0.2 ] 0 setdash
-111.57692307692308 2.5 moveto
-111.57692307692308 1 lineto
-stroke
-151 2.5 moveto
-151 1 lineto
+137.36363636363637 2.5 moveto
+137.36363636363637 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -366,28 +562,47 @@ stroke"
 \overlay {
 \translate #'(1.0 . 1)
 \sans \fontsize #-3 \center-align \fraction 0 1
-\translate #'(30.80769230769231 . 1)
-\sans \fontsize #-3 \center-align \fraction 31 32
+\translate #'(16.340909090909093 . 1)
+\sans \fontsize #-3 \center-align \fraction 9 8
+\translate #'(23.15909090909091 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 8
+\translate #'(38.5 . 1)
+\sans \fontsize #-3 \center-align \fraction 11 4
 }
-\pad-to-box #'(0 . 28.80769230769231) #'(0 . 2.5)
+\pad-to-box #'(0 . 36.5) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
 1 0.5 moveto
-30.80769230769231 0.5 lineto
+16.340909090909093 0.5 lineto
 stroke
 1 1.25 moveto
 1 -0.25 lineto
 stroke
-30.80769230769231 1.25 moveto
-30.80769230769231 -0.25 lineto
+16.340909090909093 1.25 moveto
+16.340909090909093 -0.25 lineto
+stroke
+23.15909090909091 0.5 moveto
+38.5 0.5 lineto
+stroke
+23.15909090909091 1.25 moveto
+23.15909090909091 -0.25 lineto
+stroke
+38.5 1.25 moveto
+38.5 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
 1 2.5 moveto
 1 1 lineto
 stroke
-30.80769230769231 2.5 moveto
-30.80769230769231 1 lineto
+16.340909090909093 2.5 moveto
+16.340909090909093 1 lineto
+stroke
+23.15909090909091 2.5 moveto
+23.15909090909091 1 lineto
+stroke
+38.5 2.5 moveto
+38.5 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -399,30 +614,87 @@ stroke"
 \vspace #0.5
 \column {
 \overlay {
-\translate #'(30.80769230769231 . 1)
-\sans \fontsize #-3 \center-align \fraction 31 32
-\translate #'(75.03846153846155 . 1)
-\sans \fontsize #-3 \center-align \fraction 77 32
+\translate #'(16.340909090909093 . 1)
+\sans \fontsize #-3 \center-align \fraction 9 8
+\translate #'(23.15909090909091 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 8
+\translate #'(38.5 . 1)
+\sans \fontsize #-3 \center-align \fraction 11 4
+\translate #'(45.31818181818182 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 4
+\translate #'(89.63636363636364 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 2
+\translate #'(103.27272727272728 . 1)
+\sans \fontsize #-3 \center-align \fraction 15 2
+\translate #'(137.36363636363637 . 1)
+\sans \fontsize #-3 \center-align \fraction 10 1
+\translate #'(151.0 . 1)
+\sans \fontsize #-3 \center-align \fraction 11 1
 }
-\pad-to-box #'(0 . 73.03846153846155) #'(0 . 2.5)
+\pad-to-box #'(0 . 149.0) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
-30.80769230769231 0.5 moveto
-75.03846153846155 0.5 lineto
+16.340909090909093 0.5 moveto
+23.15909090909091 0.5 lineto
 stroke
-30.80769230769231 1.25 moveto
-30.80769230769231 -0.25 lineto
+16.340909090909093 1.25 moveto
+16.340909090909093 -0.25 lineto
 stroke
-75.03846153846155 1.25 moveto
-75.03846153846155 -0.25 lineto
+23.15909090909091 1.25 moveto
+23.15909090909091 -0.25 lineto
+stroke
+38.5 0.5 moveto
+45.31818181818182 0.5 lineto
+stroke
+38.5 1.25 moveto
+38.5 -0.25 lineto
+stroke
+45.31818181818182 1.25 moveto
+45.31818181818182 -0.25 lineto
+stroke
+89.63636363636364 0.5 moveto
+103.27272727272728 0.5 lineto
+stroke
+89.63636363636364 1.25 moveto
+89.63636363636364 -0.25 lineto
+stroke
+103.27272727272728 1.25 moveto
+103.27272727272728 -0.25 lineto
+stroke
+137.36363636363637 0.5 moveto
+151 0.5 lineto
+stroke
+137.36363636363637 1.25 moveto
+137.36363636363637 -0.25 lineto
+stroke
+151 1.25 moveto
+151 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
-30.80769230769231 2.5 moveto
-30.80769230769231 1 lineto
+16.340909090909093 2.5 moveto
+16.340909090909093 1 lineto
 stroke
-75.03846153846155 2.5 moveto
-75.03846153846155 1 lineto
+23.15909090909091 2.5 moveto
+23.15909090909091 1 lineto
+stroke
+38.5 2.5 moveto
+38.5 1 lineto
+stroke
+45.31818181818182 2.5 moveto
+45.31818181818182 1 lineto
+stroke
+89.63636363636364 2.5 moveto
+89.63636363636364 1 lineto
+stroke
+103.27272727272728 2.5 moveto
+103.27272727272728 1 lineto
+stroke
+137.36363636363637 2.5 moveto
+137.36363636363637 1 lineto
+stroke
+151 2.5 moveto
+151 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -434,30 +706,68 @@ stroke"
 \vspace #0.5
 \column {
 \overlay {
-\translate #'(75.03846153846155 . 1)
-\sans \fontsize #-3 \center-align \fraction 77 32
-\translate #'(95.23076923076923 . 1)
-\sans \fontsize #-3 \center-align \fraction 49 16
+\translate #'(45.31818181818182 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 4
+\translate #'(60.659090909090914 . 1)
+\sans \fontsize #-3 \center-align \fraction 35 8
+\translate #'(74.29545454545455 . 1)
+\sans \fontsize #-3 \center-align \fraction 43 8
+\translate #'(89.63636363636364 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 2
+\translate #'(103.27272727272728 . 1)
+\sans \fontsize #-3 \center-align \fraction 15 2
+\translate #'(116.9090909090909 . 1)
+\sans \fontsize #-3 \center-align \fraction 17 2
 }
-\pad-to-box #'(0 . 93.23076923076923) #'(0 . 2.5)
+\pad-to-box #'(0 . 114.9090909090909) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
-75.03846153846155 0.5 moveto
-95.23076923076923 0.5 lineto
+45.31818181818182 0.5 moveto
+60.659090909090914 0.5 lineto
 stroke
-75.03846153846155 1.25 moveto
-75.03846153846155 -0.25 lineto
+45.31818181818182 1.25 moveto
+45.31818181818182 -0.25 lineto
 stroke
-95.23076923076923 1.25 moveto
-95.23076923076923 -0.25 lineto
+60.659090909090914 1.25 moveto
+60.659090909090914 -0.25 lineto
+stroke
+74.29545454545455 0.5 moveto
+89.63636363636364 0.5 lineto
+stroke
+74.29545454545455 1.25 moveto
+74.29545454545455 -0.25 lineto
+stroke
+89.63636363636364 1.25 moveto
+89.63636363636364 -0.25 lineto
+stroke
+103.27272727272728 0.5 moveto
+116.9090909090909 0.5 lineto
+stroke
+103.27272727272728 1.25 moveto
+103.27272727272728 -0.25 lineto
+stroke
+116.9090909090909 1.25 moveto
+116.9090909090909 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
-75.03846153846155 2.5 moveto
-75.03846153846155 1 lineto
+45.31818181818182 2.5 moveto
+45.31818181818182 1 lineto
 stroke
-95.23076923076923 2.5 moveto
-95.23076923076923 1 lineto
+60.659090909090914 2.5 moveto
+60.659090909090914 1 lineto
+stroke
+74.29545454545455 2.5 moveto
+74.29545454545455 1 lineto
+stroke
+89.63636363636364 2.5 moveto
+89.63636363636364 1 lineto
+stroke
+103.27272727272728 2.5 moveto
+103.27272727272728 1 lineto
+stroke
+116.9090909090909 2.5 moveto
+116.9090909090909 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -469,65 +779,49 @@ stroke"
 \vspace #0.5
 \column {
 \overlay {
-\translate #'(95.23076923076923 . 1)
-\sans \fontsize #-3 \center-align \fraction 49 16
-\translate #'(111.57692307692308 . 1)
-\sans \fontsize #-3 \center-align \fraction 115 32
+\translate #'(60.659090909090914 . 1)
+\sans \fontsize #-3 \center-align \fraction 35 8
+\translate #'(74.29545454545455 . 1)
+\sans \fontsize #-3 \center-align \fraction 43 8
+\translate #'(116.9090909090909 . 1)
+\sans \fontsize #-3 \center-align \fraction 17 2
+\translate #'(137.36363636363637 . 1)
+\sans \fontsize #-3 \center-align \fraction 10 1
 }
-\pad-to-box #'(0 . 109.57692307692308) #'(0 . 2.5)
+\pad-to-box #'(0 . 135.36363636363637) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
-95.23076923076923 0.5 moveto
-111.57692307692308 0.5 lineto
+60.659090909090914 0.5 moveto
+74.29545454545455 0.5 lineto
 stroke
-95.23076923076923 1.25 moveto
-95.23076923076923 -0.25 lineto
+60.659090909090914 1.25 moveto
+60.659090909090914 -0.25 lineto
 stroke
-111.57692307692308 1.25 moveto
-111.57692307692308 -0.25 lineto
+74.29545454545455 1.25 moveto
+74.29545454545455 -0.25 lineto
+stroke
+116.9090909090909 0.5 moveto
+137.36363636363637 0.5 lineto
+stroke
+116.9090909090909 1.25 moveto
+116.9090909090909 -0.25 lineto
+stroke
+137.36363636363637 1.25 moveto
+137.36363636363637 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
-95.23076923076923 2.5 moveto
-95.23076923076923 1 lineto
+60.659090909090914 2.5 moveto
+60.659090909090914 1 lineto
 stroke
-111.57692307692308 2.5 moveto
-111.57692307692308 1 lineto
+74.29545454545455 2.5 moveto
+74.29545454545455 1 lineto
 stroke
-0 0 moveto
-0.99 setgray
-0 0.01 rlineto
-stroke"
-}
-\vspace #0.5
-\fontsize #-1 \sans \line { "E:" }
-\vspace #0.5
-\column {
-\overlay {
-\translate #'(111.57692307692308 . 1)
-\sans \fontsize #-3 \center-align \fraction 115 32
-\translate #'(151.0 . 1)
-\sans \fontsize #-3 \center-align \fraction 39 8
-}
-\pad-to-box #'(0 . 149.0) #'(0 . 2.5)
-\postscript #"
-0.2 setlinewidth
-111.57692307692308 0.5 moveto
-151 0.5 lineto
+116.9090909090909 2.5 moveto
+116.9090909090909 1 lineto
 stroke
-111.57692307692308 1.25 moveto
-111.57692307692308 -0.25 lineto
-stroke
-151 1.25 moveto
-151 -0.25 lineto
-stroke
-0.1 setlinewidth
-[ 0.1 0.2 ] 0 setdash
-111.57692307692308 2.5 moveto
-111.57692307692308 1 lineto
-stroke
-151 2.5 moveto
-151 1 lineto
+137.36363636363637 2.5 moveto
+137.36363636363637 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -544,28 +838,47 @@ stroke"
 \overlay {
 \translate #'(1.0 . 1)
 \sans \fontsize #-3 \center-align \fraction 0 1
-\translate #'(41.38461538461539 . 1)
-\sans \fontsize #-3 \center-align \fraction 21 16
+\translate #'(16.340909090909093 . 1)
+\sans \fontsize #-3 \center-align \fraction 9 8
+\translate #'(23.15909090909091 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 8
+\translate #'(38.5 . 1)
+\sans \fontsize #-3 \center-align \fraction 11 4
 }
-\pad-to-box #'(0 . 39.38461538461539) #'(0 . 2.5)
+\pad-to-box #'(0 . 36.5) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
 1 0.5 moveto
-41.38461538461539 0.5 lineto
+16.340909090909093 0.5 lineto
 stroke
 1 1.25 moveto
 1 -0.25 lineto
 stroke
-41.38461538461539 1.25 moveto
-41.38461538461539 -0.25 lineto
+16.340909090909093 1.25 moveto
+16.340909090909093 -0.25 lineto
+stroke
+23.15909090909091 0.5 moveto
+38.5 0.5 lineto
+stroke
+23.15909090909091 1.25 moveto
+23.15909090909091 -0.25 lineto
+stroke
+38.5 1.25 moveto
+38.5 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
 1 2.5 moveto
 1 1 lineto
 stroke
-41.38461538461539 2.5 moveto
-41.38461538461539 1 lineto
+16.340909090909093 2.5 moveto
+16.340909090909093 1 lineto
+stroke
+23.15909090909091 2.5 moveto
+23.15909090909091 1 lineto
+stroke
+38.5 2.5 moveto
+38.5 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -577,30 +890,87 @@ stroke"
 \vspace #0.5
 \column {
 \overlay {
-\translate #'(41.38461538461539 . 1)
-\sans \fontsize #-3 \center-align \fraction 21 16
-\translate #'(57.73076923076923 . 1)
-\sans \fontsize #-3 \center-align \fraction 59 32
+\translate #'(16.340909090909093 . 1)
+\sans \fontsize #-3 \center-align \fraction 9 8
+\translate #'(23.15909090909091 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 8
+\translate #'(38.5 . 1)
+\sans \fontsize #-3 \center-align \fraction 11 4
+\translate #'(45.31818181818182 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 4
+\translate #'(89.63636363636364 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 2
+\translate #'(103.27272727272728 . 1)
+\sans \fontsize #-3 \center-align \fraction 15 2
+\translate #'(137.36363636363637 . 1)
+\sans \fontsize #-3 \center-align \fraction 10 1
+\translate #'(151.0 . 1)
+\sans \fontsize #-3 \center-align \fraction 11 1
 }
-\pad-to-box #'(0 . 55.73076923076923) #'(0 . 2.5)
+\pad-to-box #'(0 . 149.0) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
-41.38461538461539 0.5 moveto
-57.73076923076923 0.5 lineto
+16.340909090909093 0.5 moveto
+23.15909090909091 0.5 lineto
 stroke
-41.38461538461539 1.25 moveto
-41.38461538461539 -0.25 lineto
+16.340909090909093 1.25 moveto
+16.340909090909093 -0.25 lineto
 stroke
-57.73076923076923 1.25 moveto
-57.73076923076923 -0.25 lineto
+23.15909090909091 1.25 moveto
+23.15909090909091 -0.25 lineto
+stroke
+38.5 0.5 moveto
+45.31818181818182 0.5 lineto
+stroke
+38.5 1.25 moveto
+38.5 -0.25 lineto
+stroke
+45.31818181818182 1.25 moveto
+45.31818181818182 -0.25 lineto
+stroke
+89.63636363636364 0.5 moveto
+103.27272727272728 0.5 lineto
+stroke
+89.63636363636364 1.25 moveto
+89.63636363636364 -0.25 lineto
+stroke
+103.27272727272728 1.25 moveto
+103.27272727272728 -0.25 lineto
+stroke
+137.36363636363637 0.5 moveto
+151 0.5 lineto
+stroke
+137.36363636363637 1.25 moveto
+137.36363636363637 -0.25 lineto
+stroke
+151 1.25 moveto
+151 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
-41.38461538461539 2.5 moveto
-41.38461538461539 1 lineto
+16.340909090909093 2.5 moveto
+16.340909090909093 1 lineto
 stroke
-57.73076923076923 2.5 moveto
-57.73076923076923 1 lineto
+23.15909090909091 2.5 moveto
+23.15909090909091 1 lineto
+stroke
+38.5 2.5 moveto
+38.5 1 lineto
+stroke
+45.31818181818182 2.5 moveto
+45.31818181818182 1 lineto
+stroke
+89.63636363636364 2.5 moveto
+89.63636363636364 1 lineto
+stroke
+103.27272727272728 2.5 moveto
+103.27272727272728 1 lineto
+stroke
+137.36363636363637 2.5 moveto
+137.36363636363637 1 lineto
+stroke
+151 2.5 moveto
+151 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -612,30 +982,68 @@ stroke"
 \vspace #0.5
 \column {
 \overlay {
-\translate #'(57.73076923076923 . 1)
-\sans \fontsize #-3 \center-align \fraction 59 32
-\translate #'(77.92307692307692 . 1)
-\sans \fontsize #-3 \center-align \fraction 5 2
+\translate #'(45.31818181818182 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 4
+\translate #'(60.659090909090914 . 1)
+\sans \fontsize #-3 \center-align \fraction 35 8
+\translate #'(74.29545454545455 . 1)
+\sans \fontsize #-3 \center-align \fraction 43 8
+\translate #'(89.63636363636364 . 1)
+\sans \fontsize #-3 \center-align \fraction 13 2
+\translate #'(103.27272727272728 . 1)
+\sans \fontsize #-3 \center-align \fraction 15 2
+\translate #'(116.9090909090909 . 1)
+\sans \fontsize #-3 \center-align \fraction 17 2
 }
-\pad-to-box #'(0 . 75.92307692307692) #'(0 . 2.5)
+\pad-to-box #'(0 . 114.9090909090909) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
-57.73076923076923 0.5 moveto
-77.92307692307692 0.5 lineto
+45.31818181818182 0.5 moveto
+60.659090909090914 0.5 lineto
 stroke
-57.73076923076923 1.25 moveto
-57.73076923076923 -0.25 lineto
+45.31818181818182 1.25 moveto
+45.31818181818182 -0.25 lineto
 stroke
-77.92307692307692 1.25 moveto
-77.92307692307692 -0.25 lineto
+60.659090909090914 1.25 moveto
+60.659090909090914 -0.25 lineto
+stroke
+74.29545454545455 0.5 moveto
+89.63636363636364 0.5 lineto
+stroke
+74.29545454545455 1.25 moveto
+74.29545454545455 -0.25 lineto
+stroke
+89.63636363636364 1.25 moveto
+89.63636363636364 -0.25 lineto
+stroke
+103.27272727272728 0.5 moveto
+116.9090909090909 0.5 lineto
+stroke
+103.27272727272728 1.25 moveto
+103.27272727272728 -0.25 lineto
+stroke
+116.9090909090909 1.25 moveto
+116.9090909090909 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
-57.73076923076923 2.5 moveto
-57.73076923076923 1 lineto
+45.31818181818182 2.5 moveto
+45.31818181818182 1 lineto
 stroke
-77.92307692307692 2.5 moveto
-77.92307692307692 1 lineto
+60.659090909090914 2.5 moveto
+60.659090909090914 1 lineto
+stroke
+74.29545454545455 2.5 moveto
+74.29545454545455 1 lineto
+stroke
+89.63636363636364 2.5 moveto
+89.63636363636364 1 lineto
+stroke
+103.27272727272728 2.5 moveto
+103.27272727272728 1 lineto
+stroke
+116.9090909090909 2.5 moveto
+116.9090909090909 1 lineto
 stroke
 0 0 moveto
 0.99 setgray
@@ -647,65 +1055,49 @@ stroke"
 \vspace #0.5
 \column {
 \overlay {
-\translate #'(77.92307692307692 . 1)
-\sans \fontsize #-3 \center-align \fraction 5 2
-\translate #'(122.15384615384616 . 1)
-\sans \fontsize #-3 \center-align \fraction 63 16
+\translate #'(60.659090909090914 . 1)
+\sans \fontsize #-3 \center-align \fraction 35 8
+\translate #'(74.29545454545455 . 1)
+\sans \fontsize #-3 \center-align \fraction 43 8
+\translate #'(116.9090909090909 . 1)
+\sans \fontsize #-3 \center-align \fraction 17 2
+\translate #'(137.36363636363637 . 1)
+\sans \fontsize #-3 \center-align \fraction 10 1
 }
-\pad-to-box #'(0 . 120.15384615384616) #'(0 . 2.5)
+\pad-to-box #'(0 . 135.36363636363637) #'(0 . 2.5)
 \postscript #"
 0.2 setlinewidth
-77.92307692307692 0.5 moveto
-122.15384615384616 0.5 lineto
+60.659090909090914 0.5 moveto
+74.29545454545455 0.5 lineto
 stroke
-77.92307692307692 1.25 moveto
-77.92307692307692 -0.25 lineto
+60.659090909090914 1.25 moveto
+60.659090909090914 -0.25 lineto
 stroke
-122.15384615384616 1.25 moveto
-122.15384615384616 -0.25 lineto
+74.29545454545455 1.25 moveto
+74.29545454545455 -0.25 lineto
+stroke
+116.9090909090909 0.5 moveto
+137.36363636363637 0.5 lineto
+stroke
+116.9090909090909 1.25 moveto
+116.9090909090909 -0.25 lineto
+stroke
+137.36363636363637 1.25 moveto
+137.36363636363637 -0.25 lineto
 stroke
 0.1 setlinewidth
 [ 0.1 0.2 ] 0 setdash
-77.92307692307692 2.5 moveto
-77.92307692307692 1 lineto
+60.659090909090914 2.5 moveto
+60.659090909090914 1 lineto
 stroke
-122.15384615384616 2.5 moveto
-122.15384615384616 1 lineto
+74.29545454545455 2.5 moveto
+74.29545454545455 1 lineto
 stroke
-0 0 moveto
-0.99 setgray
-0 0.01 rlineto
-stroke"
-}
-\vspace #0.5
-\fontsize #-1 \sans \line { "E:" }
-\vspace #0.5
-\column {
-\overlay {
-\translate #'(122.15384615384616 . 1)
-\sans \fontsize #-3 \center-align \fraction 63 16
-\translate #'(151.0 . 1)
-\sans \fontsize #-3 \center-align \fraction 39 8
-}
-\pad-to-box #'(0 . 149.0) #'(0 . 2.5)
-\postscript #"
-0.2 setlinewidth
-122.15384615384616 0.5 moveto
-151 0.5 lineto
+116.9090909090909 2.5 moveto
+116.9090909090909 1 lineto
 stroke
-122.15384615384616 1.25 moveto
-122.15384615384616 -0.25 lineto
-stroke
-151 1.25 moveto
-151 -0.25 lineto
-stroke
-0.1 setlinewidth
-[ 0.1 0.2 ] 0 setdash
-122.15384615384616 2.5 moveto
-122.15384615384616 1 lineto
-stroke
-151 2.5 moveto
-151 1 lineto
+137.36363636363637 2.5 moveto
+137.36363636363637 1 lineto
 stroke
 0 0 moveto
 0.99 setgray

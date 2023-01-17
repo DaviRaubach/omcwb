@@ -158,10 +158,14 @@ Minha ideia para o fragmento B já incluia o uso de sons residuais (como o do ar
 #+begin_src lilypond :file foot_note_test.png
     \include "org_stylesheet.ily"
 
-  \book {
-    \header { tagline = ##f }
-    \relative c' {
-      
+  % \book {
+  %   \header { tagline = ##f }
+    \new StaffGroup
+    <<
+      \new Staff
+      {
+
+
       <a' \footnote "*" #'(0.5 . -2) \markup { \italic "* The first note" } e> 4 b8
       \footnote \markup { \super "$" } #'(0.5 . 1)
         \markup { \super "$" \italic " The second note" } e
@@ -170,10 +174,21 @@ Minha ideia para o fragmento B já incluia o uso de sons residuais (como o do ar
       b-\footnote \markup \tiny "+" #'(0.1 . 0.1)
         \markup { \super "+" \italic " Editorial" } \p
     }
-  }
-  
+      \new Staff {s1 \bar "!" s2}
+>>
+
+  % }
+
 #+end_src
 
 #+RESULTS:
 [[file:foot_note_test.png]]
 
+
+
+Multi 7
+
+[[file:images/multi7.png]]
+
+Multi 15
+[[file:images/multi15.png]]

@@ -195,12 +195,26 @@ def sx2(mat: muda.Material, timespans, time_signatures):
 sx2.apply_to = [materials.sx2.name]
 
 
-def time_signatures(mat: muda.Material):
-    mat.rewrite_meter(time_signatures)
+def write_time_signatures(mat: muda.Material, time_signatures):
     mat.write_time_signatures(time_signatures)
 
 
-# time_signatures.apply_to = [materials]
+# write_time_signatures.apply_to = [
+    # _.name for _ in materials.materials if "Voice_2" not in _.name]
+
+
+def rewrite_meter(mat: muda.Material, time_signatures):
+    mat.rewrite_meter(time_signatures)
+
+
+# rewrite_meter.apply_to = [
+    # _.name for _ in materials.materials if "Voice_2" not in _.name]
+
+# rewrite_meter.apply_to = [
+# _.name for _ in materials.materials if "Voice_2" not in _.name]
+
+# time_signatures.apply_to = [
+# _.name for _ in materials.materials if "Voice_2" not in _.name]
 
 
 # voz2.apply_to = [materials.fl2.name, materials.sx2.name,

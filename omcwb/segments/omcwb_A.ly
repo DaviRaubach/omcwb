@@ -13,6 +13,7 @@
             \tempo \markup {Tempo de leitura: \italic {poético}}
             % OPENING:
             % COMMANDS:
+            \mark #2
             \time 7/8
             s1 * 7/8
             s1 * 7/8
@@ -59,10 +60,14 @@
                          \omit Voice.Flag
                          \omit StaffGroup.SpanBar
                          \hide Voice.Beam
+                         \hide Voice.Rest
                          \omit Voice.TupletNumber
                          \omit Voice.TupletBracket
                          \omit Voice.Dots
                         b'32
+                        % AFTER:
+                        % ARTICULATIONS:
+                        \mf
                         g''16.
                         % AFTER:
                         % ARTICULATIONS:
@@ -120,7 +125,7 @@
                     }   % A_0
                     % AFTER:
                     % COMMANDS:
-                     \omit Staff.BarLine
+                     \omit Staff.BarLine \omit StaffGroup.SpanBar
                     % OPEN_BRACKETS:
                     {   % B_0
                         cs''16
@@ -194,7 +199,7 @@
                     }   % B_0
                     % AFTER:
                     % COMMANDS:
-                     \undo \omit Staff.BarLine
+                     \undo \omit Staff.BarLine \undo \omit StaffGroup.SpanBar
                     % OPEN_BRACKETS:
                     {   % C_0
                         e'32
@@ -254,45 +259,45 @@
                     {
                         s8.
                         \tweak stencil \minima
-                        e'8
+                        fs'8
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         \tweak stencil \minima
-                        e'32
+                        fs'32
                         % AFTER:
                         % COMMANDS:
                         \breathe
                         s32
                         \tweak stencil \minima
-                        bqf'8
+                        b'8
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         \tweak stencil \minima
-                        bqf'32
+                        b'32
                         % AFTER:
                         % COMMANDS:
                         \breathe
                         s32
                         \tweak stencil \minima
-                        e'4
+                        fs'4
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         \tweak stencil \minima
-                        e'16
+                        fs'16
                         % AFTER:
                         % COMMANDS:
                         \breathe
                         s16
                         \tweak stencil \minima
-                        bqf'4
+                        b'4
                         % AFTER:
                         % SPANNER_STARTS:
                         ~
                         \tweak stencil \minima
-                        bqf'16
+                        b'16
                         % AFTER:
                         % COMMANDS:
                         \breathe
@@ -307,6 +312,7 @@
                      \undo \omit Voice.Flag
                      \undo \omit Staff.SpanBar
                      \undo \hide Voice.Beam
+                     \undo \hide Voice.Rest
                      \undo \omit Voice.TupletNumber
                      \undo \omit Voice.TupletBracket
                      \undo \omit Voice.Dots
@@ -315,7 +321,7 @@
             % CLOSE_BRACKETS:
             }
             % OPEN_BRACKETS:
-            \context Voice = "Fl_Voice_2"
+            \context NullVoice = "Fl_Voice_2"
             {
                 % OPEN_BRACKETS:
                 {
@@ -323,17 +329,11 @@
                     {   % A_0
                         % OPENING:
                         % COMMANDS:
+                         \hideNotes
                          \mergeDifferentlyHeadedOn \mergeDifferentlyDottedOn \shiftOn
-                         \override Voice.NoteHead.stencil = ##f
-                         \override Voice.Rest.stencil = ##f
-                         \override Voice.Stem.stencil = ##f
-                         \override Voice.Flag.stencil = ##f
-                         \omit TupletNumber
-                         \omit Voice.Dots
+                         \omit Voice.TupletNumber
                          \override Voice.TupletBracket.stencil = ##f
-                         \override Voice.Beam.stencil = ##f
-                         \omit Voice.Accidental
-                         \override LyricText.self-alignment-X = #LEFT
+                         \override Voice.Tie.stencil = ##f
                         c'32
                         c'16.
                         c'32
@@ -472,17 +472,11 @@
                         r32
                         % AFTER:
                         % COMMANDS:
+                         \unHideNotes
                          \mergeDifferentlyHeadedOff \mergeDifferentlyDottedOff \shiftOff
-                         \revert Voice.NoteHead.stencil
-                         \revert Voice.Rest.stencil
-                         \revert Voice.Stem.stencil
-                         \revert Voice.Flag.stencil
-                         \revert Voice.Dots.stencil
                          \undo \omit Voice.TupletNumber
-                         \undo \omit Voice.Dots
                          \revert Voice.TupletBracket.stencil
-                         \revert Voice.Beam.stencil
-                         \undo \omit Voice.Accidental
+                         \revert Voice.Tie.stencil
                     % CLOSE_BRACKETS:
                     }   % E_0
                 % CLOSE_BRACKETS:
@@ -534,17 +528,20 @@
                          \omit Voice.Flag
                          \omit StaffGroup.SpanBar
                          \hide Voice.Beam
+                         \hide Voice.Rest
                          \omit Voice.TupletNumber
                          \omit Voice.TupletBracket
                          \omit Voice.Dots
                         s8
-                        \tweak stencil \minima
-                        c'2
+                        <e' fs' d'' f'' bqs''>2
                         % AFTER:
+                        % ARTICULATIONS:
+                        \p
+                        % MARKUP:
+                        ^ \markup "M15"
                         % SPANNER_STARTS:
                         ~
-                        \tweak stencil \minima
-                        c'8.
+                        <e' fs' d'' f'' bqs''>8.
                         % AFTER:
                         % COMMANDS:
                         \breathe
@@ -554,41 +551,41 @@
                     }   % A_0
                     % AFTER:
                     % COMMANDS:
-                     \omit Staff.BarLine
+                     \omit Staff.BarLine \omit StaffGroup.SpanBar
                     % OPEN_BRACKETS:
                     {   % B_0
                         s8
-                        \tweak stencil \minima
-                        c'4
+                        <b' c'' b'' gqf'''>4
                         % AFTER:
+                        % MARKUP:
+                        ^ \markup "M77"
                         % SPANNER_STARTS:
                         ~
-                        \tweak stencil \minima
-                        c'32
+                        <b' c'' b'' gqf'''>32
                         % AFTER:
                         % COMMANDS:
                         \breathe
                         s16
                         s8
-                        \tweak stencil \minima
-                        c'4
+                        <b' c'' b'' gqf'''>4
                         % AFTER:
+                        % MARKUP:
+                        ^ \markup "M77"
                         % SPANNER_STARTS:
                         ~
-                        \tweak stencil \minima
-                        c'32
+                        <b' c'' b'' gqf'''>32
                         % AFTER:
                         % COMMANDS:
                         \breathe
                         s16
                         s8
-                        \tweak stencil \minima
-                        c'4
+                        <g' af' af'' ef''' f''' g'''>4
                         % AFTER:
+                        % MARKUP:
+                        ^ \markup "M31"
                         % SPANNER_STARTS:
                         ~
-                        \tweak stencil \minima
-                        c'32
+                        <g' af' af'' ef''' f''' g'''>32
                         % AFTER:
                         % COMMANDS:
                         \breathe
@@ -598,17 +595,17 @@
                     }   % B_0
                     % AFTER:
                     % COMMANDS:
-                     \undo \omit Staff.BarLine
+                     \undo \omit Staff.BarLine \undo \omit StaffGroup.SpanBar
                     % OPEN_BRACKETS:
                     {   % C_0
                         s8
-                        \tweak stencil \minima
-                        c'4
+                        <e' fs' d'' f'' bqs''>4
                         % AFTER:
+                        % MARKUP:
+                        ^ \markup "M15"
                         % SPANNER_STARTS:
                         ~
-                        \tweak stencil \minima
-                        c'16.
+                        <e' fs' d'' f'' bqs''>16.
                         % AFTER:
                         % COMMANDS:
                         \breathe
@@ -619,40 +616,44 @@
                     % OPEN_BRACKETS:
                     {   % D_0
                         s8
-                        \tweak stencil \minima
-                        c'4.
+                        <b' c'' b'' gqf'''>4.
                         % AFTER:
+                        % MARKUP:
+                        ^ \markup "M77"
                         % SPANNER_STARTS:
                         ~
-                        \tweak stencil \minima
-                        c'32
+                        <b' c'' b'' gqf'''>32
                         % AFTER:
                         % COMMANDS:
                         \breathe
                     % CLOSE_BRACKETS:
                     }   % D_0
+                    % BEFORE:
+                    % COMMANDS:
+                    \repeat volta 2
                     % OPEN_BRACKETS:
-                    {   % E_0
+                    {
                         s8
-                        \tweak stencil \minima
-                        c'2
+                        <b' c'' b'' gqf'''>2
                         % AFTER:
+                        % MARKUP:
+                        ^ \markup "M77"
                         % SPANNER_STARTS:
                         ~
-                        \tweak stencil \minima
-                        c'16.
+                        <b' c'' b'' gqf'''>16.
                         % AFTER:
                         % COMMANDS:
                         \breathe
                         s16
                         s8
-                        \tweak stencil \minima
-                        c'4.
+                        <g' af' af'' ef''' f''' g'''>4.
                         % AFTER:
+                        % MARKUP:
+                        ^ \markup "M31"
                         % COMMANDS:
                         \breathe
                     % CLOSE_BRACKETS:
-                    }   % E_0
+                    }
                     % AFTER:
                     % COMMANDS:
                      \mergeDifferentlyHeadedOff \mergeDifferentlyDottedOff \shiftOff
@@ -661,6 +662,7 @@
                      \undo \omit Voice.Flag
                      \undo \omit Staff.SpanBar
                      \undo \hide Voice.Beam
+                     \undo \hide Voice.Rest
                      \undo \omit Voice.TupletNumber
                      \undo \omit Voice.TupletBracket
                      \undo \omit Voice.Dots
@@ -669,7 +671,7 @@
             % CLOSE_BRACKETS:
             }
             % OPEN_BRACKETS:
-            \context Voice = "Sx_Voice_2"
+            \context NullVoice = "Sx_Voice_2"
             {
                 % OPEN_BRACKETS:
                 {
@@ -677,17 +679,11 @@
                     {   % A_0
                         % OPENING:
                         % COMMANDS:
+                         \hideNotes
                          \mergeDifferentlyHeadedOn \mergeDifferentlyDottedOn \shiftOn
-                         \override Voice.NoteHead.stencil = ##f
-                         \override Voice.Rest.stencil = ##f
-                         \override Voice.Stem.stencil = ##f
-                         \override Voice.Flag.stencil = ##f
-                         \omit TupletNumber
-                         \omit Voice.Dots
+                         \omit Voice.TupletNumber
                          \override Voice.TupletBracket.stencil = ##f
-                         \override Voice.Beam.stencil = ##f
-                         \omit Voice.Accidental
-                         \override LyricText.self-alignment-X = #LEFT
+                         \override Voice.Tie.stencil = ##f
                         c'32
                         c'32
                         c'16
@@ -830,17 +826,11 @@
                         c'32
                         % AFTER:
                         % COMMANDS:
+                         \unHideNotes
                          \mergeDifferentlyHeadedOff \mergeDifferentlyDottedOff \shiftOff
-                         \revert Voice.NoteHead.stencil
-                         \revert Voice.Rest.stencil
-                         \revert Voice.Stem.stencil
-                         \revert Voice.Flag.stencil
-                         \revert Voice.Dots.stencil
                          \undo \omit Voice.TupletNumber
-                         \undo \omit Voice.Dots
                          \revert Voice.TupletBracket.stencil
-                         \revert Voice.Beam.stencil
-                         \undo \omit Voice.Accidental
+                         \revert Voice.Tie.stencil
                     % CLOSE_BRACKETS:
                     }   % E_0
                 % CLOSE_BRACKETS:
@@ -884,6 +874,7 @@
                              \omit Voice.Flag
                              \omit StaffGroup.SpanBar
                              \hide Voice.Beam
+                             \hide Voice.Rest
                              \omit Voice.TupletNumber
                              \omit Voice.TupletBracket
                              \omit Voice.Dots
@@ -911,8 +902,6 @@
                             \glissando
                             bqs''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s32
@@ -930,8 +919,6 @@
                             \glissando
                             b''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s32
@@ -946,8 +933,6 @@
                             \glissando
                             b''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s32
@@ -962,8 +947,6 @@
                             \glissando
                             b''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s32
@@ -981,8 +964,6 @@
                             \glissando
                             bqs''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s32
@@ -994,7 +975,7 @@
                         }   % A_0
                         % AFTER:
                         % COMMANDS:
-                         \omit Staff.BarLine
+                         \omit Staff.BarLine \omit StaffGroup.SpanBar
                         % OPEN_BRACKETS:
                         {   % B_0
                             fs'''32
@@ -1020,8 +1001,6 @@
                             \glissando
                             cs'''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s16
@@ -1048,8 +1027,6 @@
                             \glissando
                             cs'''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s16
@@ -1076,8 +1053,6 @@
                             \glissando
                             cs'''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s16
@@ -1110,7 +1085,7 @@
                         }   % B_0
                         % AFTER:
                         % COMMANDS:
-                         \undo \omit Staff.BarLine
+                         \undo \omit Staff.BarLine \undo \omit StaffGroup.SpanBar
                         % OPEN_BRACKETS:
                         {   % C_0
                             g''32
@@ -1123,8 +1098,6 @@
                             \glissando
                             d'''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s32
@@ -1139,8 +1112,6 @@
                             \glissando
                             g''16.
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s32
@@ -1154,8 +1125,45 @@
                             \glissando
                             d'''32
                             % AFTER:
+                            % COMMANDS:
+                            \breathe
+                            s32
+                            bf''32
+                        % CLOSE_BRACKETS:
+                        }   % C_0
+                        % OPEN_BRACKETS:
+                        {   % D_0
+                            bf''32
+                            % AFTER:
                             % SPANNER_STARTS:
                             \glissando
+                            c'''16
+                            % AFTER:
+                            % SPANNER_STARTS:
+                            \glissando
+                            bqs''32
+                            % AFTER:
+                            % SPANNER_STARTS:
+                            \glissando
+                            b''32
+                            b''32
+                            % AFTER:
+                            % SPANNER_STARTS:
+                            \glissando
+                            bqs''32
+                            % AFTER:
+                            % SPANNER_STARTS:
+                            \glissando
+                            b''32
+                            % AFTER:
+                            % SPANNER_STARTS:
+                            \glissando
+                            cs'''32
+                            % AFTER:
+                            % SPANNER_STARTS:
+                            \glissando
+                            c'''32
+                            % AFTER:
                             % COMMANDS:
                             \breathe
                             s32
@@ -1163,68 +1171,27 @@
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                        % CLOSE_BRACKETS:
-                        }   % C_0
-                        % OPEN_BRACKETS:
-                        {   % D_0
-                            a''32
+                            c'''16
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            dqf'''16
+                            bqs''32
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            c'''32
-                            % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
-                            bqf''32
-                            bqf''32
-                            % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
-                            c'''32
-                            % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
-                            bqf''32
-                            % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
-                            ef'''32
-                            % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
-                            dqf'''32
-                            % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
-                            % COMMANDS:
-                            \breathe
-                            s32
-                            a''32
-                            % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
-                            dqf'''16
-                            % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
-                            c'''32
-                            % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
-                            bqf''32
-                            bqf''32
+                            b''32
+                            b''32
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
                         % CLOSE_BRACKETS:
                         }   % D_0
+                        % BEFORE:
+                        % COMMANDS:
+                        \repeat volta 2
                         % OPEN_BRACKETS:
-                        {   % E_0
-                            d'''32
+                        {
+                            cqs'''32
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
@@ -1232,18 +1199,16 @@
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            e'''16
+                            ef'''16
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            a''32
+                            bf''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s32
-                            d'''32
+                            cqs'''32
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
@@ -1251,18 +1216,16 @@
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            e'''16
+                            ef'''16
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            a''32
+                            bf''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s32
-                            d'''32
+                            cqs'''32
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
@@ -1270,18 +1233,16 @@
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            e'''16
+                            ef'''16
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            a''32
+                            bf''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s32
-                            d'''32
+                            cqs'''32
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
@@ -1289,18 +1250,16 @@
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            e'''16
+                            ef'''16
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            a''32
+                            bf''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s32
-                            d'''32
+                            cqs'''32
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
@@ -1308,18 +1267,16 @@
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            e'''16
+                            ef'''16
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            a''32
+                            bf''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s32
-                            d'''32
+                            cqs'''32
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
@@ -1327,18 +1284,16 @@
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            e'''16
+                            ef'''16
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            a''32
+                            bf''32
                             % AFTER:
-                            % SPANNER_STARTS:
-                            \glissando
                             % COMMANDS:
                             \breathe
                             s32
-                            d'''32
+                            cqs'''32
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
@@ -1346,17 +1301,17 @@
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            e'''16
+                            ef'''16
                             % AFTER:
                             % SPANNER_STARTS:
                             \glissando
-                            a''32
+                            bf''32
                             % AFTER:
                             % COMMANDS:
                             \breathe
                             \ottava 0
                         % CLOSE_BRACKETS:
-                        }   % E_0
+                        }
                         % AFTER:
                         % COMMANDS:
                          \mergeDifferentlyHeadedOff \mergeDifferentlyDottedOff \shiftOff
@@ -1365,6 +1320,7 @@
                          \undo \omit Voice.Flag
                          \undo \omit Staff.SpanBar
                          \undo \hide Voice.Beam
+                         \undo \hide Voice.Rest
                          \undo \omit Voice.TupletNumber
                          \undo \omit Voice.TupletBracket
                          \undo \omit Voice.Dots
@@ -1373,7 +1329,7 @@
                 % CLOSE_BRACKETS:
                 }
                 % OPEN_BRACKETS:
-                \context Voice = "Vlao_Voice_2"
+                \context NullVoice = "Vlao_Voice_2"
                 {
                     % OPEN_BRACKETS:
                     {
@@ -1381,17 +1337,11 @@
                         {   % A_0
                             % OPENING:
                             % COMMANDS:
+                             \hideNotes
                              \mergeDifferentlyHeadedOn \mergeDifferentlyDottedOn \shiftOn
-                             \override Voice.NoteHead.stencil = ##f
-                             \override Voice.Rest.stencil = ##f
-                             \override Voice.Stem.stencil = ##f
-                             \override Voice.Flag.stencil = ##f
-                             \omit TupletNumber
-                             \omit Voice.Dots
+                             \omit Voice.TupletNumber
                              \override Voice.TupletBracket.stencil = ##f
-                             \override Voice.Beam.stencil = ##f
-                             \omit Voice.Accidental
-                             \override LyricText.self-alignment-X = #LEFT
+                             \override Voice.Tie.stencil = ##f
                             c'32
                             c'32
                             c'16
@@ -1530,17 +1480,11 @@
                             c'32
                             % AFTER:
                             % COMMANDS:
+                             \unHideNotes
                              \mergeDifferentlyHeadedOff \mergeDifferentlyDottedOff \shiftOff
-                             \revert Voice.NoteHead.stencil
-                             \revert Voice.Rest.stencil
-                             \revert Voice.Stem.stencil
-                             \revert Voice.Flag.stencil
-                             \revert Voice.Dots.stencil
                              \undo \omit Voice.TupletNumber
-                             \undo \omit Voice.Dots
                              \revert Voice.TupletBracket.stencil
-                             \revert Voice.Beam.stencil
-                             \undo \omit Voice.Accidental
+                             \revert Voice.Tie.stencil
                         % CLOSE_BRACKETS:
                         }   % E_0
                     % CLOSE_BRACKETS:
@@ -1606,6 +1550,7 @@
                          \omit Voice.Flag
                          \omit StaffGroup.SpanBar
                          \hide Voice.Beam
+                         \hide Voice.Rest
                          \omit Voice.TupletNumber
                          \omit Voice.TupletBracket
                          \omit Voice.Dots
@@ -1701,7 +1646,7 @@
                     }   % A_0
                     % AFTER:
                     % COMMANDS:
-                     \omit Staff.BarLine
+                     \omit Staff.BarLine \omit StaffGroup.SpanBar
                     % OPEN_BRACKETS:
                     {   % B_0
                         % OPENING:
@@ -1735,7 +1680,7 @@
                     }   % B_0
                     % AFTER:
                     % COMMANDS:
-                     \undo \omit Staff.BarLine
+                     \undo \omit Staff.BarLine \undo \omit StaffGroup.SpanBar
                     % OPEN_BRACKETS:
                     {   % C_0
                         c'32
@@ -1887,9 +1832,12 @@
                         s32
                     % CLOSE_BRACKETS:
                     }   % D_0
+                    % BEFORE:
+                    % COMMANDS:
+                    \repeat volta 2
                     % OPEN_BRACKETS:
-                    {   % E_0
-                        bqf''32
+                    {
+                        bqs''32
                         g'''16.
                         % AFTER:
                         % ARTICULATIONS:
@@ -1897,7 +1845,7 @@
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
-                        f'''32
+                        ef'''32
                         % AFTER:
                         % COMMANDS:
                         \breathe
@@ -1908,16 +1856,16 @@
                         s32
                         s32
                         s32
-                        bqf''32
+                        bqs''32
                         g'''32
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
-                        f'''16
+                        ef'''16
                         % AFTER:
                         % ARTICULATIONS:
                         - \accent
-                        bqf''32
+                        bqs''32
                         % AFTER:
                         % COMMANDS:
                         \breathe
@@ -1926,8 +1874,8 @@
                         % OPENING:
                         % COMMANDS:
                         \clef "treble"
-                        f'''32
-                        bqf''16.
+                        ef'''32
+                        bqs''16.
                         % AFTER:
                         % ARTICULATIONS:
                         - \accent
@@ -1942,7 +1890,7 @@
                         s32
                         s32
                     % CLOSE_BRACKETS:
-                    }   % E_0
+                    }
                     % AFTER:
                     % COMMANDS:
                      \mergeDifferentlyHeadedOff \mergeDifferentlyDottedOff \shiftOff
@@ -1951,6 +1899,7 @@
                      \undo \omit Voice.Flag
                      \undo \omit Staff.SpanBar
                      \undo \hide Voice.Beam
+                     \undo \hide Voice.Rest
                      \undo \omit Voice.TupletNumber
                      \undo \omit Voice.TupletBracket
                      \undo \omit Voice.Dots
@@ -1959,7 +1908,7 @@
             % CLOSE_BRACKETS:
             }
             % OPEN_BRACKETS:
-            \context Voice = "Vc_Voice_2"
+            \context NullVoice = "Vc_Voice_2"
             {
                 % OPEN_BRACKETS:
                 {
@@ -1967,17 +1916,11 @@
                     {   % A_0
                         % OPENING:
                         % COMMANDS:
+                         \hideNotes
                          \mergeDifferentlyHeadedOn \mergeDifferentlyDottedOn \shiftOn
-                         \override Voice.NoteHead.stencil = ##f
-                         \override Voice.Rest.stencil = ##f
-                         \override Voice.Stem.stencil = ##f
-                         \override Voice.Flag.stencil = ##f
-                         \omit TupletNumber
-                         \omit Voice.Dots
+                         \omit Voice.TupletNumber
                          \override Voice.TupletBracket.stencil = ##f
-                         \override Voice.Beam.stencil = ##f
-                         \omit Voice.Accidental
-                         \override LyricText.self-alignment-X = #LEFT
+                         \override Voice.Tie.stencil = ##f
                         c''''32
                         c''''32
                         c''''16
@@ -2115,17 +2058,11 @@
                         c''''32
                         % AFTER:
                         % COMMANDS:
+                         \unHideNotes
                          \mergeDifferentlyHeadedOff \mergeDifferentlyDottedOff \shiftOff
-                         \revert Voice.NoteHead.stencil
-                         \revert Voice.Rest.stencil
-                         \revert Voice.Stem.stencil
-                         \revert Voice.Flag.stencil
-                         \revert Voice.Dots.stencil
                          \undo \omit Voice.TupletNumber
-                         \undo \omit Voice.Dots
                          \revert Voice.TupletBracket.stencil
-                         \revert Voice.Beam.stencil
-                         \undo \omit Voice.Accidental
+                         \revert Voice.Tie.stencil
                     % CLOSE_BRACKETS:
                     }   % E_0
                 % CLOSE_BRACKETS:

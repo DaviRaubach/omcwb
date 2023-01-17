@@ -30,3 +30,17 @@ multi_2_mod = muda.ring_modulation(multi_2)
 multi_2_mod.sort()
 multi_2_mod = list(dict.fromkeys(multi_2_mod))
 multi_2 = [abjad.NamedPitch(_) for _ in multi_2]
+
+multi_15 = [4, 6, 14, 17, 23.5]
+
+multi_15_mod = muda.ring_modulation(multi_15)
+multi_15_mod.sort()
+multi_15_mod = list(dict.fromkeys(multi_15_mod))
+multi_15 = [abjad.NamedPitch(_) for _ in multi_15]
+
+# multi_7 = [4, 6, 14, 17, 23.5]
+
+# multi_7_mod = muda.ring_modulation(multi_7)
+# multi_7_mod.sort()
+# multi_7_mod = list(dict.fromkeys(multi_7_mod))
+# multi_7 = [abjad.NamedPitch(_) for _ in multi_7]

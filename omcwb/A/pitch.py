@@ -186,30 +186,38 @@ def fl2_pitch(mat: muda.Material):
 # fl2_pitch.apply_to = [materials.fl2.name]
 
 
-def sx_pitch(mat: muda.Material):
-    p = multi_pitches.multi_77
-    # mat.write_chords_pitches(tuple(p))
+def sx(mat: muda.Material):
+    # p = multi_pitches.multi_77
+    # # mat.write_chords_pitches(tuple(p))
 
-    first_note = abjad.select.note(mat.container, 0)
-    replace_note_by_chord(first_note)
-    write_chord_pitches([p], mat.container)
+    # first_note = abjad.select.note(mat.container, 0)
+    # replace_note_by_chord(first_note)
+    # write_chord_pitches([p], mat.container)
 
-    # write_pitches(mat.container,
+    # # write_pitches(mat.container,
 
-    # mat.write_pitches(p)
-    # print("sax pitches:", pitches_)
-    # macro_pitches(mat, p, [5, 4, 5, 4, 5, 4, 3],
-    # pitch_range=abjad.SopranoSaxophone().pitch_range)
-    mat.write_pitches_by_name(
-        {
-            "B": p[2:]
-        }
+    # # mat.write_pitches(p)
+    # # print("sax pitches:", pitches_)
+    # # macro_pitches(mat, p, [5, 4, 5, 4, 5, 4, 3],
+    # # pitch_range=abjad.SopranoSaxophone().pitch_range)
+    # mat.write_pitches_by_name(
+    #     {
+    #         "B": p[2:]
+    #     }
+    # )
+
+    # first_note = abjad.select.chord(mat.container, 0)
+    # abjad.attach(abjad.Dynamic("p"), first_note)
+
+    # abjad.glissando(mat.container[1:])
+
+    mat.write_chords_pitches(
+        [multi_pitches.multi_15, multi_pitches.multi_77,
+            multi_pitches.multi_77, multi_pitches.multi_31]
     )
 
-    first_note = abjad.select.chord(mat.container, 0)
-    abjad.attach(abjad.Dynamic("p"), first_note)
 
-    abjad.glissando(mat.container[1:])
+sx.apply_to = [materials.sx.name]
 
 
 # sx_pitch.apply_to = [materials.sx.name]
@@ -301,7 +309,8 @@ def vlao_pitch(mat: muda.Material):
         first_note,
         direction=abjad.UP)
 
-    abjad.glissando(mat.container)
+    for run in abjad.select.runs(mat.container):
+        abjad.glissando(run)
     mat.attach(abjad.Ottava(n=2), lambda _: first_note)
     mat.attach(abjad.Ottava(n=0, site="after"),
                lambda _: abjad.select.note(mat.container, -1))

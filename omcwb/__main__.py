@@ -6,13 +6,15 @@ import time
 # from omcwb.sketch import sketch
 from omcwb.A import segment as A
 from omcwb.B import segment as B
+from omcwb.C import segment as C
 # from omcwb.orchijad_seg import segment
 startTime = time.time()
 
 
 def main():
     A.main()
-    B.main()
+    # B.main()
+    C.main()
     # segment.main()
 
     includes = r"""
@@ -39,6 +41,24 @@ def main():
           {
             % \include "segments/omcwb_midi.ly"
             % \include "segments/omcwb_B.ly"
+            \include "segments/omcwb_C.ly"
+            %\include "segments/omcwb_A.ly"
+            % \include "segments/omcwb_orchijad_seg.ly"
+          }
+          \layout { }
+          \midi { }
+        }
+    """
+    score2 = r"""
+        \score {
+           \header {
+              % piece = "As Vozes das Páginas"
+              composer = "Davi Raubach"
+            }
+          {
+            % \include "segments/omcwb_midi.ly"
+            % \include "segments/omcwb_B.ly"
+            %\include "segments/omcwb_C.ly"
             \include "segments/omcwb_A.ly"
             % \include "segments/omcwb_orchijad_seg.ly"
           }
@@ -52,6 +72,7 @@ def main():
             includes,
             paper,
             score,
+            score2
         ]
     )
 

@@ -1,20 +1,20 @@
 \version "2.23.6"
 \language "english"
 
-        \include "/Users/Davi/.pyenv/versions/abjad14/lib/python3.10/site-packages/abjad/scm/abjad.ily"
-        \include "/Users/Davi/Composição/2023/base-omcwb/omcwb/stylesheet.ily"
+            \include "/Users/Davi/.pyenv/versions/abjad14/lib/python3.10/site-packages/abjad/scm/abjad.ily"
+            \include "/Users/Davi/Composição/2023/base-omcwb/omcwb/stylesheet.ily"
 
-        #(set-default-paper-size "a5landscape")
+            #(set-default-paper-size "a5landscape")
 
 
-        \paper {
-          %page-breaking = #ly:one-line-auto-height-breaking
+            \paper {
+            %page-breaking = #ly:one-line-auto-height-breaking
 
-          top-margin = 20
-          bottom-margin = 20
-          left-margin = 20
-          right-margin = 20
-        }
+            top-margin = 20
+            bottom-margin = 20
+            left-margin = 20
+            right-margin = 20
+            }
 
 % OPEN_BRACKETS:
 \context Score = "Score"
@@ -60,6 +60,7 @@
                          \omit Voice.Flag
                          \omit StaffGroup.SpanBar
                          \hide Voice.Beam
+                         \hide Voice.Rest
                          \omit Voice.TupletNumber
                          \omit Voice.TupletBracket
                          \omit Voice.Dots
@@ -88,6 +89,7 @@
                      \undo \omit Voice.Flag
                      \undo \omit Staff.SpanBar
                      \undo \hide Voice.Beam
+                     \undo \hide Voice.Rest
                      \undo \omit Voice.TupletNumber
                      \undo \omit Voice.TupletBracket
                      \undo \omit Voice.Dots
@@ -100,7 +102,7 @@
             % CLOSE_BRACKETS:
             }
             % OPEN_BRACKETS:
-            \context Voice = "Fl_Voice_2"
+            \context NullVoice = "Fl_Voice_2"
             {
                 % OPEN_BRACKETS:
                 {
@@ -117,17 +119,11 @@
                                 \tempo 4=54
                                 % OPENING:
                                 % COMMANDS:
+                                 \hideNotes
                                  \mergeDifferentlyHeadedOn \mergeDifferentlyDottedOn \shiftOn
-                                 \override Voice.NoteHead.stencil = ##f
-                                 \override Voice.Rest.stencil = ##f
-                                 \override Voice.Stem.stencil = ##f
-                                 \override Voice.Flag.stencil = ##f
-                                 \omit TupletNumber
-                                 \omit Voice.Dots
+                                 \omit Voice.TupletNumber
                                  \override Voice.TupletBracket.stencil = ##f
-                                 \override Voice.Beam.stencil = ##f
-                                 \omit Voice.Accidental
-                                 \override LyricText.self-alignment-X = #LEFT
+                                 \override Voice.Tie.stencil = ##f
                                 \time 4/4
                                 c'8
                                 c'8
@@ -159,17 +155,11 @@
                                 r8
                                 % AFTER:
                                 % COMMANDS:
+                                 \unHideNotes
                                  \mergeDifferentlyHeadedOff \mergeDifferentlyDottedOff \shiftOff
-                                 \revert Voice.NoteHead.stencil
-                                 \revert Voice.Rest.stencil
-                                 \revert Voice.Stem.stencil
-                                 \revert Voice.Flag.stencil
-                                 \revert Voice.Dots.stencil
                                  \undo \omit Voice.TupletNumber
-                                 \undo \omit Voice.Dots
                                  \revert Voice.TupletBracket.stencil
-                                 \revert Voice.Beam.stencil
-                                 \undo \omit Voice.Accidental
+                                 \revert Voice.Tie.stencil
                             % CLOSE_BRACKETS:
                             }
                         % CLOSE_BRACKETS:
@@ -224,7 +214,7 @@
             % CLOSE_BRACKETS:
             }
             % OPEN_BRACKETS:
-            \context Voice = "Sx_Voice_2"
+            \context NullVoice = "Sx_Voice_2"
             {
                 % OPEN_BRACKETS:
                 {
@@ -266,6 +256,7 @@
                              \omit Voice.Flag
                              \omit StaffGroup.SpanBar
                              \hide Voice.Beam
+                             \hide Voice.Rest
                              \omit Voice.TupletNumber
                              \omit Voice.TupletBracket
                              \omit Voice.Dots
@@ -338,6 +329,7 @@
                          \undo \omit Voice.Flag
                          \undo \omit Staff.SpanBar
                          \undo \hide Voice.Beam
+                         \undo \hide Voice.Rest
                          \undo \omit Voice.TupletNumber
                          \undo \omit Voice.TupletBracket
                          \undo \omit Voice.Dots
@@ -346,7 +338,7 @@
                 % CLOSE_BRACKETS:
                 }
                 % OPEN_BRACKETS:
-                \context Voice = "Vlao_Voice_2"
+                \context NullVoice = "Vlao_Voice_2"
                 {
                     % OPEN_BRACKETS:
                     {
@@ -363,17 +355,11 @@
                                     \tempo 4=54
                                     % OPENING:
                                     % COMMANDS:
+                                     \hideNotes
                                      \mergeDifferentlyHeadedOn \mergeDifferentlyDottedOn \shiftOn
-                                     \override Voice.NoteHead.stencil = ##f
-                                     \override Voice.Rest.stencil = ##f
-                                     \override Voice.Stem.stencil = ##f
-                                     \override Voice.Flag.stencil = ##f
-                                     \omit TupletNumber
-                                     \omit Voice.Dots
+                                     \omit Voice.TupletNumber
                                      \override Voice.TupletBracket.stencil = ##f
-                                     \override Voice.Beam.stencil = ##f
-                                     \omit Voice.Accidental
-                                     \override LyricText.self-alignment-X = #LEFT
+                                     \override Voice.Tie.stencil = ##f
                                     \time 4/4
                                     c'8
                                     c'8
@@ -405,17 +391,11 @@
                                     r8
                                     % AFTER:
                                     % COMMANDS:
+                                     \unHideNotes
                                      \mergeDifferentlyHeadedOff \mergeDifferentlyDottedOff \shiftOff
-                                     \revert Voice.NoteHead.stencil
-                                     \revert Voice.Rest.stencil
-                                     \revert Voice.Stem.stencil
-                                     \revert Voice.Flag.stencil
-                                     \revert Voice.Dots.stencil
                                      \undo \omit Voice.TupletNumber
-                                     \undo \omit Voice.Dots
                                      \revert Voice.TupletBracket.stencil
-                                     \revert Voice.Beam.stencil
-                                     \undo \omit Voice.Accidental
+                                     \revert Voice.Tie.stencil
                                 % CLOSE_BRACKETS:
                                 }
                             % CLOSE_BRACKETS:
@@ -515,6 +495,7 @@
                          \omit Voice.Flag
                          \omit StaffGroup.SpanBar
                          \hide Voice.Beam
+                         \hide Voice.Rest
                          \omit Voice.TupletNumber
                          \omit Voice.TupletBracket
                          \omit Voice.Dots
@@ -542,6 +523,7 @@
                      \undo \omit Voice.Flag
                      \undo \omit Staff.SpanBar
                      \undo \hide Voice.Beam
+                     \undo \hide Voice.Rest
                      \undo \omit Voice.TupletNumber
                      \undo \omit Voice.TupletBracket
                      \undo \omit Voice.Dots
@@ -550,7 +532,7 @@
             % CLOSE_BRACKETS:
             }
             % OPEN_BRACKETS:
-            \context Voice = "Vc_Voice_2"
+            \context NullVoice = "Vc_Voice_2"
             {
                 % OPEN_BRACKETS:
                 {

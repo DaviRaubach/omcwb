@@ -348,6 +348,7 @@ rh
 
 #+RESULTS:
 #+ATTR_LATEX: :width 5cm
+
 [[file:sync_line.png]]
 
 

@@ -11,17 +11,17 @@
    #{\markup \override #'(offset . -4) \underline { #text }#}))
 
 minima = #(lambda (grob)(grob-interpret-markup grob
-  #{ \markup
-    \musicglyph "noteheads.s1"
-   #}))
+			 #{ \markup
+			 \musicglyph "noteheads.s1"
+			 #}))
 
-% rs = \markup \strikethrough
+				% rs = \markup \strikethrough
 
 #(set-global-staff-size 15)
-% #(set-default-paper-size "a4" 'landscape)
+				% #(set-default-paper-size "a4" 'landscape)
 
 \paper {
-  % #(set-paper-size "a3landscape")
+				% #(set-paper-size "a3landscape")
   scoreTitleMarkup = \markup {
     \fill-line {
       \null
@@ -30,7 +30,7 @@ minima = #(lambda (grob)(grob-interpret-markup grob
     }
   }
   
-  % line-width = 17\cm
+				% line-width = 17\cm
   print-page-number = ##t
   print-first-page-number = ##f
   oddHeaderMarkup = \markup \null
@@ -48,7 +48,7 @@ minima = #(lambda (grob)(grob-interpret-markup grob
   }
   top-margin = 10
   bottom-margin = 10
- left-margin = 5
+  left-margin = 5
   right-margin = 5
 				% left-margin = 50
 				% right-margin = 50
@@ -56,10 +56,10 @@ minima = #(lambda (grob)(grob-interpret-markup grob
   max-systems-per-page = 3
 				% staff-staff-space = 16
   staff-staff-space = 18
-				system-system-spacing = #'((basic-distance . 18)
-							     (minimum-distance . 12)
-							     (padding . 6)
-							     (stretchability . 1))
+  system-system-spacing = #'((basic-distance . 18)
+			     (minimum-distance . 12)
+			     (padding . 6)
+			     (stretchability . 1))
 
 }
 \layout{
@@ -71,23 +71,24 @@ minima = #(lambda (grob)(grob-interpret-markup grob
     \consists Metronome_mark_engraver
     \consists Text_engraver
     \consists Text_spanner_engraver
-    % \consists Time_signature_engraver
-    % markFormatter = #format-mark-box-alphabet
+				% \consists Time_signature_engraver
+				markFormatter = #format-mark-box-alphabet
     \numericTimeSignature
     
   }
   \context{
     \Voice
-				\consists Duration_line_engraver
+    \override NoteColumn.ignore-collision = ##t
+    \consists Duration_line_engraver
 				% \override LyricText.self-alignment-X = #CENTER
 				% \consists "Horizontal_bracket_engraver"
 				% \override HorizontalBracket.direction = #UP
 				% \override NoteHead.duration-log = 2
 				% \remove Forbid_line_break_engraver
     \accidentalStyle modern-voice-cautionary
-    % \accidentalStyle dodecaphonic
-    % \accidentalStyle modern-voice
-    % \consists Duration_line_engraver
+				% \accidentalStyle dodecaphonic
+				% \accidentalStyle modern-voice
+				% \consists Duration_line_engraver
 				% \override LyricText.self-alignment-X = #CENTER
     \consists "Horizontal_bracket_engraver"
     \override HorizontalBracket.direction = #UP
@@ -96,15 +97,25 @@ minima = #(lambda (grob)(grob-interpret-markup grob
 
     
   }
+  
+  \context {
+    \NullVoice
+    \override NoteColumn.ignore-collision = ##t
+    % \consists Note_heads_engraver
+    % \revert NoteHead.stencil
+      }
+  
   \context {
     \Staff
-    % \override Rest.stencil = #ly:text-interface::print
-    % \override Rest.text = \markup {
-      % \musicglyph "scripts.rcomma"
-    % }
+    % \accepts TextVoice
+
+				% \override Rest.stencil = #ly:text-interface::print
+				% \override Rest.text = \markup {
+				% \musicglyph "scripts.rcomma"
+				% }
 				% \consists Mark_engraver
-    % \consists "Grid_point_engraver"
-    % gridInterval = #(ly:make-moment 1/4)
+				% \consists "Grid_point_engraver"
+				% gridInterval = #(ly:make-moment 1/4)
     \remove Time_signature_engraver
     \consists "Timing_translator"
     \consists "Default_bar_line_engraver"
@@ -130,7 +141,7 @@ minima = #(lambda (grob)(grob-interpret-markup grob
 			       (multi-tie-region-size . 3)
 			       (single-tie-region-size . 4)
 			       (between-length-limit . 1.0))
-\override Staff.TimeSignature.whiteout-style = #'outline
+    \override Staff.TimeSignature.whiteout-style = #'outline
     \override Staff.TimeSignature.whiteout = 1
     \override Staff.TimeSignature.layer = 2
 
@@ -138,9 +149,11 @@ minima = #(lambda (grob)(grob-interpret-markup grob
   }
   \context{
     \StaffGroup
-\override Staff.TimeSignature.whiteout-style = #'outline
+    \RemoveEmptyStaves
+    \override Staff.TimeSignature.whiteout-style = #'outline
     \override Staff.TimeSignature.whiteout = 1
     \override Staff.TimeSignature.layer = 2
+    % \consists Metronome_mark_engraver
 				% \omit TimeSignature
 				% \omit BarLine
 				% \omit SpanBar
@@ -148,7 +161,7 @@ minima = #(lambda (grob)(grob-interpret-markup grob
   }
   \context{
     \PianoStaff
-    % \consists Duration_line_engraver
+				% \consists Duration_line_engraver
     \accidentalStyle piano
 				% \omit TimeSignature
 				% \omit BarLine
@@ -158,12 +171,12 @@ minima = #(lambda (grob)(grob-interpret-markup grob
   \context {
     \Lyrics
     \override LyricText.font-shape = #'caps
-    % \override VerticalAxisGroup.staff-affinity = #DOWN
-    % \override VerticalAxisGroup.staff-staff-spacing =
-    % #'((basic-distance . 0)
-    %    (minimum-distance . 0)
-    %    (padding . 0))
-    % \override Lyrics.LyricSpace.minimum-distance = #0.01
+				% \override VerticalAxisGroup.staff-affinity = #DOWN
+				% \override VerticalAxisGroup.staff-staff-spacing =
+				% #'((basic-distance . 0)
+				%    (minimum-distance . 0)
+				%    (padding . 0))
+				% \override Lyrics.LyricSpace.minimum-distance = #0.01
 				% \override Lyrics.VerticalAxisGroup.staff-affinity = #DOWN
     
   }
@@ -174,9 +187,9 @@ minima = #(lambda (grob)(grob-interpret-markup grob
     \override BendAfter.thickness = #3.5
     
     
-    % \consists "Grid_line_span_engraver"
-      % this moves them to the right half a staff space
-    % \override NoteColumn.X-offset = #-0.5
+				% \consists "Grid_line_span_engraver"
+				% this moves them to the right half a staff space
+				% \override NoteColumn.X-offset = #-0.5
 				% \consists Duration_line_engraver
     \remove "Timing_translator"
     \remove "Default_bar_line_engraver"
@@ -189,13 +202,13 @@ minima = #(lambda (grob)(grob-interpret-markup grob
     \remove Metronome_mark_engraver
     \remove Mark_engraver
 
-    % \override GridLine.whiteout-style = #'outline
-    % \override GridLine.layer = 1
-    % \override GridLine.whiteout = ##t
-    % \override GridLine.stencil = ##f
-    % \override GridLine.extra-offset = #'(0.0 . 2.0)
-    % \override GridLine.parent-alignment-X = -1
-    % \override NoteColumn.X-offset = #-0.5
+				% \override GridLine.whiteout-style = #'outline
+				% \override GridLine.layer = 1
+				% \override GridLine.whiteout = ##t
+				% \override GridLine.stencil = ##f
+				% \override GridLine.extra-offset = #'(0.0 . 2.0)
+				% \override GridLine.parent-alignment-X = -1
+				% \override NoteColumn.X-offset = #-0.5
 
     
 				% \override SpacingSpanner.strict-grace-spacing = ##t
@@ -220,7 +233,7 @@ minima = #(lambda (grob)(grob-interpret-markup grob
 				% \override TupletNumber.font-size = #1
 				% \override TupletNumber.text = #tuplet-number::calc-fraction-text
 				% autoBeaming = ##f
-				% markFormatter = #format-mark-box-alphabet
+				markFormatter = #format-mark-box-alphabet
     
 				% proportionalNotationDuration = #(ly:make-moment 1/18)
 				% tupletFullLength = ##t
@@ -242,22 +255,22 @@ minima = #(lambda (grob)(grob-interpret-markup grob
     \override Beam.beam-thickness = #0.6
     \override Beam.length-fraction = #1.3
 
-    % \override StaffSymbol.layer = 4
-    % \override StaffSymbol.whiteout-style = #'outline
-    % \override StaffSymbol.whiteout = 1
+				% \override StaffSymbol.layer = 4
+				% \override StaffSymbol.whiteout-style = #'outline
+				% \override StaffSymbol.whiteout = 1
     
-    % \override Clef.layer = 3
+				% \override Clef.layer = 3
     \override Clef.whiteout-style = #'outline
     \override Clef.whiteout = 1
-        \override Clef.avoid-slur = #'inside'
-    % \override ClefModifier.layer = 4
+    \override Clef.avoid-slur = #'inside'
+				% \override ClefModifier.layer = 4
     \override ClefModifier.whiteout-style = #'outline
     \override ClefModifier.whiteout = 1
-    % \override TextScript.layer = 8
+				% \override TextScript.layer = 8
     \override TextScript.whiteout = ##t
     \override TextScript.whiteout-style = #'outline
     \override DynamicText.font-size = #-2
-    % \override DynamicLineSpanner.staff-padding = 4.5
+				% \override DynamicLineSpanner.staff-padding = 4.5
     \override Glissando.breakable = ##t
     \override Glissando.thickness = #1.8
     \override Stem.thickness = #0.5
@@ -266,16 +279,17 @@ minima = #(lambda (grob)(grob-interpret-markup grob
 
 
     \override MetronomeMark.font-size = 1.2
-    % \override MetronomeMark.outside-staff-padding = #3
+    \override MetronomeMark.outside-staff-padding = #0
 
-    \override TextSpanner.outside-staff-padding = #3
+    \override TextSpanner.outside-staff-padding = #0
     \override TextSpanner.side-axis = #0
 
-    \override RehearsalMark.padding = #'1
+    \override RehearsalMark.padding = #6
+    \override RehearsalMark.outside-staff-padding = #1
 
 				% \override SpacingSpanner.strict-grace-spacing = ##t
 				% \override SpacingSpanner.strict-note-spacing = ##t % ESSE ERA O PROBLEMA DA JUNÇÃO DO SEGMENTO 4 E 5
-    %\override SpacingSpanner.uniform-stretching = ##t
+				%\override SpacingSpanner.uniform-stretching = ##t
 
 				%\override StaffGrouper.staff-staff-spacing = #'((basic-distance . 23) (minimum-distance . 23) (padding . 8))
 
@@ -291,10 +305,10 @@ minima = #(lambda (grob)(grob-interpret-markup grob
     \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
     \override TupletNumber.font-size = #0.8
     \override TupletNumber.text = #tuplet-number::calc-fraction-text
-    % autoBeaming = ##f
+				% autoBeaming = ##f
     \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/24)
 
-    proportionalNotationDuration = #(ly:make-moment 1/24)
+    proportionalNotationDuration = #(ly:make-moment 1/5)
     tupletFullLength = ##t
 
 

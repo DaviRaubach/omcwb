@@ -30,6 +30,18 @@ Multi2:
 #+attr_html: :width 250px
 [[file:../images/multi2.png]]
 
+
+Multi 7
+
+#+attr_html: :width 250px
+[[file:../images/multi7.png]]
+
+Multi 15
+
+#+attr_html: :width 250px
+[[file:../images/multi15.png]]
+
+
 *A primeira pergunta* é então se seria possível tocar privilegiando a região mais aguda do multifônico.
 
 Pensei em notar dessa maneira:

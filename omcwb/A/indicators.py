@@ -74,6 +74,10 @@ def gl(mat: muda.Material):
     )
 
     abjad.attach(mark, mat.container[0])
+
+    mark = abjad.RehearsalMark(number=2)
+    abjad.attach(mark, mat.container[0])
+
     # pass
 
 
@@ -85,6 +89,11 @@ def fl(mat: muda.Material):
     articulation_beggining_end(mat.container, abjad.Articulation("."))
     articulation_tonica(mat.container, abjad.Articulation(">"))
     remove_stacc_long_notes(mat.container)
+    mat.dynamics(
+        [
+            (["A"], lambda _: abjad.select.notes(_)[0], "mf"),
+        ]
+    )
 
     # dur_line(mat.container)
     # mat.annotate_material_names(
@@ -98,6 +107,67 @@ fl.apply_to = [materials.fl.name]
 def sx(mat: muda.Material):
     breath_after_run(mat.container)
     remove_stacc_long_notes(mat.container)
+
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M15"'
+        ),
+        mat.leaves(pitched=True)[0],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M77"'
+        ),
+        mat.leaves(pitched=True)[2],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M77"'
+        ),
+        mat.leaves(pitched=True)[4],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M31"'
+        ),
+        mat.leaves(pitched=True)[6],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M15"'
+        ),
+        mat.leaves(pitched=True)[8],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M77"'
+        ),
+        mat.leaves(pitched=True)[10],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M77"'
+        ),
+        mat.leaves(pitched=True)[12],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M31"'
+        ),
+        mat.leaves(pitched=True)[14],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Dynamic('p'),
+        mat.leaves(pitched=True)[0],
+    )
 
 
 sx.apply_to = [materials.sx.name]
@@ -185,4 +255,5 @@ def repeat(mat: muda.Material):
     # abjad.attach(instruction, abjad.select.note(d, 0), direction=abjad.UP)
 
 
-repeat.apply_to = [materials.fl.name]
+repeat.apply_to = [materials.fl.name, materials.vc.name,
+                   materials.sx.name, materials.vlao.name]
