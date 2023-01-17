@@ -81,6 +81,13 @@ def gl(mat: muda.Material, time_signatures):
 gl.apply_to = [materials.gl.name]
 
 
+def skips(mat: muda.Material, time_signatures):
+    mat.make_skips(time_signatures)
+
+
+skips.apply_to = [materials.vlao3.name, materials.fl3.name]
+
+
 def fl(mat: muda.Material, timespans, time_signatures, pivot="C5"):
     mat_makers = {
         "A": rmakers.fl_a,
@@ -91,11 +98,6 @@ def fl(mat: muda.Material, timespans, time_signatures, pivot="C5"):
     }
 
     mat.alternating_materials(timespans, mat_makers)
-    # print(timespans)
-    # print(time_signatures)
-
-    mat.rewrite_meter(time_signatures)
-    # mat.write_time_signatures(time_signatures)
     # dur_line(mat.container)
     _rewrite_sustained(mat.container)
     # _override_ties(mat.container)
@@ -114,7 +116,6 @@ def fl2(mat: muda.Material, timespans, time_signatures):
     }
 
     mat.alternating_materials(timespans, mat_makers)
-    # mat.write_time_signatures(time_signatures)
 
 
 fl2.apply_to = [materials.fl2.name]
@@ -130,8 +131,6 @@ def vc(mat: muda.Material, timespans, time_signatures):
     }
 
     mat.alternating_materials(timespans, mat_makers)
-    # mat.rewrite_meter(time_signatures)
-    # mat.write_time_signatures(time_signatures)
 
 
 vc.apply_to = [materials.vc.name]
@@ -146,7 +145,6 @@ def vc2(mat: muda.Material, timespans, time_signatures):
         "E": rmakers.vc_rule_e,
     }
     mat.alternating_materials(timespans, mat_makers)
-    # mat.write_time_signatures(time_signatures)
 
 
 vc2.apply_to = [materials.vc2.name]
@@ -162,32 +160,62 @@ def vlao(mat: muda.Material, timespans, time_signatures):
     }
 
     mat.alternating_materials(timespans, mat_makers)
-    # mat.annotate_material_names()
-    # print(timespans)
-    # print(time_signatures)
-    # mat.rewrite_meter(time_signatures)
-    # mat.write_time_signatures(time_signatures)
 
 
 vlao.apply_to = [materials.vlao.name, materials.vlao2.name]
 
 
-def sx(mat: muda.Material, timespans, time_signatures, pivot="C5"):
+def sx(mat: muda.Material, timespans, time_signatures):
     mat_makers = {
         "A": rmakers.sx_a,
         "B": rmakers.sx_b,
-        "C": rmakers.make_rest,
-        "D": rmakers.make_rest,
+        "C": rmakers.sx_c,
+        "D": rmakers.sx_d,
+        "E": rmakers.sx_e,
     }
 
     mat.alternating_materials(timespans, mat_makers)
-    # print(timespans)
-    # print(time_signatures)
-    mat.rewrite_meter(time_signatures)
-    mat.write_time_signatures(time_signatures)
+    _rewrite_sustained(mat.container)
 
 
 sx.apply_to = [materials.sx.name]
+
+
+def sx2(mat: muda.Material, timespans, time_signatures):
+    mat_makers = {
+        "A": rmakers.sx_rule_a,
+        "B": rmakers.sx_rule_b,
+        "C": rmakers.sx_rule_c,
+        "D": rmakers.sx_rule_d,
+        "E": rmakers.sx_rule_e,
+    }
+    mat.alternating_materials(timespans, mat_makers)
+
+
+sx2.apply_to = [materials.sx2.name]
+
+
+def write_time_signatures(mat: muda.Material, time_signatures):
+    mat.write_time_signatures(time_signatures)
+
+
+# write_time_signatures.apply_to = [
+    # _.name for _ in materials.materials if "Voice_2" not in _.name]
+
+
+def rewrite_meter(mat: muda.Material, time_signatures):
+    mat.rewrite_meter(time_signatures)
+
+
+# rewrite_meter.apply_to = [
+    # _.name for _ in materials.materials if "Voice_2" not in _.name]
+
+# rewrite_meter.apply_to = [
+# _.name for _ in materials.materials if "Voice_2" not in _.name]
+
+# time_signatures.apply_to = [
+# _.name for _ in materials.materials if "Voice_2" not in _.name]
+
 
 # voz2.apply_to = [materials.fl2.name, materials.sx2.name,
 #                  materials.vlao2.name, materials.vc2.name]

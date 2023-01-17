@@ -86,20 +86,20 @@ lín --
 gua
 e
 es --
-cor --
-re,
+co --
+a,
 e
 es --
-cor --
-re,
+co --
+a,
 e
 es --
-cor --
-re,
+co --
+a,
 e
 es --
-cor --
-re,
+co --
+a,
 ca --
 da
 vez
@@ -119,16 +119,16 @@ da
 
 vc_lyrics = r"""E
 es --
-cor --
-re,
+co --
+a,
 e
 es --
-cor --
-re,
+co --
+a,
 e
 es --
-cor --
-re,
+co --
+a,
 ca --
 da
 vez
@@ -153,8 +153,8 @@ lín --
 gua
 e
 es --
-cor --
-re,
+co --
+a,
 mer --
 gu --
 lha
@@ -222,15 +222,16 @@ ve)
 """
 
 fl_lyrics = scratched(fl_lyrics)
+sx_lyrics = scratched(fl_lyrics)
 vc_lyrics = scratched(vc_lyrics)
 
 
-e_escorre = r"""E
+e_escoa = r""" E
 es --
-cor --
-re,"""
+co --
+a,"""
 
-cada_vez_mais_sonhada = r"""ca --
+cada_vez_mais_sonhada = r""" ca --
 da
 vez
 mais
@@ -238,7 +239,7 @@ so --
 nha --
 da"""
 
-palavra_contra_agua = """Pa --
+palavra_contra_agua = """ Pa --
 la --
 vra
 con --
@@ -246,7 +247,7 @@ tra
 a‿á --
 gua."""
 
-mergulha_cada_vez_mais_fundo = """Mer --
+mergulha_cada_vez_mais_fundo = """ Mer --
 gu --
 lha
 ca --
@@ -281,11 +282,11 @@ def get_lyrics(mat: muda.Material):
 
     global vlao_lyrics
 
-    lyr_dict = {"A": e_escorre,
+    lyr_dict = {"A": e_escoa,
                 "B": cada_vez_mais_sonhada,
                 "C": palavra_contra_agua,
                 "D": mergulha_cada_vez_mais_fundo,
-                "E": e_escorre
+                "E": e_escoa
                 }
     vlao_lyrics = lyr_by_material(mat, lyr_dict)
     # print(vlao_lyrics)
@@ -294,10 +295,42 @@ def get_lyrics(mat: muda.Material):
 get_lyrics.apply_to = [materials.vlao2.name]
 
 
-def vlao_lyrics(lyr: muda.Lyrics):
+def fl_lyr(lyr: muda.Lyrics):
+    lyr.write_lyrics(fl_lyrics)
+
+    # lyr.align = "LEFT"
+
+
+fl_lyr.apply_to = [
+    "Fl_Voice_2_Lyrics",
+]
+
+
+def sx_lyr(lyr: muda.Lyrics):
+    lyr.write_lyrics(fl_lyrics)
+
+    # lyr.align = "LEFT"
+
+
+sx_lyr.apply_to = [
+    "Sx_Voice_2_Lyrics",
+]
+
+
+def vc_lyr(lyr: muda.Lyrics):
+    lyr.write_lyrics(vc_lyrics)
+
+    # lyr.align = "LEFT"
+
+
+vc_lyr.apply_to = [
+    materials.vc_lyr.name]
+
+
+def vlao_lyr(lyr: muda.Lyrics):
 
     lyr.write_lyrics(vlao_lyrics)
     print(vlao_lyrics)
 
 
-vlao_lyrics.apply_to = [materials.vlao_lyr.name]
+vlao_lyr.apply_to = [materials.vlao_lyr.name]

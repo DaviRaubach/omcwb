@@ -74,6 +74,10 @@ def gl(mat: muda.Material):
     )
 
     abjad.attach(mark, mat.container[0])
+
+    mark = abjad.RehearsalMark(number=2)
+    abjad.attach(mark, mat.container[0])
+
     # pass
 
 
@@ -81,10 +85,15 @@ gl.apply_to = [materials.gl.name]
 
 
 def fl(mat: muda.Material):
-    breath_after_run(mat.select("A"))
+    breath_after_run(mat.container)
     articulation_beggining_end(mat.container, abjad.Articulation("."))
     articulation_tonica(mat.container, abjad.Articulation(">"))
     remove_stacc_long_notes(mat.container)
+    mat.dynamics(
+        [
+            (["A"], lambda _: abjad.select.notes(_)[0], "mf"),
+        ]
+    )
 
     # dur_line(mat.container)
     # mat.annotate_material_names(
@@ -95,29 +104,89 @@ def fl(mat: muda.Material):
 fl.apply_to = [materials.fl.name]
 
 
-# print(lyrics.fl_lyrics)
+def sx(mat: muda.Material):
+    breath_after_run(mat.container)
+    remove_stacc_long_notes(mat.container)
+
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M15"'
+        ),
+        mat.leaves(pitched=True)[0],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M77"'
+        ),
+        mat.leaves(pitched=True)[2],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M77"'
+        ),
+        mat.leaves(pitched=True)[4],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M31"'
+        ),
+        mat.leaves(pitched=True)[6],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M15"'
+        ),
+        mat.leaves(pitched=True)[8],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M77"'
+        ),
+        mat.leaves(pitched=True)[10],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M77"'
+        ),
+        mat.leaves(pitched=True)[12],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Markup(
+            r'\markup "M31"'
+        ),
+        mat.leaves(pitched=True)[14],
+        direction=abjad.UP
+    )
+    abjad.attach(
+        abjad.Dynamic('p'),
+        mat.leaves(pitched=True)[0],
+    )
 
 
-def fl_lyrics(lyr: muda.Lyrics):
-    lyr.write_lyrics(write_lyrics.fl_lyrics)
-
-    # lyr.align = "LEFT"
+sx.apply_to = [materials.sx.name]
 
 
-fl_lyrics.apply_to = [
-    "Fl_Voice_2_Lyrics",
-]
+def vc(mat: muda.Material):
+    breath_after_run(mat.container)
+    articulation_tonica(mat.container, abjad.Articulation(">"))
+    remove_stacc_long_notes(mat.container)
 
 
-def vc_lyrics(lyr: muda.Lyrics):
-    lyr.write_lyrics(write_lyrics.vc_lyrics)
-
-    # lyr.align = "LEFT"
+vc.apply_to = [materials.vc.name]
 
 
-vc_lyrics.apply_to = [
-    "Vc_Voice_2_Lyrics",
-]
+def vlao(mat: muda.Material):
+    breath_after_run(mat.container)
+
+
+vlao.apply_to = [materials.vlao.name]
 
 
 def voz_indicators(mat: muda.Material):
@@ -186,4 +255,5 @@ def repeat(mat: muda.Material):
     # abjad.attach(instruction, abjad.select.note(d, 0), direction=abjad.UP)
 
 
-repeat.apply_to = [materials.fl.name]
+repeat.apply_to = [materials.fl.name, materials.vc.name,
+                   materials.sx.name, materials.vlao.name]

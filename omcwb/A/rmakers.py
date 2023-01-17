@@ -131,6 +131,17 @@ sum_vlao_rule_c = sum(rule_palavra_contra_agua)
 sum_vlao_rule_d = sum(rule_mergulha_cada_vez_mais_fundo)
 sum_vlao_rule_e = sum(rule_e_escorre_x3)
 
+sx_rule_a_counts = fl_rule_a_counts
+sx_rule_b_counts = fl_rule_b_counts
+sx_rule_c_counts = fl_rule_c_counts
+sx_rule_d_counts = fl_rule_d_counts
+sx_rule_e_counts = fl_rule_e_counts
+
+sx_a_counts = [-4, sum(sx_rule_a_counts) - 6, -2]
+sx_b_counts = [-4, sum(sx_rule_b_counts) - 6, -2]
+sx_c_counts = [-4, sum(sx_rule_c_counts) - 6, -2]
+sx_d_counts = [-4, sum(sx_rule_d_counts) - 6, -2]
+sx_e_counts = [-4, sum(sx_rule_e_counts) - 6, -2]
 
 # RMAKERS
 
@@ -294,6 +305,58 @@ def vlao_e(divisions):
         rule_e_escorre_x3)
     return result
 
+# SAX
+
+
+def sx_rule_a(divisions):
+    result = _talea(divisions, sx_rule_e_counts)
+    return result
+
+
+def sx_a(divisions):
+    result = _talea(divisions, sx_e_counts)
+    return result
+
+
+def sx_rule_b(divisions):
+    result = _talea(divisions, sx_rule_d_counts)
+    return result
+
+
+def sx_b(divisions):
+    result = _talea(divisions, sx_d_counts)
+    return result
+
+
+def sx_rule_c(divisions):
+    result = _talea(divisions, sx_rule_c_counts)
+    return result
+
+
+def sx_c(divisions):
+    result = _talea(divisions, sx_c_counts)
+    return result
+
+
+def sx_rule_d(divisions):
+    result = _talea(divisions, sx_rule_b_counts)
+    return result
+
+
+def sx_d(divisions):
+    result = _talea(divisions, sx_b_counts)
+    return result
+
+
+def sx_rule_e(divisions):
+    result = _talea(divisions, sx_rule_a_counts)
+    return result
+
+
+def sx_e(divisions):
+    result = _talea(divisions, sx_a_counts)
+    return result
+
 # def fl2_b(divisions):
 #     nested_music = r.tuplet(divisions, [(1, 1, 1)])
 #     container = abjad.Container(nested_music)
@@ -392,25 +455,25 @@ def vlao_e(divisions):
 #     return music
 
 
-def sx_a(divisions):
-    nested_music = r.note(divisions)
-    container = abjad.Container(nested_music)
-    # r.beam(container)
-    r.extract_trivial(container)
-    music = abjad.mutate.eject_contents(container)
-    return music
+# def sx_a(divisions):
+#     nested_music = r.note(divisions)
+#     container = abjad.Container(nested_music)
+#     # r.beam(container)
+#     r.extract_trivial(container)
+#     music = abjad.mutate.eject_contents(container)
+#     return music
 
 
-def sx_b(divisions):
-    nested_music = r.talea(
-        divisions,
-        [8],
-        # [1, 3, 1, -1, 1, 1, 2, 2, 1, 1, 3, 1, -2],
-        32,
-        spelling=r.Spelling(increase_monotonic=False),
-    )
-    container = abjad.Container(nested_music)
-    # r.beam(container)
-    r.extract_trivial(container)
-    music = abjad.mutate.eject_contents(container)
-    return music
+# def sx_b(divisions):
+#     nested_music = r.talea(
+#         divisions,
+#         [8],
+#         # [1, 3, 1, -1, 1, 1, 2, 2, 1, 1, 3, 1, -2],
+#         32,
+#         spelling=r.Spelling(increase_monotonic=False),
+#     )
+#     container = abjad.Container(nested_music)
+#     # r.beam(container)
+#     r.extract_trivial(container)
+#     music = abjad.mutate.eject_contents(container)
+#     return music

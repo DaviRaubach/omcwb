@@ -1,0 +1,140 @@
+#+title: omcwb
+#+author: Davi Raubach
+#+OPTIONS: num:nil toc:nil date:nil
+#+PROPERTY: header-args:lilypond :noweb yes
+#+EXCLUDE_TAGS: noexport
+#+LATEX_HEADER: \usepackage{nopageno}
+#+LaTeX_HEADER: \usepackage{pdfpages}
+
+#+INCLUDE: abntex2.org             :only-contents t
+#+INCLUDE: abntex2-meta.org        :only-contents t
+#+INCLUDE: abntex2-pretextual.org  :only-contents t
+
+
+* Prefácio
+Nesta composição, a leitura de um texto verbal ocupa uma posição de geração de material musical e de organizador relativo da temporalidade. Em boa parte da peça, o passar do tempo é articulado pela leitura do texto.
+
+O poema abaixo cumpre essa função na peça foi escrito para essa ocasião.
+
+#+begin_center
+
+Palavra atirada contra a água\\
+Salta, salta, voa\\
+Pousa sobre as nuvens\\
+Mergulha cada vez mais fundo\\
+Cada vez mais alto\\
+Seduz a língua e escoa\\
+Escoa, salta, voa\\
+Cada vez mais sonhada
+#+end_center
+
+
+* Notas de Performance
+
+*Duração* c. 4 min
+
+** Notação rítmica
+
+*** Tempo estrito
+
+Notado tradicionalmente
+
+*** Tempo de leitura
+
+Gestos instrumentais estão associados às sílabas do texto. O/A intérprete deve executar a música levando em conta sua associação com o texto. A leitura do texto determina quando tocar. 
+
+**** Leitura mental
+
+Texto em tachado indica que não se deve ler em voz alta, apenas mentalmente (esse é o caso em toda peça, por enquanto).
+
+- Cabeça de nota como de semínima representa a leitura de uma sílaba para cada nota (notas mais curtas).
+- Cabeça de nota como de mínimas representam notas que se estendem por várias sílabas (notas mais longas):
+
+#+begin_src lilypond :file exemplo_tempo_fala.pdf :results none :exports none
+  \include "org_stylesheet.ily"
+% #(ly:set-option 'backend 'svg)
+  #(set-global-staff-size 12)
+  \score {
+    \include "exemplo_tempo_fala.ily"
+  }
+
+#+end_src
+
+#+ATTR_LATEX: :width 7cm
+[[file:exemplo_tempo_fala.pdf]]
+
+Além disso, um sinal de respiração indica os limites de som e pausa.
+
+**** Modos de fala
+
+O modo da leitura mental também está indicado e pode ser /poético/, como a leitura de um poema por Pablo Neruda, ou /dramático/, como uma fala de protesto. A primeira é uma leitura mais lenta, enquanto a segunda é mais rápida.
+
+**** Conflitos entre leitura musical e textual
+
+Em geral, o ritmo instrumental deve se submeter ao ritmo da leitura. Entretanto, também deve-se levar em consideração que alguns gestos precisam de tempo hábil para a execução e nestes casos não há problema em suspender o tempo da leitura.
+
+**** Sincronia
+
+Por causa da diferença da leitura de cada intérprete, muitos momentos não exigem sincronia, com exceção de início de seções e momentos específicoos indicados com  *barras de compasso pontilhadas, que representam momentos de retomada da sincronia*.
+
+** Multifônicos Sax
+
+Anotei na partitura o multifônico de acordo com os nomes abaixo. Escrevi todas as notas, mas a ideia é conferir as possibilidades de cada multifônico e anotar as notas mais especificamente. 
+
+M1:
+
+#+attr_latex: :width 8cm
+#+attr_html: :width 250px
+[[file:images/multi1.png]]
+
+M2:
+
+#+attr_latex: :width 8cm
+#+attr_html: :width 250px
+[[file:images/multi2.png]]
+
+
+M7:
+
+#+attr_latex: :width 8cm
+#+attr_html: :width 250px
+[[file:images/multi7.png]]
+
+M15:
+
+#+attr_latex: :width 8cm
+#+attr_html: :width 250px
+[[file:images/multi15.png]]
+
+M31:
+
+#+attr_latex: :width 8cm
+#+attr_html: :width 250px [[file:images/multi31.png]]
+[[file:images/multi31.png]]
+
+M77:
+
+#+attr_latex: :width 8cm
+#+attr_html: :width 250px
+[[file:images/multi77.png]]
+
+Retirados de WEISS, Marcus; NETTI, Giorgio. The techniques of saxophone playing. Bärenreiter, 2010
+
+* Processo
+Gostaria de mencionar que terminei essa primeira versão com muita pressa e posso estar deixando passar alguma coisa (inclusive simples). Com a pressa, também optei por coisas que mudaria se for possível. Por exemplo:
+- mudar o material do cello na primeira seção
+- melhorar o uso das técnicas da flauta para ter uma gradação entre whitle tones e slap tongue
+- pensar nas técnicas do cello na segunda seção
+- definir melhor as notas alvo dos multifônicos do sax
+- ser mais preciso nas dinâmicas
+
+Gostaria ainda de acrescentar uma transição entre as duas seções, algo com cerca de 15 segundos e também uma coda com duração semelhante.
+
+* Contágios
+- Utilização dos multifônicos do saxophone como gerador de alturas (Charles Neimog)
+- Modulação de frequências para derivação de alturas (Bruno Gageiro)
+
+#+LATEX: \includepdf[pages=-,pagecommand={}]{omcwb_score.pdf}
+
+
+

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-01-17 Ter 16:13 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>(Pré)-composição 2</title>
+<meta name="author" content="Davi Raubach Tuchtenhagen" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">(Pré)-composição 2
+<br />
+<span class="subtitle">Oficina de Música de Curitiba 2023</span>
+</h1>
+
+<div id="outline-container-orgfce8cee" class="outline-2">
+<h2 id="orgfce8cee">Estrutura geral</h2>
+<div class="outline-text-2" id="text-orgfce8cee">
+<p>
+Consegui pensar em três fragmentos de 1 a 1:30 minutos que conectados formam a peça completa.
+</p>
+
+<p>
+As imagens abaixo apresentam um percurso dos materiais. O percurso para cada um dos 3 fragmentos está completo neste planejamento e poderia ficar interessante.
+</p>
+
+
+<div id="org01941bb" class="figure">
+<p><img src="images/20230104_085554.jpg" alt="20230104_085554.jpg" width="560px" />
+</p>
+</div>
+
+
+<div id="org0ab8c0c" class="figure">
+<p><img src="images/20230104_085602.jpg" alt="20230104_085602.jpg" width="560px" />
+</p>
+</div>
+
+
+<div id="org0e1ee4d" class="figure">
+<p><img src="images/20230104_085609.jpg" alt="20230104_085609.jpg" width="560px" />
+</p>
+</div>
+
+
+<div id="orgacecac7" class="figure">
+<p><img src="images/20230104_085625.jpg" alt="20230104_085625.jpg" width="560px" />
+</p>
+</div>
+
+
+<div id="org35345d5" class="figure">
+<p><img src="images/20230104_085636.jpg" alt="20230104_085636.jpg" width="560px" />
+</p>
+</div>
+
+<p>
+Embora esteja produzindo bastante (abaixo detalho algumas etapas do processo), não acredito que consigo finalizar esses 3 fragmentos até dia 14. Estou pensando em trabalhar na reescritura deste primeiro como maneira de gerar os outros dois. Por exemplo, aproveitar a mesma estrutura com outro percurso harmônico, ou com outro modo de leitura (inserindo mais pausas na leitura p. ex.), ou mudando para notação tradicional.
+</p>
+
+<p>
+O trabalho até então envolve uma série de atividades que acho interessante mencionar:
+</p>
+</div>
+
+<div id="outline-container-orgdc42058" class="outline-3">
+<h3 id="orgdc42058">Escrita do texto poético já pensado como estrutura temporal</h3>
+<div class="outline-text-3" id="text-orgdc42058">
+<p>
+Estou trabalhando a partir do texto. Tento pensar o material musical como se fosse a leitura de um texto poético. 
+</p>
+
+<p>
+O trecho abaixo se refere ao fragmento A. Para a apresentação abaixo (<b>diferente da partitura</b> <sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>), usei a seguinte notação:
+</p>
+
+<p>
+normal = uma nota para cada sílaba
+</p>
+
+<p>
+<del>tachado</del> = pausa (leitura mental sem tocar)
+</p>
+
+<p>
+_<sub>sublinhado</sub>__ = notas que se extendem por várias sílabas
+</p>
+
+
+<p>
+<b>Piccolo:</b>
+</p>
+
+<p>
+Palavra <del>salta, salta, voa</del> <br />
+atirada contra a água <del>leve, leve, leve</del> <br />
+</p>
+
+
+<p>
+salta, salta, voa<br />
+<span class="underline">palavra</span> a - <span class="underline">tirada</span> <br />
+pousa sobre as nuvens
+pa - <span class="underline">lavra</span> con - <span class="underline">tra a água</span><br />
+</p>
+
+
+<p>
+mer - <span class="underline">gulha cada vez mais</span> fundo<br />
+cada <span class="underline">vez mais alto</span><br />
+</p>
+
+
+<p>
+a <span class="underline">palavra seduz</span> a <span class="underline">língua e escorre<br />
+</span>
+<del>e escorre</del>, <span class="underline">e escorre, e escorre</span><br />
+<span class="underline">cada vez mais sonhada</span><br />
+</p>
+
+
+
+<p>
+<b>Cello:</b> (retrógrado)
+</p>
+
+<p>
+a <span class="underline">palavra seduz</span> a <span class="underline">língua e escorre</span><br />
+<del>e escorre</del>, <span class="underline">e escorre, e escorre</span><br />
+<span class="underline">cada vez mais sonhada</span><br />
+</p>
+
+
+<p>
+mer - <span class="underline">gulha cada vez mais</span> fundo<br />
+cada <span class="underline">vez mais alto</span><br />
+</p>
+
+
+<p>
+salta, salta, voa<br />
+<span class="underline">palavra</span> a - <span class="underline">tirada</span><br />
+pousa sobre as nuvens<br />
+pa - <span class="underline">lavra</span> con - <span class="underline">tra a água</span><br />
+</p>
+
+
+<p>
+Palavra <del>salta, salta, voa</del><br />
+atirada contra a água <del>leve, leve, leve</del>
+</p>
+</div>
+
+
+<div id="outline-container-org2966c54" class="outline-4">
+<h4 id="org2966c54">Funciona?</h4>
+<div class="outline-text-4" id="text-org2966c54">
+<p>
+Faltou dizer na pré-composição 1 que se trata de leitura mental, o texto não será ouvido. Uso o texto tachado na partitura para indicar isso (falta fazer as notas de performance onde isso deve ficar claro).
+</p>
+
+<p>
+Assim, a ideia é esta leitura associada (musical/textual) que apresenta grande flexibilidade em relação ao resultado, e ao mesmo tempo, um detalhamento em outro nível.
+</p>
+
+<p>
+Márcio, não entendi se teu apontamento sobre esta técnica se referia ao caso específico do que apresentei, ou a técnica em si. O que apresentei, realmente não funcionaria muito bem porque estava aproveitando um texto e não tinha pensado o ritmo a partir do texto (as combinações texto/notas se davam por acaso). Agora, escrevi o texto e pensei os ritmos para ele, num processo parecido com o de musicar uma letra. O perfil melódico também derivou do texto.
+</p>
+
+<p>
+Irá "funcionar" assim como "funcionou" na peça <a href="https://www.youtube.com/watch?v=StGfpgi3p10">As vozes das páginas</a>, embora não tenha certeza sobre o quanto funcionou naquela ocasião, ou melhor, não tenha certeza sobre o quanto esse funcionamento é interessante.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf7f9228" class="outline-3">
+<h3 id="orgf7f9228">Códigos</h3>
+<div class="outline-text-3" id="text-orgf7f9228">
+<p>
+Tenho utilizado (pro bem e pro mal) o seguinte processo: Escrevo um programa em python (usando <a href="https://abjad.github.io/">abjad</a> e minha própria biblioteca <a href="https://github.com/DaviRaubach/muda">muda</a>) que gera uma partitura que é compilada pelo <a href="https://lilypond.org/">LilyPond</a> para gerar o pdf.
+Devo subir o código da peça em breve para poder compartilhar com vocês.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org83e37f8" class="outline-3">
+<h3 id="org83e37f8">Notação</h3>
+<div class="outline-text-3" id="text-org83e37f8">
+<p>
+Às vezes, um simples problema de notação demora a ser resolvido neste processo. Alterar uma articulação pode significar escrever uma função que selecione aquela nota numa lista de notas para modificá-la. Como a ideia não é trabalhar como se estivesse num programa gráfico, as funções tem que ser "espertas" e não voltadas a um único detalhe da partitura (embora isso aconteça algumas vezes).
+</p>
+
+<p>
+O principal problema de notação neste caso é quanto a esta relação com o texto. Tenho escrito uma voz invisível na qual escrevo uma régua com o ritmo escrito da leitura do texto. Escrevo o ritmo sobre esta régua pensando na relação que terá com o texto (mais sílabas para uma única nota, ou pausa, etc.). Além disso, também precisei ocultar outras coisas da partitura e às vezes elas precisam reaparecer.
+</p>
+
+<p>
+Optei por escrever cabeça de nota de semínima para notas associadas a uma única sílaba e cabeça de nota de mínima para notas associadas com mais sílabas.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6a28172" class="outline-3">
+<h3 id="org6a28172">Outras alturas</h3>
+<div class="outline-text-3" id="text-org6a28172">
+<p>
+O percurso de alturas desse primeiro fragmento para o Piccolo é o seguinte:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">1<span style="color: #ff6c6b;">)</span> multif&#244;nico 1 modulado <span style="color: #ff6c6b;">(</span>filtrado para extens&#227;o do piccolo<span style="color: #ff6c6b;">)</span>
+sorted pitches: <span style="color: #ff6c6b;">[</span>18, 19, 21.5, 22, 23, 23.5, 24, 24.5, 25, 27, 30, 31<span style="color: #ff6c6b;">]</span>
+used pitches: <span style="color: #ff6c6b;">[</span>23, 31, 25, 23, 21.5, 25, 24, 23, 21.5, 24, 18, 24, 23,
+               31, 23, 24, 21.5, 23, 24, 25<span style="color: #ff6c6b;">]</span>
+
+2<span style="color: #ff6c6b;">)</span>multif&#244;nico 1 modulado + multif&#244;nico 2 <span style="color: #ff6c6b;">(</span>filtrado para extens&#227;o do piccolo<span style="color: #ff6c6b;">)</span>
+sorted pitches: <span style="color: #ff6c6b;">[</span>18, 23, 23.5, 25, 30, 31<span style="color: #ff6c6b;">]</span>
+used pitches: <span style="color: #ff6c6b;">[</span>25, 23.5, 23, 18, 30, 25, 23.5, 25, 23, 23.5, 18, 31, 18<span style="color: #ff6c6b;">]</span>
+
+3<span style="color: #ff6c6b;">)</span> multif&#244;nico 2 modulado <span style="color: #ff6c6b;">(</span>filtrado para extens&#227;o do piccolo<span style="color: #ff6c6b;">)</span>
+sorted pitches: <span style="color: #ff6c6b;">[</span>16, 17, 18, 19, 20, 20.5, 21, 22, 23, 23.5, 25, 26,
+                 27, 28, 29, 30<span style="color: #ff6c6b;">]</span>
+used pitches: <span style="color: #ff6c6b;">[</span>16, 23.5, 30, 19, 21, 16, 27<span style="color: #ff6c6b;">]</span>
+
+4<span style="color: #ff6c6b;">)</span> multif&#244;nico 3 modulado <span style="color: #ff6c6b;">(</span>filtrado para extens&#227;o do piccolo<span style="color: #ff6c6b;">)</span>
+sorted pitches: <span style="color: #ff6c6b;">[</span>16, 18, 19, 20, 20.5, 21, 22.5, 23.5, 24, 25.5, 26,
+                 27, 27.5, 28, 29, 30, 31<span style="color: #ff6c6b;">]</span>
+used pitches: <span style="color: #ff6c6b;">[</span>16, 22.5<span style="color: #ff6c6b;">]</span>
+</pre>
+</div>
+
+<p>
+Posso apresentar partitura destas alturas se alguém quiser.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0595b20" class="outline-3">
+<h3 id="org0595b20">Contágios</h3>
+<div class="outline-text-3" id="text-org0595b20">
+<p>
+O principal contágio é o uso do multifônico como gerador de alturas (Charles Neimog). Preciso encontrar outro contágio para explorar.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org8eeeea2" class="outline-2">
+<h2 id="org8eeeea2">Partitura</h2>
+<div class="outline-text-2" id="text-org8eeeea2">
+<p>
+Na partitura que estou enviando estão escritos apenas piccolo e cello. Falta pensar dinâmicas e articulações. Falta acertar o violão (notas superagudas com slide) e o sax (multifônicos dos quais derivam as alturas.
+</p>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org368af50" class="outline-2">
+<h2 id="org368af50">Reescrevendo o texto</h2>
+<div class="outline-text-2" id="text-org368af50">
+<p>
+(em algum tempo entre etapa 1 e 2)
+</p>
+
+<p>
+Palavra atirada contra a água
+Salta, salta, voa
+Pousa sobre as nuvens
+Mergulha cada vez mais fundo
+Cada vez mais alto
+Seduz a língua e escoa
+Escoa, salta, voa
+Cada vez mais sonhada
+</p>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+: Na partitura, o texto <del>tachado</del> se refere à leitura mental (não falado).
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Davi Raubach Tuchtenhagen</p>
+<p class="date">Created: 2023-01-17 Ter 16:13</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

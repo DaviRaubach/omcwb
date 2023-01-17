@@ -5,6 +5,8 @@
         \include "/Users/Davi/Composição/2023/base-omcwb/omcwb/stylesheet.ily"
 
 
+        #(set-default-paper-size "a4")
+
         \paper {
           top-margin = 20
           bottom-margin = 20
@@ -20,6 +22,25 @@
             }
           {
             % \include "segments/omcwb_midi.ly"
+            % \include "segments/omcwb_B.ly"
+            \include "segments/omcwb_C.ly"
+            %\include "segments/omcwb_A.ly"
+            % \include "segments/omcwb_orchijad_seg.ly"
+          }
+          \layout { }
+          \midi { }
+        }
+
+
+        \score {
+           \header {
+              % piece = "As Vozes das Páginas"
+              composer = "Davi Raubach"
+            }
+          {
+            % \include "segments/omcwb_midi.ly"
+            % \include "segments/omcwb_B.ly"
+            %\include "segments/omcwb_C.ly"
             \include "segments/omcwb_A.ly"
             % \include "segments/omcwb_orchijad_seg.ly"
           }

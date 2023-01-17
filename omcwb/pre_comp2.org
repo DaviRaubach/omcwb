@@ -29,23 +29,29 @@ Consegui pensar em três fragmentos de 1 a 1:30 minutos que conectados formam a 
 
 As imagens abaixo apresentam um percurso dos materiais. O percurso para cada um dos 3 fragmentos está completo neste planejamento e poderia ficar interessante.
 
+#+attr_html: :width 560px
 [[file:images/20230104_085554.jpg]]
 
 #+ATTR_LATEX: :width 10cm 
+#+attr_html: :width 560px
 [[file:images/20230104_085602.jpg]]
 
 #+ATTR_LATEX: :width 10cm 
+#+attr_html: :width 560px
 [[file:images/20230104_085609.jpg]]
 
 #+ATTR_LATEX: :width 10cm 
+#+attr_html: :width 560px
 [[file:images/20230104_085625.jpg]]
 
 #+ATTR_LATEX: :width 10cm 
+#+attr_html: :width 560px
 [[file:images/20230104_085636.jpg]]
 
 Embora esteja produzindo bastante (abaixo detalho algumas etapas do processo), não acredito que consigo finalizar esses 3 fragmentos até dia 14. Estou pensando em trabalhar na reescritura deste primeiro como maneira de gerar os outros dois. Por exemplo, aproveitar a mesma estrutura com outro percurso harmônico, ou com outro modo de leitura (inserindo mais pausas na leitura p. ex.), ou mudando para notação tradicional.
 
 O trabalho até então envolve uma série de atividades que acho interessante mencionar:
+
 ** Escrita do texto poético já pensado como estrutura temporal
 
 Estou trabalhando a partir do texto. Tento pensar o material musical como se fosse a leitura de um texto poético. 
@@ -56,73 +62,51 @@ normal = uma nota para cada sílaba
 
 +tachado+ = pausa (leitura mental sem tocar)
 
-_sublinhado_ = notas que se extendem por várias sílabas
+__sublinhado__ = notas que se extendem por várias sílabas
 
-\n
 
 *Piccolo:*
 
-Palavra +salta, salta, voa+
+Palavra +salta, salta, voa+ \\
+atirada contra a água +leve, leve, leve+ \\
 
-atirada contra a água +leve, leve, leve+
 
-\
-
-salta, salta, voa
-
-_palavra_ a - _tirada_
-
+salta, salta, voa\\
+_palavra_ a - _tirada_ \\
 pousa sobre as nuvens
-
-pa - _lavra_ con - _tra a água_
-
-\
-
-mer - _gulha cada vez mais_ fundo
-
-cada _vez mais alto_
-
-\
-
-a _palavra seduz_ a _língua e escorre_
-
-+e escorre+, _e escorre, e escorre_
-
-_cada vez mais sonhada_
+pa - _lavra_ con - _tra a água_\\
 
 
-\
+mer - _gulha cada vez mais_ fundo\\
+cada _vez mais alto_\\
+
+
+a _palavra seduz_ a _língua e escorre\\_
++e escorre+, _e escorre, e escorre_\\
+_cada vez mais sonhada_\\
+
 
 
 *Cello:* (retrógrado)
 
-a _palavra seduz_ a _língua e escorre_
+a _palavra seduz_ a _língua e escorre_\\
++e escorre+, _e escorre, e escorre_\\
+_cada vez mais sonhada_\\
 
-+e escorre+, _e escorre, e escorre_
 
-_cada vez mais sonhada_
+mer - _gulha cada vez mais_ fundo\\
+cada _vez mais alto_\\
 
-\
 
-mer - _gulha cada vez mais_ fundo
+salta, salta, voa\\
+_palavra_ a - _tirada_\\
+pousa sobre as nuvens\\
+pa - _lavra_ con - _tra a água_\\
 
-cada _vez mais alto_
 
-\
-
-salta, salta, voa
-
-_palavra_ a - _tirada_
-
-pousa sobre as nuvens
-
-pa - _lavra_ con - _tra a água_
-
-\
-
-Palavra +salta, salta, voa+
-
+Palavra +salta, salta, voa+\\
 atirada contra a água +leve, leve, leve+
+
 
 *** Funciona?
 Faltou dizer na pré-composição 1 que se trata de leitura mental, o texto não será ouvido. Uso o texto tachado na partitura para indicar isso (falta fazer as notas de performance onde isso deve ficar claro).
@@ -178,9 +162,8 @@ O principal contágio é o uso do multifônico como gerador de alturas (Charles 
 
 Na partitura que estou enviando estão escritos apenas piccolo e cello. Falta pensar dinâmicas e articulações. Falta acertar o violão (notas superagudas com slide) e o sax (multifônicos dos quais derivam as alturas.
 
-[[file:omcwb_score.pdf]]
+#+LATEX: \includepdf[pages=-,pagecommand={}]{0105_omcwb_score.pdf}
 
-[[file:omcwb_scorep2.pdf]]
 
 
 ** A :noexport:
@@ -362,3 +345,20 @@ On ne se guéritjamais d’avoir rêvé près d’une eau dormante...
 
 #+RESULTS:
 [[file:test3.png]]
+
+
+
+
+* Reescrevendo o texto
+
+(em algum tempo entre etapa 1 e 2)
+
+Palavra atirada contra a água\\
+Salta, salta, voa\\
+Pousa sobre as nuvens\\
+Mergulha cada vez mais fundo\\
+Cada vez mais alto\\
+Seduz a língua e escoa\\
+Escoa, salta, voa\\
+Cada vez mais sonhada\\
+

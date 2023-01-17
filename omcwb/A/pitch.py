@@ -29,37 +29,39 @@ def write_pitches(selected_material, outline_indices, pitches):
 
 
 def macro_pitches(pitches, outline, pitch_range=False, select_range=[0, 1]):
-    pitches_ = [abjad.NamedPitch(_).number for _ in pitches]
-    pitches_ = list(dict.fromkeys(pitches_))
-    pitches_.sort()
-    print("sorted pitches:", pitches_)
+    _pitches = [abjad.NamedPitch(_).number for _ in pitches]
+    _pitches = list(dict.fromkeys(_pitches))
+    _pitches.sort()
+    # print("sorted pitches:", _pitches)
     # pitches_ = muda.ring_modulation(
     #     abjad.PitchSegment(pitches_), pitch_range
     # )
     # pitches_.sort()
     if pitch_range:
-        pitches_ = muda.filter_pitches(pitches_, pitch_range)
+        _pitches = muda.filter_pitches(_pitches, pitch_range)
     # print(pitches_)
 
     outline = [_ / max(outline) for _ in outline]
 
     # _max = round(len(pitches_) * constante)
-    _max = round(len(pitches_) * select_range[1])
-    _min = round(len(pitches_) * select_range[0])
+    _max = round(len(_pitches) * select_range[1])
+    _min = round(len(_pitches) * select_range[0])
+    # print("min max", _min, _max)
 
-    pitches = pitches_[_min:_max]
-    outline_indices = [int(_ * (len(pitches) - 1))
+    _pitches = _pitches[_min:_max]
+    # print("selected_pitches:", _pitches)
+    outline_indices = [int(_ * (len(_pitches) - 1))
                        for _ in outline]
-    pitches_ = [pitches_[_] for _ in outline_indices]
+    _pitches = [_pitches[_] for _ in outline_indices]
 
     if pitch_range:
-        toprint = [_.number for _ in pitches_]
+        toprint = [_.number for _ in _pitches]
     else:
-        toprint = pitches_
-    print("used pitches:", toprint)
+        toprint = _pitches
+    # print("used pitches:", toprint)
     # muda.see_pitches(pitches_)
 
-    return pitches_
+    return _pitches
 
     # write_pitches(mat.container, outline_indices, pitches)
     # mat.write_pitches(pitches_)
@@ -108,24 +110,24 @@ def transpose_neiborgh_octaves(pitches, pitch_range):
 
 def fl_pitch(mat: muda.Material):
     pa = transpose_neiborgh_octaves(
-        multi_pitches.multi_2_mod,
+        multi_pitches.multi_77_mod,
         abjad.PitchRange("[C5, G6]"),
 
     )
 
     pa = muda.filter_pitches(pa, abjad.PitchRange("[E5, G6]"))
 
-    pb = multi_pitches.multi_2_mod + multi_pitches.multi_3
+    pb = multi_pitches.multi_77_mod + multi_pitches.multi_1
     pb = muda.filter_pitches(pb, abjad.PitchRange("[E5, G6]"))
 
     pc = transpose_neiborgh_octaves(
-        multi_pitches.multi_3_mod,
+        multi_pitches.multi_1_mod,
         abjad.PitchRange("[C5, G6]"),
     )
     pc = muda.filter_pitches(pc, abjad.PitchRange("[E5, G6]"))
 
     pd = transpose_neiborgh_octaves(
-        multi_pitches.multi_4_mod,
+        multi_pitches.multi_77_mod,
         abjad.PitchRange("[C5, G6]")
     )
     pd = muda.filter_pitches(pd, abjad.PitchRange("[E5, G6]"))
@@ -164,7 +166,7 @@ def fl_pitch(mat: muda.Material):
         })
 
     # comment to listen real pitches in MIDI
-    # mat.transpose_instrument(abjad.Piccolo())
+    mat.transpose_instrument(abjad.Piccolo())
 
     # first_note = abjad.select.note(mat.container, 0)
 
@@ -184,64 +186,78 @@ def fl2_pitch(mat: muda.Material):
 # fl2_pitch.apply_to = [materials.fl2.name]
 
 
-def sx_pitch(mat: muda.Material):
-    p = multi_pitches.multi_2
-    # mat.write_chords_pitches(tuple(p))
+def sx(mat: muda.Material):
+    # p = multi_pitches.multi_77
+    # # mat.write_chords_pitches(tuple(p))
 
-    first_note = abjad.select.note(mat.container, 0)
-    replace_note_by_chord(first_note)
-    write_chord_pitches([p], mat.container)
+    # first_note = abjad.select.note(mat.container, 0)
+    # replace_note_by_chord(first_note)
+    # write_chord_pitches([p], mat.container)
 
-    # write_pitches(mat.container,
+    # # write_pitches(mat.container,
 
-    # mat.write_pitches(p)
-    # print("sax pitches:", pitches_)
-    # macro_pitches(mat, p, [5, 4, 5, 4, 5, 4, 3],
-    # pitch_range=abjad.SopranoSaxophone().pitch_range)
-    mat.write_pitches_by_name(
-        {
-            "B": p[2:]
-        }
+    # # mat.write_pitches(p)
+    # # print("sax pitches:", pitches_)
+    # # macro_pitches(mat, p, [5, 4, 5, 4, 5, 4, 3],
+    # # pitch_range=abjad.SopranoSaxophone().pitch_range)
+    # mat.write_pitches_by_name(
+    #     {
+    #         "B": p[2:]
+    #     }
+    # )
+
+    # first_note = abjad.select.chord(mat.container, 0)
+    # abjad.attach(abjad.Dynamic("p"), first_note)
+
+    # abjad.glissando(mat.container[1:])
+
+    mat.write_chords_pitches(
+        [multi_pitches.multi_15, multi_pitches.multi_77,
+            multi_pitches.multi_77, multi_pitches.multi_31]
     )
 
-    first_note = abjad.select.chord(mat.container, 0)
-    abjad.attach(abjad.Dynamic("p"), first_note)
 
-    abjad.glissando(mat.container[1:])
+sx.apply_to = [materials.sx.name]
 
 
-sx_pitch.apply_to = [materials.sx.name]
+# sx_pitch.apply_to = [materials.sx.name]
 
 
 def vlao_pitch(mat: muda.Material):
+    pa = multi_pitches.multi_77_mod
+    # pa = transpose_neiborgh_octaves(
+    #     multi_pitches.multi_77_mod,
+    #     abjad.PitchRange("[G5, G6]"),
 
-    pa = transpose_neiborgh_octaves(
-        multi_pitches.multi_2_mod,
-        abjad.PitchRange("[G5, A6]"),
+    # )
 
-    )
+    pa = muda.filter_pitches(pa, abjad.PitchRange("[C5, G6]"))
 
-    # pa = muda.filter_pitches(pa, abjad.PitchRange("[C5, G6]"))
-
-    pb = multi_pitches.multi_2_mod + multi_pitches.multi_3
+    pb = multi_pitches.multi_77_mod + multi_pitches.multi_1
     pb = muda.filter_pitches(pb, abjad.PitchRange("[G5, G6]"))
 
     pc = transpose_neiborgh_octaves(
-        multi_pitches.multi_3_mod,
+        multi_pitches.multi_1_mod,
         abjad.PitchRange("[G5, G6]"),
     )
     # pc = muda.filter_pitches(pc, abjad.PitchRange("[C5, G6]"))
 
     pd = transpose_neiborgh_octaves(
-        multi_pitches.multi_4_mod,
+        multi_pitches.multi_77_mod,
         abjad.PitchRange("[G5, G6]")
     )
     # pd = muda.filter_pitches(pd, abjad.PitchRange("[E5, G6]"))
+    e_escorre = [2, 1, 3, 0]
+    e_escorre = \
+        [(_ + 2) for _ in e_escorre] + \
+        e_escorre + \
+        [(_ - 1) for _ in e_escorre] + \
+        [(_ + 1) for _ in e_escorre]
 
     pitchesA = macro_pitches(
         pa,
-        [2, 1, 4, 0] * 8,  # e escorre
-        select_range=[0.5, 1]
+        e_escorre,
+        select_range=[0.4, 1]
     )
 
     pitchesB = macro_pitches(
@@ -251,15 +267,22 @@ def vlao_pitch(mat: muda.Material):
     )
     pitchesC = macro_pitches(
         pc,
-        frase5 + frase6,
+        [0, 3, 2, 1, 1, 2, 0] * 8,  # multiplicação para ter sobrando
         # constante=0.5
 
     )
 
     pitchesD = macro_pitches(
         pd,
-        [0, 5, 4],
-        select_range=[0.5, 1]
+        [0, 3, 2, 1, 1, 2, 1, 4, 3] * 8,  # multiplicação para ter sobrando
+        select_range=[0.2, 0.7]
+        # aqui optei por usar a mesmas frases, já que são notas longas
+        # não precisava dos perfis
+    )
+    pitchesE = macro_pitches(
+        pd,
+        [2, 1, 3, 0] * 8,  # e escorre
+        select_range=[0.2, 0.8]
         # aqui optei por usar a mesmas frases, já que são notas longas
         # não precisava dos perfis
     )
@@ -269,10 +292,11 @@ def vlao_pitch(mat: muda.Material):
             "A": pitchesA,
             "B": pitchesB,
             "C": pitchesC,
-            "D": pitchesC,
-            "E": pitchesD,
+            "D": pitchesD,
+            "E": pitchesE,
         })
 
+    # mat.transpose_instrument(abjad.Guitar())
     # pitches_ = [29, 30.5, 31]
     # pitches_ = muda.ring_modulation(pitches_, abjad.PitchRange("[C5, G6]"))
     # mat.write_pitches(pitches_)
@@ -285,7 +309,8 @@ def vlao_pitch(mat: muda.Material):
         first_note,
         direction=abjad.UP)
 
-    abjad.glissando(mat.container)
+    for run in abjad.select.runs(mat.container):
+        abjad.glissando(run)
     mat.attach(abjad.Ottava(n=2), lambda _: first_note)
     mat.attach(abjad.Ottava(n=0, site="after"),
                lambda _: abjad.select.note(mat.container, -1))
@@ -299,24 +324,24 @@ vlao_pitch.apply_to = [materials.vlao.name]
 def vc_pitch(mat: muda.Material):
 
     pa = transpose_neiborgh_octaves(
-        multi_pitches.multi_2_mod,
+        multi_pitches.multi_77_mod,
         abjad.PitchRange("[C5, G6]"),
 
     )
 
     # pa = muda.filter_pitches(pa, abjad.PitchRange("[C5, G6]"))
 
-    pb = multi_pitches.multi_2_mod + multi_pitches.multi_3
+    pb = multi_pitches.multi_77_mod + multi_pitches.multi_1
     pb = muda.filter_pitches(pb, abjad.PitchRange("[C5, G6]"))
 
     pc = transpose_neiborgh_octaves(
-        multi_pitches.multi_3_mod,
+        multi_pitches.multi_1_mod,
         abjad.PitchRange("[C5, G6]"),
     )
     # pc = muda.filter_pitches(pc, abjad.PitchRange("[C5, G6]"))
 
     pd = transpose_neiborgh_octaves(
-        multi_pitches.multi_4_mod,
+        multi_pitches.multi_77_mod,
         abjad.PitchRange("[C5, G6]")
     )
     # pd = muda.filter_pitches(pd, abjad.PitchRange("[E5, G6]"))
@@ -423,8 +448,8 @@ def vc_pitch(mat: muda.Material):
     chords = abjad.select.chords(mat.container)
 
     # Test MIDI
-    for chord in chords:
-        chord.written_pitches = [chord.written_pitches[0] + 24]
+    # for chord in chords:
+    # chord.written_pitches = [chord.written_pitches[0] + 24]
 
     first_note = abjad.select.chord(mat.container, 0)
     abjad.attach(abjad.Dynamic("p"), first_note)
