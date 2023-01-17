@@ -110,7 +110,7 @@ M31:
 
 #+attr_latex: :width 8cm
 #+attr_html: :width 250px [[file:images/multi31.png]]
-
+[[file:images/multi31.png]]
 
 M77:
 

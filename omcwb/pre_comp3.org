@@ -1,6 +1,7 @@
 
 * Fragmento B
-Encontrei um material interessante experimentando no violão: fixo uma posição (usando as 4 cordas mais graves) na mão esquerda e movimento essa posição sobre a boca do violão até a 12ª casa como se estivesse tocando harmônicos. Os harmônicos são ocasionais, o som predominante é o som do ataque das unhas sobre as cordas. Dos harmônicos saiu também as alturas que vou utilizar nesse fragmento.
+Encontrei um material interessante experimentando no violão: fixo uma posição (usando as 4 cordas mais graves) na mão esquerda e movimento essa posição sobre a boca do violão até a 12ª casa como se estivesse tocando harmônicos. Os harmônicos são ocasionais, o som predominante é o som do ataque das unhas sobre as cordas. Dos harmônicos saiu também as alturas que vou utilizar nesse fragmento. (comentário posterior: acabei misturando estas alturas com as alturas provenientes dos multifônicos da seção que havia composto primeiro).
+
 ** Alturas
 #+begin_src python :results none
   gtr_strings = {
@@ -15,18 +16,7 @@ Encontrei um material interessante experimentando no violão: fixo uma posição
       gtr_strings[key] = [key * i for i in range(7, 14)]
       pitches.extend([abjad.NumberedPitch.from_hertz(_)
                      for _ in gtr_strings[key]])
-  gtr_strings = {
-      82.41: [],
-      110: [],
-      146.83: []
-  }
-  pitches = []
-
-  for key in gtr_strings.keys():
-      gtr_strings[key] = [key * i for i in range(7, 14)]
-      pitches.extend([abjad.NumberedPitch.from_hertz(_)
-                     for _ in gtr_strings[key]])
-
+ 
 #+end_src
 
 #+begin_src lilypond :file pitches_B.pdf
@@ -142,53 +132,17 @@ Encontrei um material interessante experimentando no violão: fixo uma posição
 
 #+RESULTS:
 [[file:pitches_B.pdf]]
+
 * Estrutura repensada
-Assisti a um vídeo de uma análise do quarteto de cordas de Lachenmann "Reigen seilige geister".
+
+Assisti a um vídeo de uma análise do quarteto de cordas de Lachenmann "Reigen seliger Geister" https://youtu.be/lwsnHoIlFWw
 
 A ideia de oposições identificadas nesse quarteto me fez pensar nas oposições com as quais eu estou trabalhando.
 
-No fragmento A, tenho gestos de notas curtas e agudas vs. gestos de multifônicos continuos - ainda que explorando variações dentro das possibilidades do multifônico. Os primeiros são "projeções" dos segundos em se tratando de alturas. Quer dizer, a oposição se mantém dentro de uma abordagem monolítica.
+No fragmento que compus primeiro (B da partitura), tenho gestos de notas curtas e agudas vs. gestos de multifônicos continuos - ainda que explorando variações dentro das possibilidades do multifônico. Os primeiros são "projeções" dos segundos em se tratando de alturas. Quer dizer, a oposição se mantém dentro de uma abordagem monolítica.
 
-Minha ideia para o fragmento B já incluia o uso de sons residuais (como o do arrastar dos dedos sobre as cordas do violão na mudança de posição), depois do vídeo fiquei mais propenso à exploração desses sons. Lachenmann pode ser um contágio.
+Minha ideia para o fragmento que comporia em seguida já incluia o uso de sons residuais (como o do arrastar dos dedos sobre as cordas do violão na mudança de posição), depois do vídeo fiquei mais propenso à exploração desses sons. Lachenmann pode ter sido um contágio.
 
-
-
-
-
-#+begin_src lilypond :file foot_note_test.png
-    \include "org_stylesheet.ily"
-
-  % \book {
-  %   \header { tagline = ##f }
-    \new StaffGroup
-    <<
-      \new Staff
-      {
+Outra decisão foi passar esse fragmento para o começo. A ideia é fazer com que os multifônicos que apareceriam depois fossem "nascendo" de dentro destes sons residuais.
 
 
-      <a' \footnote "*" #'(0.5 . -2) \markup { \italic "* The first note" } e> 4 b8
-      \footnote \markup { \super "$" } #'(0.5 . 1)
-        \markup { \super "$" \italic " The second note" } e
-      c4
-      \once \override Score.Footnote.annotation-line = ##f
-      b-\footnote \markup \tiny "+" #'(0.1 . 0.1)
-        \markup { \super "+" \italic " Editorial" } \p
-    }
-      \new Staff {s1 \bar "!" s2}
->>
-
-  % }
-
-#+end_src
-
-#+RESULTS:
-[[file:foot_note_test.png]]
-
-
-
-Multi 7
-
-[[file:images/multi7.png]]
-
-Multi 15
-[[file:images/multi15.png]]
