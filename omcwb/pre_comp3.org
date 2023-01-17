@@ -1,4 +1,29 @@
 
+#+title: (Pré)-composição 3
+#+subtitle: Oficina de Música de Curitiba 2023
+#+author: Davi Raubach Tuchtenhagen
+#+EXCLUDE_TAGS: noexport
+#+OPTIONS: num:nil toc:nil 
+# #+LATEX_HEADER: \usepackage{nopageno}
+#+SETUPFILE: latexport.org
+#+ATTR_LATEX: :options [label={}, itemjoin={,}, itemjoin*={, and}]
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper, 12pt]
+#+LATEX_HEADER: \usepackage[margin=0.8in]{geometry}
+#+LATEX_HEADER: \setlength{\textheight}{230mm}
+
+#+LATEX_HEADER: \setlength{\textwidth}{160mm}
+
+#+LATEX_HEADER: \setlength{\voffset}{-10mm}
+
+#+LATEX_HEADER: \setlength{\oddsidemargin}{0mm}
+
+#+LATEX_HEADER: \setlength{\evensidemargin}{0mm}
+
+#+LATEX_HEADER: \addtolength{\parskip}{0.33\baselineskip}
+
+#+LATEX_HEADER: \setlength\parindent{24pt}
+
 * Fragmento B
 Encontrei um material interessante experimentando no violão: fixo uma posição (usando as 4 cordas mais graves) na mão esquerda e movimento essa posição sobre a boca do violão até a 12ª casa como se estivesse tocando harmônicos. Os harmônicos são ocasionais, o som predominante é o som do ataque das unhas sobre as cordas. Dos harmônicos saiu também as alturas que vou utilizar nesse fragmento. (comentário posterior: acabei misturando estas alturas com as alturas provenientes dos multifônicos da seção que havia composto primeiro).
 
@@ -19,7 +44,7 @@ Encontrei um material interessante experimentando no violão: fixo uma posição
  
 #+end_src
 
-#+begin_src lilypond :file pitches_B.pdf
+#+begin_src lilypond :file pitches_B.png :export results
   \include "org_stylesheet.ily"
   \score {
 \new StaffGroup
@@ -131,7 +156,7 @@ Encontrei um material interessante experimentando no violão: fixo uma posição
 #+end_src
 
 #+RESULTS:
-[[file:pitches_B.pdf]]
+[[file:pitches_B.png]]
 
 * Estrutura repensada
 
